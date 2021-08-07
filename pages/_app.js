@@ -5,6 +5,8 @@ import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import '../styles/globals.css'
 import '../styles/fonts/fonts.css'
+import HomePage from './index.js'
+import CaseStudyPage from './case-studies/[case-study].js'
 import CaseStudyCard from '../components/CaseStudyCard.js'
 import SectionHeader from '../components/SectionHeader.js'
 /* import HomeStyles from '../styles/Home.module.css'
@@ -18,13 +20,13 @@ function MyApp({ Component, pageProps }) {
 
   const enter = (node) => {
 
-    /* document.documentElement.style.scrollBehavior = 'auto'
+    document.documentElement.style.scrollBehavior = 'auto'
 
     window.scroll({
       top: 0
     });
 
-    document.documentElement.style.scrollBehavior = 'smooth' */
+    document.documentElement.style.scrollBehavior = 'smooth'
 
     gsap.from(node, {
       ease: "power3.out",

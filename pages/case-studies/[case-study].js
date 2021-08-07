@@ -15,21 +15,7 @@ import SectionHeader from '../../components/SectionHeader.js'
 
 const CaseStudyPage = () => {
 
-    const scrollOnRender = () =>{
-        document.documentElement.style.scrollBehavior = 'auto'
-
-        window.scroll({
-        top: 0
-        });
-
-        document.documentElement.style.scrollBehavior = 'smooth'
-    }
-
     useEffect(() => {
-    
-        const pageRendered =() => {
-            setTimeout((scrollOnRender()), 300)
-        }
 
         gsap.from(".navAni", {
           ease: "power3.out",

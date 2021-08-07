@@ -5,7 +5,7 @@ import Script from 'next/script'
 import Image from 'next/image'
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import homeStyles from '../styles/Home.module.css'
+import HomeStyles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar.js'
 import SectionHeader from '../components/SectionHeader.js'
 import Loader from '../components/Loader.js'
@@ -77,18 +77,18 @@ export default function Home({loaded , loaderView}) {
 
 
   return (
-    <div className={homeStyles.homePage}>
+    <div className={HomeStyles.homePage}>
         {(loaderView ? <Loader loaded={loaded} />: null)}
         <Navbar />
-        <div className={homeStyles.showcase} id="showcase">
+        <div className={HomeStyles.showcase} id="showcase">
           <div className="container">
-            <h1 className={`textHeadline1 mainText fadeAni ${homeStyles.showcaseHeadline}`}><span className={`fadeAni ${homeStyles.showcaseHeadline}`}>Hey there—I’m Zack. I’m a passionate </span><span className={`fadeAni ${homeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${homeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1>
+            <h1 className={`textHeadline1 mainText fadeAni ${HomeStyles.showcaseHeadline}`}><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>Hey there—I’m Zack. I’m a passionate </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1>
           </div>
         </div>
         <div className="fadeAni">
-          <div className={homeStyles.work} id="work">
+          <div className={HomeStyles.work} id="work">
             <SectionHeader title="My work" name="work"  />
-            <div className={homeStyles.work}>
+            <div className={HomeStyles.work}>
               <div className="container">
                 <div className="grid">
                   <div className="col-6">
@@ -104,7 +104,7 @@ export default function Home({loaded , loaderView}) {
               </div>
             </div>
           </div>
-          <div className={homeStyles.about} id="about">
+          <div className={HomeStyles.about} id="about">
             <SectionHeader title="About me" />
             <div className="container">
             </div>

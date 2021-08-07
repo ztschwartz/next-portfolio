@@ -58,7 +58,7 @@ const CaseStudyPage = () => {
         <div className={CaseStudyStyles.caseStudyPage}>
             <Navbar />
             <div className={CaseStudyStyles.showcase}>
-                    
+                <h1 className="mainText textHeadline2" >Case Study Page</h1>
             </div>
         </div>
     )

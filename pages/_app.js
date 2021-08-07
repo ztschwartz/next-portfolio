@@ -1,7 +1,77 @@
+import React, {useState, useEffect} from 'react'
+import { useRouter } from 'next/router'
+import {Transition , SwitchTransition} from 'react-transition-group'
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import '../styles/globals.css'
+import '../styles/fonts/fonts.css'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+  const router = useRouter();
+
+  const enter = (node) => {
+
+    document.documentElement.style.scrollBehavior = 'auto'
+
+    window.scroll({
+      top: 0
+    });
+
+    document.documentElement.style.scrollBehavior = 'smooth'
+
+    gsap.from(node, {
+      ease: "power3.out",
+      opacity: 0,
+      duration: 0.4,
+      y: 24,
+      onComplete: ScrollTrigger.refresh()
+    })
+  }
+  
+  const exit = (node) => {
+    gsap.to(node, {
+      ease: "power3.out",
+      opacity: 0,
+      duration: 0.4,
+      y: 24,
+      onComplete: ScrollTrigger.refresh()
+    })
+  }
+  
+
+  const [loaded, setLoaded] = useState(false);
+
+  const [loaderView, setLoaderView] = useState(true)
+
+  const firstPageLoad = () => {
+    setLoaded(true)
+    console.log(loaderView);
+    setTimeout(()=>{
+      setLoaderView(false)
+    }, 300)
+  }
+
+  useEffect(() =>{
+    firstPageLoad();
+  })
+
+
+
+  return (
+      <SwitchTransition
+        mode={"out-in"}
+      >
+        <Transition 
+          timeout={400}
+          onEnter={enter}
+          onExiting={exit}
+          key={router.route}
+          >
+              <Component loaded={loaded} loaderView={loaderView} {...pageProps} />
+          </Transition>
+        </SwitchTransition>
+  )
 }
 
 export default MyApp

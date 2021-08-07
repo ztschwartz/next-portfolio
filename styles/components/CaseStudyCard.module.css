@@ -1,0 +1,56 @@
+.caseStudyCard{
+    border-radius: 0.75rem;
+    padding: 0.25rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+    height: 32rem;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 200ms ease-out;
+}
+
+.caseStudyCard:hover{
+    background-color: var(--gray20);
+}
+
+.cardImgSection{
+    margin: 1.5rem;
+    position: relative;
+    align-self: stretch;
+    justify-content: stretch;
+}
+
+.cardImg{
+    padding: 2rem;
+}
+
+.cardInnerSection{
+    align-self: end;
+}
+
+.cardInner{
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: end;
+    transition: background-color 200ms ease-out;
+}
+
+.cardInnerLink{
+    text-decoration: none;
+    display: inline-grid;
+    grid-auto-flow: column;
+    gap: 0.75rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.cardInnerLink svg{
+    height: 12px;
+    transition: transform 200ms ease-out;
+}

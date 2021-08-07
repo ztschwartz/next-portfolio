@@ -18,13 +18,13 @@ function MyApp({ Component, pageProps }) {
 
   const enter = (node) => {
 
-    document.documentElement.style.scrollBehavior = 'auto'
+    /* document.documentElement.style.scrollBehavior = 'auto'
 
     window.scroll({
       top: 0
     });
 
-    document.documentElement.style.scrollBehavior = 'smooth'
+    document.documentElement.style.scrollBehavior = 'smooth' */
 
     gsap.from(node, {
       ease: "power3.out",

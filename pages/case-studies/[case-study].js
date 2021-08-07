@@ -7,6 +7,7 @@ import { gsap } from "gsap/dist/gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 import CaseStudyStyles from '../../styles/CaseStudy.module.css'
 import HomeStyles from '../../styles/Home.module.css'
+import CardStyles from '../styles/components/CaseStudyCard.module.css'
 import Navbar from '../../components/Navbar.js'
 import SectionHeader from '../../components/SectionHeader.js'
 

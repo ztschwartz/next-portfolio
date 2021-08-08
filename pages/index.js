@@ -20,6 +20,8 @@ export default function Home({loaded , loaderView}) {
 
   const postObject = JSON.parse(postString)
 
+  const scrollTriggerFresh = () => ScrollTrigger.refresh();
+
   
   useEffect(() => {
     window.requestAnimationFrame( () => {
@@ -31,7 +33,7 @@ export default function Home({loaded , loaderView}) {
         stagger: 0.12,
         duration: 0.8,
         y: -32,
-        onComplete: ScrollTrigger.refresh()
+        onComplete: scrollTriggerFresh
     });
   
     gsap.from(".fadeAni", {
@@ -41,7 +43,7 @@ export default function Home({loaded , loaderView}) {
         delay: 0.2,
         duration: 0.8,
         y: 28,
-        onComplete: ScrollTrigger.refresh()
+        onComplete: scrollTriggerFresh
     });
   
     gsap.from("#workHeaderLink", {
@@ -68,6 +70,54 @@ export default function Home({loaded , loaderView}) {
         ease: "Power2.easeOut"
     });
 
+    gsap.from("#aboutHeaderLink", {
+      scrollTrigger:{
+          trigger: "#about",
+          start: "top top",
+          toggleActions: "play none none reverse"
+      },
+      display: "none",
+      duration: 0.3,
+      ease: "Power2.easeOut",
+      opacity: 0,
+      x: 24
+  });
+
+  gsap.to("#aboutHeaderBg", {
+      scrollTrigger:{
+          trigger: "#about",
+          start: "top top",
+          toggleActions: "play none none reverse"
+      },
+      opacity: 1,
+      duration: 0.2,
+      ease: "Power2.easeOut"
+  });
+  
+  gsap.from("#contactHeaderLink", {
+    scrollTrigger:{
+        trigger: "#contact",
+        start: "top top",
+        toggleActions: "play none none reverse"
+    },
+    display: "none",
+    duration: 0.3,
+    ease: "Power2.easeOut",
+    opacity: 0,
+    x: 24
+  });
+
+  gsap.to("#contactHeaderBg", {
+      scrollTrigger:{
+          trigger: "#contact",
+          start: "top top",
+          toggleActions: "play none none reverse"
+      },
+      opacity: 1,
+      duration: 0.2,
+      ease: "Power2.easeOut"
+  });
+
 
     })
     
@@ -92,21 +142,82 @@ export default function Home({loaded , loaderView}) {
               <div className="container">
                 <div className="grid">
                   <div className="col-6">
-                    <CaseStudyCard postData={postData[0]} title={postObject[0].title} subtitle={postObject[0].subtitle} slug={postObject[0].meta.slug} img={`/../${ postObject[0].featureImg }`} />
+                    <CaseStudyCard postData={postData[0]} title={postObject[0].title} subtitle={postObject[0].subtitle} slug={postObject[0].meta.slug} img={ postObject[0].featureImg } />
                   </div>
                   <div className="col-6">
-                  <CaseStudyCard postData={postData[1]} title={postObject[1].title} subtitle={postObject[1].subtitle} slug={postObject[1].meta.slug} img={`/../${ postObject[1].featureImg }`} />
+                  <CaseStudyCard postData={postData[1]} title={postObject[1].title} subtitle={postObject[1].subtitle} slug={postObject[1].meta.slug} img={postObject[1].featureImg} />
                   </div>
                   <div className="col-12">
-                    <CaseStudyCard postData={postData[2]} title={postObject[2].title} subtitle={postObject[2].subtitle} slug={postObject[2].meta.slug} img={`/../${ postObject[2].featureImg }`} />
+                    <CaseStudyCard postData={postData[2]} title={postObject[2].title} subtitle={postObject[2].subtitle} slug={postObject[2].meta.slug} img={postObject[2].featureImg} />
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className={HomeStyles.about} id="about">
-            <SectionHeader title="About me" />
+            <SectionHeader title="About me" name="about" />
             <div className="container">
+              <div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
+                <div className="col-6--6 contentGroup">
+                  <div className="textGroup">
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                  <div className="textGroup">
+                    <p className="mainText textSubtitle">My design principles.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                  <div className="textGroup">
+                    <p className="mainText textTitle">Start with a well defined problem.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                  <div className="textGroup">
+                    <p className="mainText textTitle">Start with a well defined problem.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                  <div className="textGroup">
+                    <p className="mainText textTitle">Start with a well defined problem.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={HomeStyles.about} id="contact">
+            <SectionHeader title="Contact me" name="contact" />
+            <div className="container">
+              <div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
+                <div className="col-6--6 contentGroup">
+                  <div className="textGroup">
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                  <div className="textGroup">
+                    <p className="mainText textSubtitle">My design principles.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                  <div className="textGroup">
+                    <p className="mainText textTitle">Start with a well defined problem.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                  <div className="textGroup">
+                    <p className="mainText textTitle">Start with a well defined problem.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                  <div className="textGroup">
+                    <p className="mainText textTitle">Start with a well defined problem.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

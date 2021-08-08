@@ -2,14 +2,17 @@ import React from 'react'
 import Link from 'next/link'
 import CardStyles from '../styles/components/CaseStudyCard.module.css'
 import Image from 'next/image'
+import TTImg from '/public/img/tt-img-test-2.png'
 
 const CaseStudyCard = ({title, subtitle, slug, img , postData}) => {
+
     
+
     return (
         <Link scroll={false} href={`/case-studies/${encodeURIComponent(slug)}`}>
             <a className={`deepBackground ${CardStyles.caseStudyCard}`}>
                 <div className={CardStyles.cardImgSection}>
-                    <Image layout="fill" objectFit="contain" src={img} alt="Ambassador App Phone Mockup" />
+                    <Image layout="fill" objectFit="contain" src={`/img/${img}`} alt="Ambassador App Phone Mockup" />
                 </div>
                 <div className={CardStyles.cardInnerSection}>
                     <div className={`mainBackground ${CardStyles.cardInner}`}>

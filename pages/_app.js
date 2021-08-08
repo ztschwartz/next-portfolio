@@ -52,7 +52,6 @@ function MyApp({ Component, pageProps }) {
 
   const firstPageLoad = () => {
     setLoaded(true)
-    console.log(loaderView);
     setTimeout(()=>{
       setLoaderView(false)
     }, 300)

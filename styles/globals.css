@@ -38,7 +38,7 @@ a {
   --gray80: #2A2B2D;
   --gray90: #0E0F10;
   --transparentGray90: rgba(14,15,16,0.9);
-  --accentLight: #38919F;
+  --accentLight: #2B6DE9;
   --accentDark: #408CE7;
 }
 
@@ -184,6 +184,28 @@ a {
   font-size: 0.875rem;
   line-height: 1.25rem;
   text-decoration: underline;
+}
+
+
+.sectionContent{
+  margin-top: -3rem;
+}
+
+.contentGroup{
+  justify-self: stretch;
+  align-self: stretch;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 4rem;
+}
+
+
+.textGroup{
+  justify-self: stretch;
+  align-self: stretch;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1rem;
 }
 
 

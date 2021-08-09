@@ -45,87 +45,8 @@ export default function Home({loaded , loaderView}) {
         y: 28,
         onComplete: scrollTriggerFresh
     });
-  
-    gsap.from("#workHeaderLink", {
-        scrollTrigger:{
-            trigger: "#work",
-            start: "top top",
-            toggleActions: "play none none reverse"
-        },
-        display: "none",
-        duration: 0.3,
-        ease: "Power2.easeOut",
-        opacity: 0,
-        x: 24
-    });
-  
-    gsap.to("#workHeaderBg", {
-        scrollTrigger:{
-            trigger: "#work",
-            start: "top top",
-            toggleActions: "play none none reverse"
-        },
-        opacity: 1,
-        duration: 0.2,
-        ease: "Power2.easeOut"
-    });
-
-    gsap.from("#aboutHeaderLink", {
-      scrollTrigger:{
-          trigger: "#about",
-          start: "top top",
-          toggleActions: "play none none reverse"
-      },
-      display: "none",
-      duration: 0.3,
-      ease: "Power2.easeOut",
-      opacity: 0,
-      x: 24
-  });
-
-  gsap.to("#aboutHeaderBg", {
-      scrollTrigger:{
-          trigger: "#about",
-          start: "top top",
-          toggleActions: "play none none reverse"
-      },
-      opacity: 1,
-      duration: 0.2,
-      ease: "Power2.easeOut"
-  });
-  
-  gsap.from("#contactHeaderLink", {
-    scrollTrigger:{
-        trigger: "#contact",
-        start: "top top",
-        toggleActions: "play none none reverse"
-    },
-    display: "none",
-    duration: 0.3,
-    ease: "Power2.easeOut",
-    opacity: 0,
-    x: 24
-  });
-
-  gsap.to("#contactHeaderBg", {
-      scrollTrigger:{
-          trigger: "#contact",
-          start: "top top",
-          toggleActions: "play none none reverse"
-      },
-      opacity: 1,
-      duration: 0.2,
-      ease: "Power2.easeOut"
-  });
-
-
-    })
-    
-
+  })
   }, [])
-
-  const aboutBlur = 'iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAAigAwAEAAAAAQAAAAgAAAAAZr4WUQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDYuMC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KGV7hBwAAAP5JREFUGBkFwUtOwlAYBtDvXu7FB5Q2agFJnOMARw5cgNtyB+7BLRhJNNGJjjDGaA1REqKCpmgptZa+pKXt7zns7OKctHoLtu2goWtAwTDoP9Du/gF7HQwjUZYS/vwXgjIEQQB7YqGiVMEZg8yX4DxPoagqcjCYd9foHh8BJQnz4xPJIgaP3SmCMIQztdC7vEJtbQVj8wuyLBElGTj9+chmI3gv97h1M5z0nmE89qFu1qHqOviP9U2p59J2p0MJgQ7bTdprVGn0PoTvTsCLms6MJ4NFM4tpLGeLNGcbFcHt8RuKgpcEhV681drBzWkXbX0dWG1iHi9JKFy4jhX+A7v3epVB01aiAAAAAElFTkSuQmCC'
-
 
 
   return (
@@ -197,12 +118,11 @@ export default function Home({loaded , loaderView}) {
                   <div className="textGroup">
                     <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                     <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                 </div>
                 <div className="col-9--3 contentGroup">
                   <div className="imgGroup">
-                    <Image className={HomeStyles.aboutImg} src="/img/about-img.png" alt="A photo of Zachary Schwartz" width={500} height={500} layout="responsive" placeholder="blur" blurDataURL="/img/imgblur.png" />
+                    <Image className={HomeStyles.aboutImg} src="/img/about-img.png" alt="A photo of Zachary Schwartz" width={500} height={500} layout="responsive" placeholder="blur" blurDataURL="/img/about-imgblur.png" />
                   </div>
                   <div className="textGroup">
                   <div>

@@ -29,8 +29,7 @@ function MyApp({ Component, pageProps }) {
     gsap.from(node, {
       ease: "power3.out",
       opacity: 0,
-      duration: 0.4,
-      y: 24,
+      duration: 0.2,
       onComplete: ScrollTrigger.refresh()
     })
   }
@@ -39,7 +38,7 @@ function MyApp({ Component, pageProps }) {
     gsap.to(node, {
       ease: "power3.out",
       opacity: 0,
-      duration: 0.4,
+      duration: 0.6,
       y: 24,
       onComplete: ScrollTrigger.refresh()
     })
@@ -68,12 +67,12 @@ function MyApp({ Component, pageProps }) {
         mode={"out-in"}
       >
         <Transition 
-          timeout={400}
+          timeout={300}
           onEnter={enter}
           onExiting={exit}
           key={router.route}
           >
-              <Component loaded={loaded} loaderView={loaderView} {...pageProps} />
+            <Component loaded={loaded} loaderView={loaderView} {...pageProps} />
           </Transition>
         </SwitchTransition>
   )

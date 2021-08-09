@@ -13,7 +13,7 @@ const SectionHeader = ({ title, name }) => {
                     <h1 className="mainText textSubtitle">
                         {title}<span className="accentText">.</span>
                     </h1>
-                    <a href="#home-showcase" id={`${name}HeaderLink`} className="textMain textLink">
+                    <a href="#showcase" id={`${name}HeaderLink`} className="textMain textLink">
                         Back to top
                     </a>
                 </div>

@@ -72,3 +72,22 @@
 .about{
   padding-bottom: 6rem;
 }
+
+.aboutImg{
+  justify-self: stretch;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.contact{
+  padding-bottom: 6rem;
+  background-color: #FFFFFF;
+}
+
+/* .aboutContent{
+  margin-top: -3rem;
+}
+
+.contactContent{
+  margin-top: -3rem;
+} */

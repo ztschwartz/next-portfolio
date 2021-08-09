@@ -28,6 +28,15 @@
 
 /*  Showcase - Medium */
 
+@media(max-width: 1080px){
+  .showcaseHeadline{
+    display: inline;
+  }
+
+  
+}
+
+
 /*  Showcase - Small */
 
 @media(max-width: 768px){
@@ -81,7 +90,6 @@
 
 .contact{
   padding-bottom: 6rem;
-  background-color: #FFFFFF;
 }
 
 /* .aboutContent{

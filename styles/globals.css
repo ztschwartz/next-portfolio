@@ -224,10 +224,10 @@ a {
 /* Text Styles - XSmall */
 
 @media (max-width: 640px){
-  .textHeadline1{
+  /* .textHeadline1{
     font-size: 1.8125rem;
     line-height: 2.25rem;
-  }
+  } */
 }
 
 

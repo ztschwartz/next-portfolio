@@ -28,10 +28,10 @@ export default function Home({loaded , loaderView}) {
 
       gsap.from(".navAni", {
         ease: "power3.out",
-        delay: 0.2,
+        delay: 0.3,
         opacity: 0,
         stagger: 0.12,
-        duration: 0.7,
+        duration: 1,
         y: -32,
         onComplete: scrollTriggerFresh
     });
@@ -40,8 +40,8 @@ export default function Home({loaded , loaderView}) {
         ease: "power3.out",
         opacity: 0,
         stagger: 0.12,
-        delay: 0.1,
-        duration: 0.7,
+        delay: 0.2,
+        duration: 1,
         y: 28,
         onComplete: scrollTriggerFresh
     });
@@ -53,7 +53,7 @@ export default function Home({loaded , loaderView}) {
     <div className={HomeStyles.homePage}>
         {(loaderView ? <Loader loaded={loaded} />: null)}
         <Navbar />
-        <div className={HomeStyles.showcase} id="showcase">
+        <div className={`fadeAni ${HomeStyles.showcase}`} id="showcase">
           <div className="container">
             <h1 className={`textHeadline1 mainText fadeAni ${HomeStyles.showcaseHeadline}`}><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>Hey there—I’m Zack. I’m a passionate </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1>
           </div>
@@ -61,7 +61,7 @@ export default function Home({loaded , loaderView}) {
         <div className="fadeAni">
           <div className={HomeStyles.work} id="work">
             <SectionHeader title="My work" name="work"  />
-            <div className={HomeStyles.work}>
+            <div className={HomeStyles.workContent}>
               <div className="container">
                 <div className="grid">
                   <div className="col-12">
@@ -83,13 +83,9 @@ export default function Home({loaded , loaderView}) {
               <div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
                 <div className="col-5--7 contentGroup">
                   <div className="textGroup">
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                  </div>
-                  <div className="textGroup">
-                    <p className="mainText textSubtitle">My design principles.</p>
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="mainText textTitle">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="mainText textTitle">I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="mainText textTitle">I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. </p>
                   </div>
                   <div className="textGroup">
                     <p className="mainText textTitle">Start with a well defined problem.</p>

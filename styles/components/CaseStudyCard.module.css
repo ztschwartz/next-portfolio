@@ -1,3 +1,6 @@
+
+/* Case Study Card - Large  */
+
 .caseStudyCard{
     border-radius: 0.75rem;
     padding: 0.25rem;
@@ -53,4 +56,31 @@
 .cardInnerLink svg{
     height: 12px;
     transition: transform 200ms ease-out;
+}
+
+
+
+/* Case Study Card - Small  */
+
+@media (max-width: 758px){
+    .caseStudyCard{
+        height: 24rem;
+    }
+    
+    .cardImgSection{
+        margin: 1.5rem;
+    }
+
+    .cardInner{
+        padding: 1.25rem 1.25rem 1rem 1.25rem;
+    }
+
+    .cardInnerLink{
+        padding-bottom: 0.25rem;
+    }
+
+    .cardInnerLink p{
+        display: none;
+        visibility: hidden;
+    }
 }

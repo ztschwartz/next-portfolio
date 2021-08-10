@@ -43,7 +43,7 @@
     
 
   .showcase{
-      padding: 10rem 0 4rem 0;
+      padding: 10rem 0 5rem 0;
   }
   
 }
@@ -53,7 +53,7 @@
 @media(max-width: 640px){
 
   .showcase{
-      padding: 9rem 0 4rem 0;
+      padding: 10rem 0 5rem 0;
   }
   
   .showcaseHealineName{
@@ -74,7 +74,17 @@
 
 .work{
   height: auto;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
+}
+
+/*  Showcase - Small */
+
+@media(max-width: 768px){
+
+  .work{
+     padding-bottom: 5rem;
+  }
+  
 }
 
 
@@ -86,6 +96,14 @@
   justify-self: stretch;
   height: auto;
   border-radius: 0.5rem;
+}
+
+@media(max-width: 768px){
+
+  .about{
+     padding-bottom: 5rem;
+  }
+  
 }
 
 .contact{

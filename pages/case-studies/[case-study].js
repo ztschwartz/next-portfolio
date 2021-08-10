@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import { useRouter } from 'next/router'
 /* import Head from 'next/head'
 import Link from 'next/link'
 import Script from 'next/script'
@@ -8,12 +9,29 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 import CaseStudyStyles from '../../styles/CaseStudy.module.css'
 import Navbar from '../../components/Navbar.js'
 import SectionHeader from '../../components/SectionHeader.js'
+import postData from '../../posts/post.json'
 
 
 
 
 
 const CaseStudyPage = () => {
+
+    const postString = JSON.stringify(postData)
+
+    const postObject = JSON.parse(postString)
+
+    const router = useRouter();
+
+    const postPath = router.asPath;
+
+    const post = postPath.replace('/case-studies/', '')
+
+    console.log(post);
+
+    const scrollTriggerFresh = () => ScrollTrigger.refresh();
+
+
 
     useEffect(() => {
 
@@ -22,9 +40,9 @@ const CaseStudyPage = () => {
           delay: 0.3,
           opacity: 0,
           stagger: 0.12,
-          duration: 0.8,
+          duration: 1,
           y: -32,
-          /* onComplete: ScrollTrigger.refresh() */
+          onComplete: scrollTriggerFresh
       });
     
       gsap.from(".fadeAni", {
@@ -32,9 +50,9 @@ const CaseStudyPage = () => {
           opacity: 0,
           stagger: 0.12,
           delay: 0.2,
-          duration: 0.8,
+          duration: 1,
           y: 28,
-          /* onComplete: ScrollTrigger.refresh() */
+          onComplete: scrollTriggerFresh
       });
     
       }, [])
@@ -45,7 +63,7 @@ const CaseStudyPage = () => {
             <Navbar />
             <div className={CaseStudyStyles.showcase}>
                 <div className="container">
-                    <h1 className="mainText textHeadline2" >Case Study Page</h1>
+                    <h1 className="mainText textHeadline2 fadeAni" >Case Study Page</h1>
                 </div>
             </div>
         </div>

@@ -23,8 +23,8 @@
 
 .loaderLogo{
     height: 8vh;
-    -webkit-animation: loading-logo alternate 400ms infinite ease-in-out;      
-    animation: loading-logo alternate 400ms infinite ease-in-out;
+    -webkit-animation: loading-logo alternate 200ms infinite ease-in-out;      
+    animation: loading-logo alternate 200ms infinite ease-in-out;
 }
 
 @keyframes loading-logo{
@@ -49,13 +49,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fade-out-loader 300ms;
+    animation: fade-out-loader 200ms;
     animation-fill-mode: forwards;
 }
 
 .loaderLogoHidden{
     height: 8vh;
-    animation: fade-out-loader-logo 300ms;
+    animation: fade-out-loader-logo 200ms;
 }
 
 @keyframes fade-out-loader {
@@ -75,9 +75,11 @@
 
     50%{
         opacity: 1;
+        transform: scale(1.4);
     }
 
     100%{
+        transform: scale(2);
         opacity: 0;
         display: none;
         visibility: hidden;

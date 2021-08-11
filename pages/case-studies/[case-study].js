@@ -12,28 +12,45 @@ import SectionHeader from '../../components/SectionHeader.js'
 import postData from '../../posts/post.json'
 
 
+export async function getServerSideProps(context) {
 
 
+    const postParams = context.params
 
-const CaseStudyPage = () => {
+    const postPath = postParams['case-study']
+
+
+    return {
+        props: {postPath}
+    }
+  }
+
+const CaseStudyPage = ({postPath}) => {
 
     const postString = JSON.stringify(postData)
 
     const postObject = JSON.parse(postString)
 
-    const router = useRouter();
+    const getSpecificPost = () => {
 
-    const postPath = router.asPath;
+        const postArray = postObject.filter((post) => post.meta.slug === postPath)
 
-    const post = postPath.replace('/case-studies/', '')
+        const post = postArray[0]
 
-    console.log(post);
+        return post
+    }
+
 
     const scrollTriggerFresh = () => ScrollTrigger.refresh();
 
 
+    const post = getSpecificPost()
 
-    useEffect(() => {
+    console.log(post);
+    
+
+    useEffect(() => {  
+        
 
         gsap.from(".navAni", {
           ease: "power3.out",
@@ -63,11 +80,32 @@ const CaseStudyPage = () => {
             <Navbar />
             <div className={CaseStudyStyles.showcase}>
                 <div className="container">
-                    <h1 className="mainText textHeadline2 fadeAni" >Case Study Page</h1>
+                    <div className={`grid ${CaseStudyStyles.showcaseContent}`}>
+                        <div className={`col-6 ${CaseStudyStyles.showcaseMain}`}>
+                            <div>
+                                <h1 className="mainText textHeadline2 fadeAni">{post.title}</h1>
+                                <h1 className="mainText textHeadline2 fadeAni">{post.subtitle}</h1>
+                            </div>
+                            <p className="softText textBody1Medium fadeAni">{post.meta.description}</p>
+                        </div>
+                        <div className={`col-6 fadeAni ${CaseStudyStyles.showcaseMeta}`}>
+                            <p className={`mainText textBody1Medium ${CaseStudyStyles.showcaseDate}`}>{post.meta.date}</p>
+                            <div className={`${CaseStudyStyles.showcaseTags}`}>
+                                {post.meta.tags.map((tag) => <p key={tag} className={`softText textBody2 ${CaseStudyStyles.showcaseTag}`}>{tag}</p>)}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
 
+
+/* {() => {
+    const tags = post.meta.tags
+    tags.map((tag) => {
+    <p className={`textBody2 ${CaseStudyStyles.showcaseTag}`}>{tag}</p>
+ })
+}} */
 export default CaseStudyPage

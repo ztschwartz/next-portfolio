@@ -3,3 +3,35 @@
 .showcase{
     padding: 12rem 0 48rem 0;
 }
+
+.showcaseContent{
+    display: grid;
+    align-items: end;
+}
+
+
+.showcaseMain{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+
+.showcaseMeta{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: end;
+    align-items: end;
+    gap: 0.25rem;
+}
+
+.showcaseDate{
+    text-align: right;
+}
+
+.showcaseTags{
+    text-align: right;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    justify-items: end;
+}

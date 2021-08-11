@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 0;
+    padding: 2rem 0;
     display: flex;
     z-index: 100;
     align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .navFlex{
-    height: 64px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,6 +36,9 @@
 
 
 @media (max-width: 768px){
+    .navbar{
+        padding: 1.5rem 0;
+    }
     .navLinks{
         gap: 2.5rem;
     }

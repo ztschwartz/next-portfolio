@@ -15,26 +15,35 @@
             "sectionContent": [{
                 "nodeType": "textGroup",
                 "content":[{
-                    "nodeType": "bodyText",
-                    "value": "Total Tastings is a liquor and product promotion company based in St. Louis, Missouri. They assign product ambassadors to conduct liquor tastings inside retail stores to help promote and sell products."
-                },{
-                    "nodeType": "bodyText",
-                    "value": "They came to us at RYSE with the idea of adding a new survey feature to their tastings which would create a way for their clients to get new insights from their product promotions."
-                },{
-                    "nodeType": "bodyText",
-                    "value": "Part of making this new feature possible was updating the way tastings were managed and conducted to create a better experience for their ambassadors."
+                    "nodeType":"textBodyGroup",
+                    "content": [{
+                        "nodeType": "bodyText",
+                        "value": "Total Tastings is a liquor and product promotion company based in St. Louis, Missouri. They assign product ambassadors to conduct liquor tastings inside retail stores to help promote and sell products."
+                    },{
+                        "nodeType": "bodyText",
+                        "value": "They came to us at RYSE with the idea of adding a new survey feature to their tastings which would create a way for their clients to get new insights from their product promotions."
+                    },{
+                        "nodeType": "bodyText",
+                        "value": "Part of making this new feature possible was updating the way tastings were managed and conducted to create a better experience for their ambassadors."
+                    }]
                 }]
-            },{
+                },{
                 "nodeType": "textGroup",
                 "content":[{
-                    "nodeType": "bodyText",
-                    "value": "Total Tastings is a liquor and product promotion company based in St. Louis, Missouri. They assign product ambassadors to conduct liquor tastings inside retail stores to help promote and sell products."
+                    "nodeType":"titleText",
+                    "value": "Start with this"
                 },{
-                    "nodeType": "bodyText",
-                    "value": "They came to us at RYSE with the idea of adding a new survey feature to their tastings which would create a way for their clients to get new insights from their product promotions."
-                },{
-                    "nodeType": "bodyText",
-                    "value": "Part of making this new feature possible was updating the way tastings were managed and conducted to create a better experience for their ambassadors."
+                    "nodeType":"textBodyGroup",
+                    "content": [{
+                        "nodeType": "bodyText",
+                        "value": "Total Tastings is a liquor and product promotion company based in St. Louis, Missouri. They assign product ambassadors to conduct liquor tastings inside retail stores to help promote and sell products."
+                    },{
+                        "nodeType": "bodyText",
+                        "value": "They came to us at RYSE with the idea of adding a new survey feature to their tastings which would create a way for their clients to get new insights from their product promotions."
+                    },{
+                        "nodeType": "bodyText",
+                        "value": "Part of making this new feature possible was updating the way tastings were managed and conducted to create a better experience for their ambassadors."
+                    }]
                 }]
             },{
                 "nodeType": "imgGroup",

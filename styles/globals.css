@@ -160,7 +160,8 @@ a {
 .textBody1,
 .textBody2,
 .textLink{
-  font-family: 'neue_montrealregular';
+  font-family: 'neue_montrealregular',-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -171,7 +172,8 @@ a {
 .textBody1Medium,
 .textBody2Medium,
 .textLinkMedium{
-  font-family: 'neue_montrealmedium';
+  font-family: 'neue_montrealmedium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -221,13 +223,14 @@ a {
 .textHeadline1Medium{
   font-size: 2.875rem;
   line-height: 3.75rem;
+  letter-spacing: -0.01em;
 }
 
 .textHeadline2,
 .textHeadline2Medium{
   font-size: 2.25rem;
   line-height: 3rem;  
-  
+  letter-spacing: -0.01em;
 }
 
 .textTitle,
@@ -359,6 +362,7 @@ a {
 .grid{
   width: 100%;
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
 }
@@ -571,7 +575,7 @@ a {
   align-items: start;
   display: grid;
   grid-auto-flow: row;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 

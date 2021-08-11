@@ -605,9 +605,6 @@ a {
   }
 
   .contentGroup{
-    align-items: start;
-    display: grid;
-    grid-auto-flow: row;
     gap: 2.75rem;
   }
   

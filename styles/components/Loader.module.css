@@ -23,8 +23,8 @@
 
 .loaderLogo{
     height: 8vh;
-    -webkit-animation: loading-logo alternate 200ms infinite ease-in-out;      
-    animation: loading-logo alternate 200ms infinite ease-in-out;
+    -webkit-animation: loading-logo alternate 500ms infinite ease-in-out;      
+    animation: loading-logo alternate 500ms infinite ease-in-out;
 }
 
 @keyframes loading-logo{

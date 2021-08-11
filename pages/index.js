@@ -101,6 +101,8 @@ export default function Home({loaded , loaderView}) {
                   <div className="textGroup">
                     <p className="mainText textTitle">Start with a well defined problem.</p>
                     <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                  <div className="textGroup">
                     <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                 </div>
@@ -110,7 +112,7 @@ export default function Home({loaded , loaderView}) {
           <div className={HomeStyles.contact} id="contact">
             <SectionHeader title="Contact me" name="contact" />
             <div className="container">
-              <div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
+              <div className={`grid sectionContent ${HomeStyles.contactContent}`}>
                 <div className="col-5--4 contentGroup">
                   <div className="textGroup">
                     <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>

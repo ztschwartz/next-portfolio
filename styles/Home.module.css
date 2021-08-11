@@ -8,8 +8,17 @@
   padding: 13rem 0 7rem 0;
 }
 
+.showcaseMainHeadline{
+  display: block;
+}
+
 .showcaseHeadline{
   display: block;
+}
+
+.showcaseBr{
+  /* display: none;
+  visibility: hidden; */
 }
 
 .showcaseHealineName{
@@ -29,8 +38,17 @@
 /*  Showcase - Medium */
 
 @media(max-width: 1080px){
+
+  .showcaseMainHeadline{
+    display: inline-block;
+  }
   .showcaseHeadline{
     display: inline;
+  }
+  
+
+  .showcaseBr{
+    visibility: visible;
   }
 
   

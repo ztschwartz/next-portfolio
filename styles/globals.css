@@ -31,13 +31,13 @@ a {
   --white: #FFFFFF;
   --transparentWhite: rgba(255,255,255,0.8);
   --black: #000000;
-  --gray10: #EFF0F1;
-  --gray20: #DADBDD;
-  --gray30: #ACB0B4;
-  --gray40: #535658;
-  --gray80: #2A2B2D;
-  --gray90: #0E0F10;
-  --transparentGray90: rgba(14,15,16,0.9);
+  --gray10: #EFEFF1;
+  --gray20: #DCDCDF;
+  --gray30: #A6A6AB;
+  --gray40: #75757A;
+  --gray80: #18181B;
+  --gray90: #0E0E10;
+  --transparentGray90: rgba(14,14,16,0.9);
   --accentLight: #2B6DE9;
   --accentDark: #408CE7;
 }
@@ -46,6 +46,19 @@ a {
 .mainText{
   color: var(--gray90);
 }
+
+.link{
+  color: var(--gray90);
+}
+
+.link:hover{
+  color: var(--accentLight);
+}
+
+.link:active{
+  filter: brightness(0.9);
+}
+
 
 .softText{
   color: var(--gray40);
@@ -87,7 +100,19 @@ a {
   
 
   .mainText{
-    color: var(--gray10);
+    color: var(--white);
+  }
+
+  .link{
+    color: var(--white);
+  }
+
+  .link:hover{
+    color: var(--accentDark);
+  }
+
+  .link{
+    filter: brightness(1.1);
   }
   
   .softText{
@@ -127,12 +152,6 @@ a {
 
 
 
-
-
-
-
-
-
 /**** TEXT ****/
 
 .textHeadline1,
@@ -147,7 +166,7 @@ a {
 }
 
 
-.textHeadline1{
+/* .textHeadline1{
   font-size: 3.1875rem;
   line-height: 4rem;
 }
@@ -158,8 +177,9 @@ a {
 }
 
 .textTitle{
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  
 }
 
 .textSubtitle{
@@ -184,19 +204,59 @@ a {
   font-size: 0.875rem;
   line-height: 1.25rem;
   text-decoration: underline;
+} */
+
+.textHeadline1{
+  font-size: 3.25rem;
+  line-height: 4rem;
+}
+
+.textHeadline2{
+  font-size: 2.5rem;
+  line-height: 3.25rem;  
+  
+}
+
+.textTitle{
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+}
+
+.textSubtitle{
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  font-family: 'neue_montrealbold';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.textBody1{
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+}
+
+.textBody2{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.textLink{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-decoration: underline;
 }
 
 /* Text Styles - Medium */
 
 @media (max-width: 1080px){
   .textHeadline1{
-    font-size: 2.625rem;
-    line-height: 3.25rem; 
+    font-size: 2.5rem;
+  line-height: 3.25rem;
   }
   
   .textHeadline2{
-    font-size: 2.1875rem;
-    line-height: 2.75rem;  
+    font-size: 1.75rem;
+    line-height: 2.125rem;  
   }
   
   
@@ -206,19 +266,14 @@ a {
 
 @media (max-width: 768px){
   .textHeadline1{
-    font-size: 2.1875rem;
-    line-height: 2.75rem;
-  }
-  
-  .textHeadline2{
-    font-size: 1.8125rem;
-    line-height: 2.25rem;  
+    font-size: 1.75rem;
+    line-height: 2.125rem;
   }
 
-  .textTitle{
+  /* .textTitle{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
+  } */
 }
 
 /* Text Styles - XSmall */
@@ -521,13 +576,6 @@ a {
 
   .sectionContent{
     margin-top: 0;
-  }
-
-  .contentGroup{
-    align-items: start;
-    display: grid;
-    grid-auto-flow: row;
-    gap: 3rem;
   }
   
   

@@ -165,6 +165,17 @@ a {
   font-style: normal;
 }
 
+.textHeadline1Medium,
+.textHeadline2Medium,
+.textTitleMedium,
+.textBody1Medium,
+.textBody2Medium,
+.textLinkMedium{
+  font-family: 'neue_montrealmedium';
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* .textHeadline1{
   font-size: 3.1875rem;
@@ -206,23 +217,27 @@ a {
   text-decoration: underline;
 } */
 
-.textHeadline1{
-  font-size: 3.25rem;
-  line-height: 4rem;
+.textHeadline1,
+.textHeadline1Medium{
+  font-size: 2.875rem;
+  line-height: 3.75rem;
 }
 
-.textHeadline2{
-  font-size: 2.5rem;
-  line-height: 3.25rem;  
+.textHeadline2,
+.textHeadline2Medium{
+  font-size: 2.25rem;
+  line-height: 3rem;  
   
 }
 
-.textTitle{
+.textTitle,
+.textTitleMedium{
   font-size: 1.375rem;
   line-height: 1.875rem;
 }
 
-.textSubtitle{
+.textSubtitle,
+.textSubtitle1Medium{
   font-size: 1.0625rem;
   line-height: 1.5rem;
   font-family: 'neue_montrealbold';
@@ -230,17 +245,20 @@ a {
   font-style: normal;
 }
 
-.textBody1{
+.textBody1,
+.textBody1Medium{
   font-size: 1.0625rem;
   line-height: 1.5rem;
 }
 
-.textBody2{
+.textBody2,
+.textBody2Medium{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.textLink{
+.textLink,
+.textLinkMedium{
   font-size: 0.875rem;
   line-height: 1.25rem;
   text-decoration: underline;
@@ -249,12 +267,14 @@ a {
 /* Text Styles - Medium */
 
 @media (max-width: 1080px){
-  .textHeadline1{
-    font-size: 2.5rem;
-  line-height: 3.25rem;
+  .textHeadline1,
+  .textHeadline1Medium{
+    font-size: 2.25rem;
+    line-height: 3rem;  
   }
   
-  .textHeadline2{
+  .textHeadline2,
+  .textHeadline2Medium{
     font-size: 1.75rem;
     line-height: 2.125rem;  
   }
@@ -265,9 +285,10 @@ a {
 /* Text Styles - Small */
 
 @media (max-width: 768px){
-  .textHeadline1{
+  .textHeadline1,
+  .textHeadline1Medium{
     font-size: 1.75rem;
-    line-height: 2.125rem;
+    line-height: 2.25rem;
   }
 
   /* .textTitle{
@@ -327,7 +348,7 @@ a {
 
 @media (max-width: 640px){
   .container{
-      padding: 0 1.75rem;
+      padding: 0 1.5rem;
   }
 }
 
@@ -557,7 +578,7 @@ a {
 .textGroup{
   display: grid;
   grid-auto-flow: row;
-  gap: 1.5rem;
+  gap: 0.75rem;
   padding-right: 2rem;
 }
 
@@ -575,8 +596,21 @@ a {
 @media (max-width: 768px){
 
   .sectionContent{
-    margin-top: 0;
+    margin-top: 1rem;
   }
+
+
+  .textGroup{
+    padding-right: 0;
+  }
+
+  .contentGroup{
+    align-items: start;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2.75rem;
+  }
+  
   
   
   /* .textGroup{

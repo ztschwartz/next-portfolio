@@ -17,8 +17,8 @@
 }
 
 .showcaseBr{
-  /* display: none;
-  visibility: hidden; */
+  display: none;
+  visibility: hidden;
 }
 
 .showcaseHealineName{
@@ -39,17 +39,7 @@
 
 @media(max-width: 1080px){
 
-  .showcaseMainHeadline{
-    display: inline;
-  }
-  .showcaseHeadline{
-    display: inline;
-  }
   
-
-  .showcaseBr{
-    visibility: visible;
-  }
 
   
 }
@@ -64,6 +54,20 @@
       padding: 10rem 0 5rem 0;
   }
   
+  .showcaseMainHeadline{
+    display: inline;
+  }
+  .showcaseHeadline{
+    display: inline;
+  }
+  
+
+  .showcaseBr{
+    display: block;
+    visibility: visible;
+  }
+
+
 }
 
 /*  Showcase - XSmall */

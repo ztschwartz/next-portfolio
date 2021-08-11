@@ -55,7 +55,12 @@ export default function Home({loaded , loaderView}) {
         <Navbar />
         <div className={`fadeAni ${HomeStyles.showcase}`} id="showcase">
           <div className="container">
-            <h1 className={`textHeadline1 mainText fadeAni ${HomeStyles.showcaseHeadline}`}><span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>Hey there—I’m Zack. I’m a passionate </span>{/* <br className={HomeStyles.showcaseBr} /> */}<span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1>
+           {/*  <h1 className={`textHeadline1Medium mainText fadeAni ${HomeStyles.showcaseHeadline}`}><span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>Hey there—I’m Zack. I’m a passionate </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1> */}
+           <h1 className={`textHeadline1Medium softText fadeAni ${HomeStyles.showcaseHeadline}`}>
+             <span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}><span className={`mainText`}>Hey there—I’m Zack<span className={`accentText`}>.</span><br className={HomeStyles.showcaseBr} /></span> I’m a passionate </span>
+           <span className={`fadeAni softText ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span>
+           <span className={`fadeAni softText ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span>
+           </h1>
           </div>
         </div>
         <div className="fadeAni">
@@ -83,16 +88,14 @@ export default function Home({loaded , loaderView}) {
               <div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
                 <div className="col-5--7 contentGroup">
                   <div className="textGroup">
-                    <p className="mainText textTitle">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1Medium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                   <div className="textGroup">
                     <p className="mainText textTitle">Start with a well defined problem.</p>
-                    <p className="softText textTitle">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                    <p className="softText textTitle">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1Medium">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                   <div className="textGroup">
                     <p className="mainText textTitle">Start with a well defined problem.</p>
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                     <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                   <div className="textGroup">
@@ -111,6 +114,8 @@ export default function Home({loaded , loaderView}) {
                 <div className="col-5--4 contentGroup">
                   <div className="textGroup">
                     <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  </div>
+                  <div className="textGroup">
                     <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                 </div>

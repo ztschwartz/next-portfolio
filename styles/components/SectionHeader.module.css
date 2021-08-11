@@ -29,3 +29,10 @@
     justify-content: space-between;
     overflow: visible;
 }
+
+@media (max-width: 640px){
+    .headerBar{
+        padding: 1rem 0px;
+    }
+
+}

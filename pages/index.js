@@ -53,13 +53,13 @@ export default function Home({loaded , loaderView}) {
     <div className={HomeStyles.homePage}>
         {(loaderView ? <Loader loaded={loaded} />: null)}
         <Navbar />
-        <div className={`fadeAni ${HomeStyles.showcase}`} id="showcase">
+        <div className={`${HomeStyles.showcase}`} id="showcase">
           <div className="container">
            {/*  <h1 className={`textHeadline1Medium mainText fadeAni ${HomeStyles.showcaseHeadline}`}><span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>Hey there—I’m Zack. I’m a passionate </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1> */}
-           <h1 className={`textHeadline1Medium softText fadeAni ${HomeStyles.showcaseHeadline}`}>
+           <h1 className={`textHeadline1Medium softText fadeAni ${HomeStyles.showcaseHeadlineGroup}`}>
             <span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}><span className={`mainText`}>Hey there—I’m Zack<span className={`accentText`}>.</span><br className={HomeStyles.showcaseBr} /></span> I’m a passionate </span>
-           <span className={`fadeAni softText ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span>
-           <span className={`fadeAni softText ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span>
+            <span className={`fadeAni softText ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span>
+            <span className={`fadeAni softText ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span>
            </h1>
           </div>
         </div>

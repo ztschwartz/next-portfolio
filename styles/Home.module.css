@@ -51,7 +51,7 @@
     
 
   .showcase{
-      padding: 10rem 0 5rem 0;
+      padding: 11rem 0 5rem 0;
   }
   
   .showcaseMainHeadline{
@@ -75,7 +75,7 @@
 @media(max-width: 640px){
 
   .showcase{
-      padding: 9rem 0 5rem 0;
+      padding: 10rem 0 5rem 0;
   }
   
   .showcaseHealineName{

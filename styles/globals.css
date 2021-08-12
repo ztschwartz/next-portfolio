@@ -288,11 +288,7 @@ a {
 /* Text Styles - Small */
 
 @media (max-width: 768px){
-  .textHeadline1,
-  .textHeadline1Medium{
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-  }
+  
 
   /* .textTitle{
     font-size: 1.25rem;
@@ -303,6 +299,13 @@ a {
 /* Text Styles - XSmall */
 
 @media (max-width: 640px){
+
+  .textHeadline1,
+  .textHeadline1Medium{
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
   /* .textHeadline1{
     font-size: 1.8125rem;
     line-height: 2.25rem;

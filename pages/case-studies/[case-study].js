@@ -82,7 +82,7 @@ const CaseStudyPage = ({postPath}) => {
                 <div className="container">
                     <div className={`grid ${CaseStudyStyles.showcaseContent}`}>
                         <div className={`col-6 ${CaseStudyStyles.showcaseMain}`}>
-                            <div>
+                            <div className={`${CaseStudyStyles.showcaseHeadlineGroup}`}>
                                 <h1 className="mainText textHeadline2 fadeAni">{post.title}</h1>
                                 <h1 className="mainText textHeadline2 fadeAni">{post.subtitle}</h1>
                             </div>

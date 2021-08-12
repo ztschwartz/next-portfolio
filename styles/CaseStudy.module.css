@@ -35,3 +35,17 @@
     gap: 2rem;
     justify-items: end;
 }
+
+
+@media(max-width: 768px){
+
+    
+  }
+
+
+@media(max-width: 640px){
+
+    .showcase{
+        padding: 10rem 0 5rem 0;
+    }
+  }

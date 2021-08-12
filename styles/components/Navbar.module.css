@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
     display: flex;
     z-index: 100;
     align-items: center;
@@ -36,11 +36,15 @@
 
 
 @media (max-width: 768px){
-    .navbar{
-        padding: 1.5rem 0;
-    }
     .navLinks{
         gap: 2.5rem;
+    }
+    
+}
+
+@media (max-width: 640px){
+    .navbar{
+        padding: 1.75rem 0;
     }
     
 }

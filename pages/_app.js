@@ -34,13 +34,21 @@ function MyApp({ Component, pageProps }) {
     })
   }
   
-  const exit = (node) => {
+  const exiting = (node) => {
     gsap.to(node, {
       ease: "power3.in",
       opacity: 0,
       duration: 0.4,
       y: -24,
       onComplete: ScrollTrigger.refresh()
+    })
+  }
+
+  const exit = (node) => {
+    gsap.to(node, {
+      ease: "power3.in",
+      opacity: 0.8,
+      duration: 0.1
     })
   }
   
@@ -69,7 +77,8 @@ function MyApp({ Component, pageProps }) {
         <Transition 
           timeout={500}
           onEnter={enter}
-          onExiting={exit}
+          onExit={exit}
+          onExiting={exiting}
           key={router.route}
           >
             <Component loaded={loaded} loaderView={loaderView} {...pageProps} />

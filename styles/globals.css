@@ -222,25 +222,24 @@ a {
 .textHeadline1,
 .textHeadline1Medium{
   font-size: 2.875rem;
-  line-height: 3.75rem;
+  line-height: 3.5rem;
   letter-spacing: -0.01em;
 }
 
 .textHeadline2,
 .textHeadline2Medium{
   font-size: 2.25rem;
-  line-height: 3rem;  
+  line-height: 2.75rem;  
   letter-spacing: -0.01em;
 }
 
 .textTitle,
 .textTitleMedium{
   font-size: 1.375rem;
-  line-height: 1.875rem;
+  line-height: 1.75rem;
 }
 
-.textSubtitle,
-.textSubtitle1Medium{
+.textSubtitle{
   font-size: 1.0625rem;
   line-height: 1.5rem;
   font-family: 'neue_montrealbold';
@@ -252,18 +251,25 @@ a {
 .textBody1Medium{
   font-size: 1.0625rem;
   line-height: 1.5rem;
+  letter-spacing: 0.005em;
 }
 
 .textBody2,
 .textBody2Medium{
   font-size: 0.875rem;
   line-height: 1.25rem;
+  letter-spacing: 0.005em;
 }
 
 .textLink,
 .textLinkMedium{
   font-size: 0.875rem;
   line-height: 1.25rem;
+  text-decoration: none;
+}
+
+.textLink:hover,
+.textLinkMedium:hover{
   text-decoration: underline;
 }
 
@@ -578,14 +584,14 @@ a {
   align-items: start;
   display: grid;
   grid-auto-flow: row;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 
 .textGroup{
   display: grid;
   grid-auto-flow: row;
-  gap: 0.75rem;
+  gap: 1rem;
   padding-right: 2rem;
 }
 

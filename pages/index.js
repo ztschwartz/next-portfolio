@@ -42,7 +42,7 @@ export default function Home({loaded , loaderView}) {
         stagger: 0.12,
         delay: 0.2,
         duration: 1,
-        y: 40,
+        y: 32,
         onComplete: scrollTriggerFresh
     });
   })

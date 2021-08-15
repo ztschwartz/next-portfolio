@@ -88,11 +88,11 @@ export default function Home({loaded , loaderView}) {
               <div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
                 <div className="col-5--7 contentGroup">
                   <div className="textGroup">
-                    <p className="mainText textBodyMedium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1Medium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                   <div className="textGroup">
                     {/* <p className="mainText textTitleMedium">Start with a well defined problem.</p> */}
-                    <p className="softText textTitleMedium">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="mainText textTitleMedium">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                   <div className="textGroup">
                     <p className="mainText textTitleMedium">Start with a well defined problem.</p>

@@ -88,9 +88,9 @@ export default function Home({loaded , loaderView}) {
               <div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
                 <div className="col-5--7 contentGroup">
                   <div className="textGroup">
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1Medium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1Medium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1Medium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                 </div>
               </div>
@@ -102,10 +102,10 @@ export default function Home({loaded , loaderView}) {
               <div className={`grid sectionContent ${HomeStyles.contactContent}`}>
                 <div className="col-5--4 contentGroup">
                   <div className="textGroup">
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1Medium">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                   <div className="textGroup">
-                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1Medium">Hey again, I’m Zack Schwartz. I’m a designer, developer, and problem solver currently living in St. Louis, Missouri. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
                 </div>
                 <div className="col-9--3 contentGroup">

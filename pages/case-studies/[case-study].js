@@ -12,7 +12,21 @@ import SectionHeader from '../../components/SectionHeader.js'
 import postData from '../../posts/post.json'
 
 
-export async function getServerSideProps(context) {
+
+
+export async function getStaticPaths(context) {
+
+
+    const paths = postData.map((post) => ({
+        params: { 'case-study': post.meta.slug },
+      }))
+
+    return {
+        paths, fallback: false
+    }
+  }
+
+export async function getStaticProps(context) {
 
 
     const postParams = context.params
@@ -24,6 +38,9 @@ export async function getServerSideProps(context) {
         props: {postPath}
     }
   }
+
+
+  
 
 const CaseStudyPage = ({postPath}) => {
 

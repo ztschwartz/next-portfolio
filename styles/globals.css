@@ -600,7 +600,7 @@ a {
 .textGroup{
   display: grid;
   grid-auto-flow: row;
-  gap: 1rem;
+  gap: 1.5rem;
   padding-right: 2rem;
 }
 
@@ -625,10 +625,10 @@ a {
   .textGroup{
     padding-right: 0;
   }
-
+/* 
   .contentGroup{
     gap: 4rem;
-  }
+  } */
   
   
   

@@ -42,6 +42,21 @@ a {
   --accentDark: #408CE7;
 }
 
+:root{
+  --white: #FFFFFF;
+  --transparentWhite: rgba(255,255,255,0.8);
+  --black: #111111;
+  --gray10: #f1f1f1;
+  --gray20: #e0e0e0;
+  --gray30: #AAAAAA;
+  --gray40: #696969;
+  --gray80: #1f1f1f;
+  --gray90: #1a1a1a;
+  --transparentGray90: rgba(26,26,26,0.9);
+  --accentLight: #2B6DE9;
+  --accentDark: #408CE7;
+}
+
 
 .mainText{
   color: var(--gray90);

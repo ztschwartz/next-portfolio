@@ -256,7 +256,7 @@ a {
 }
 
 .textSubtitle{
-  font-size: 1.0625rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   font-family: 'neue_montrealbold';
   font-weight: normal;
@@ -266,7 +266,7 @@ a {
 
 .textBody1,
 .textBody1Medium{
-  font-size: 1.0625rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.005em;
 }

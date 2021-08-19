@@ -92,6 +92,12 @@ export default function Home({loaded , loaderView}) {
                     <p className="softText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                     <p className="softText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                   </div>
+                  <div className="textGroup">
+                    <p className="mainText textTitleMedium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers. Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                    <p className="softText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+
+                  </div>
                 </div>
               </div>
             </div>

@@ -42,7 +42,7 @@ a {
   --accentDark: #408CE7;
 } */
 
-:root{
+/* :root{
   --white: #FFFFFF;
   --transparentWhite: rgba(255,255,255,0.8);
   --black: #0c0c0c;
@@ -55,15 +55,33 @@ a {
   --transparentGray90: rgba(20,20,20,0.9);
   --accentLight: #2B6DE9;
   --accentDark: #408CE7;
+} */
+
+:root{
+  --white: #FFFFFF;
+  --transparentWhite: rgba(255,255,255,0.6);
+  --black: #0C0D0E;
+  --gray10: #F0F1F2;
+  --gray20: #DEE0E2;
+  --gray30: #CCCFD1;
+  --gray40: #B2B5B8;
+  --gray50: #9A9EA2;
+  --gray60: #797D81;
+  --gray70: #5F6367;
+  --gray80: #494C50;
+  --gray90: #161718;
+  --transparentGray90: rgba(22,23,24,0.6);
+  --accentLight: #0471F1;
+  --accentDark: #1B82FB;
 }
 
 
 .mainText{
-  color: var(--gray90);
+  color: var(--black);
 }
 
 .link{
-  color: var(--gray90);
+  color: var(--black);
 }
 
 .link:hover{
@@ -76,7 +94,7 @@ a {
 
 
 .softText{
-  color: var(--gray40);
+  color: var(--gray80);
 }
 
 .mainBackground{
@@ -261,27 +279,28 @@ a {
   font-family: 'neue_montrealbold';
   font-weight: normal;
   font-style: normal;
-  letter-spacing: 0.005em;
+  letter-spacing: 0.015em;
 }
 
 .textBody1,
 .textBody1Medium{
   font-size: 1.0625rem;
   line-height: 1.5rem;
-  letter-spacing: 0.005em;
+  letter-spacing: 0.015em;
 }
 
 .textBody2,
 .textBody2Medium{
   font-size: 0.875rem;
   line-height: 1.25rem;
-  letter-spacing: 0.005em;
+  letter-spacing: 0.015em;
 }
 
 .textLink,
 .textLinkMedium{
   font-size: 0.875rem;
   line-height: 1.25rem;
+  letter-spacing: 0.015em;
   text-decoration: none;
 }
 
@@ -623,6 +642,7 @@ a {
 
 
   .textGroup{
+    gap: 1.25rem;
     padding-right: 0;
   }
 /* 

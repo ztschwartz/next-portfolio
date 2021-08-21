@@ -50,7 +50,7 @@ const SectionHeader = ({ title, name }) => {
                     <h1 className="mainText textSubtitle">
                         {title}<span className="accentText">.</span>
                     </h1>
-                    <a href="#showcase" id={`${name}HeaderLink`} className="mainText textLink">
+                    <a href="#showcase" id={`${name}HeaderLink`} className="link textLink">
                         Back to top
                     </a>
                 </div>

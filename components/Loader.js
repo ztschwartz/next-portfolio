@@ -9,9 +9,9 @@ const Loader = ( {loaded} ) => {
 
     <div className={`mainBackground ${loaded ? LoaderStyles.loaderHidden : LoaderStyles.loader}`}>
         <div className={LoaderStyles.loaderContent}>
-            <svg className={`accentFill ${LoaderStyles.loaderLogo}`} viewBox="0 0 85 44" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" clipRule="evenodd" d="M0 24.3158L19.2857 3H27.2857L0 33.1579V42C0 43.1046 0.895447 44 2 44H40V19.6842L20.7143 41H12.7143L40 10.8421V0H2C0.895447 0 0 0.895416 0 2V24.3158ZM85 24.3158L65.7143 3H57.7143L85 33.1579V42C85 43.1046 84.1046 44 83 44H45V19.6842L64.2857 41H72.2857L45 10.8421V0H83C84.1046 0 85 0.895416 85 2V24.3158Z"/>
-            </svg>
+            <svg className={`accentFill ${LoaderStyles.loaderLogo}`} viewBox="0 0 125 78" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M125 6C125 2.68629 122.314 0 119 0H6C2.68629 0 0 2.68629 0 6V72C0 75.3137 2.68629 78 6 78H119C122.314 78 125 75.3137 125 72V6ZM38.1905 20L20 40.1053V20C20 18.8954 20.8954 18 22 18H60V27.6923L31.8571 58H41.8095L60 37.8947V60H22C20.8954 60 20 59.1046 20 58V50.3077L48.1429 20H38.1905ZM86.8095 20L105 40.1053V20C105 18.8954 104.105 18 103 18H65V27.6923L93.1429 58H83.1905L65 37.8947V60H103C104.105 60 105 59.1046 105 58V50.3077L76.8571 20H86.8095Z"/>
+                </svg>
         </div>
      </div>
 

@@ -20,7 +20,7 @@
 
 @media (prefers-color-scheme: dark){
     .caseStudyCard:hover{
-        background-color: var(--gray80);
+        background-color: var(--gray90);
     }
 }
 

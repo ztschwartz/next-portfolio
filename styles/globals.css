@@ -69,8 +69,9 @@ a {
   --gray60: #797D81;
   --gray70: #5F6367;
   --gray80: #494C50;
-  --gray90: #161718;
-  --transparentGray90: rgba(22,23,24,0.6);
+  --gray90: #252628;
+  --gray100: #161718;
+  --transparentGray100: rgba(22,23,24,0.6);
   --accentLight: #0471F1;
   --accentDark: #1B82FB;
 }
@@ -128,7 +129,7 @@ a {
 @media (prefers-color-scheme: dark){
 
   body {
-    background-color: var(--gray90);
+    background-color: var(--gray100);
   }
   
 
@@ -153,7 +154,7 @@ a {
   }
   
   .mainBackground{
-    background-color: var(--gray90);
+    background-color: var(--gray100);
   }
   
   .deepBackground{
@@ -177,7 +178,7 @@ a {
   }
 
   .transparentOverlay{
-    background-color: var(--transparentGray90);
+    background-color: var(--transparentGray100);
   }
 
 }

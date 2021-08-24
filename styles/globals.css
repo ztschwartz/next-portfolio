@@ -122,6 +122,10 @@ a {
   background-color: var(--transparentWhite);
 }
 
+.mainFill{
+  fill: var(--black);
+}
+
 .accentFill{
   fill: var(--accentLight);
 }
@@ -175,6 +179,10 @@ a {
   
   .accentBackground{
     background-color: var(--accentDark);
+  }
+
+  .mainFill{
+    fill: var(--white);
   }
   
   .accentFill{
@@ -617,10 +625,10 @@ a {
     gap: 1.25rem;
     padding-right: 0;
   }
-/* 
+
   .contentGroup{
     gap: 4rem;
-  } */
+  }
   
   
   

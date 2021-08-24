@@ -59,7 +59,7 @@ a {
 
 :root{
   --white: #FFFFFF;
-  --transparentWhite: rgba(255,255,255,0.6);
+  --transparentWhite: rgba(255,255,255,0.7);
   --black: #0C0D0E;
   --gray10: #F0F1F2;
   --gray20: #DEE0E2;
@@ -71,7 +71,7 @@ a {
   --gray80: #494C50;
   --gray90: #252628;
   --gray100: #161718;
-  --transparentGray100: rgba(22,23,24,0.6);
+  --transparentGray100: rgba(22,23,24,0.8);
   --accentLight: #0471F1;
   --accentDark: #1B82FB;
 }
@@ -124,6 +124,10 @@ a {
 
 .accentFill{
   fill: var(--accentLight);
+}
+
+.whiteFill{
+  fill: var(--white);
 }
 
 @media (prefers-color-scheme: dark){
@@ -213,57 +217,17 @@ a {
 }
 
 
-/* .textHeadline1{
-  font-size: 3.1875rem;
-  line-height: 4rem;
-}
-
-.textHeadline2{
-  font-size: 2.625rem;
-  line-height: 3.25rem;  
-}
-
-.textTitle{
-  font-size: 1.375rem;
-  line-height: 1.75rem;
-  
-}
-
-.textSubtitle{
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: 'neue_montrealbold';
-  font-weight: normal;
-  font-style: normal;
-}
-
-.textBody1{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.textBody2{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.textLink{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-decoration: underline;
-} */
-
 .textHeadline1,
 .textHeadline1Medium{
-  font-size: 2.9375rem;
-  line-height: 3.5rem;
+  font-size: 3.125rem;
+  line-height: 3.75rem;
   letter-spacing: -0.01em;
 }
 
 .textHeadline2,
 .textHeadline2Medium{
-  font-size: 2.25rem;
-  line-height: 2.75rem;  
+  font-size: 2.5rem;
+  line-height: 3rem;  
   letter-spacing: -0.01em;
 }
 
@@ -315,14 +279,14 @@ a {
 @media (max-width: 1080px){
   .textHeadline1,
   .textHeadline1Medium{
-    font-size: 2.25rem;
-    line-height: 2.75rem;  
+    font-size: 2.5rem;
+    line-height: 3rem;  
   }
   
   .textHeadline2,
   .textHeadline2Medium{
-    font-size: 1.75rem;
-    line-height: 2.125rem;  
+    font-size: 2rem;
+    line-height: 2.375rem;  
   }
   
   
@@ -345,6 +309,13 @@ a {
     font-size: 2rem;
     line-height: 2.375rem;
   }
+
+  .textHeadline2,
+  .textHeadline2Medium{
+    font-size: 1.625rem;
+    line-height: 2rem;  
+  }
+
 }
 
 

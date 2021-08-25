@@ -8,7 +8,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import HomeStyles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar.js'
 import SectionHeader from '../components/SectionHeader.js'
-import Loader from '../components/Loader.js'
 import CaseStudyCard from '../components/CaseStudyCard.js'
 import postData from '../posts/post.json'
 
@@ -51,7 +50,6 @@ export default function Home({loaded , loaderView}) {
 
   return (
     <div className={HomeStyles.homePage}>
-        {(loaderView ? <Loader loaded={loaded} />: null)}
         <Navbar />
         <div className={`${HomeStyles.showcase}`} id="showcase">
           <div className="container">

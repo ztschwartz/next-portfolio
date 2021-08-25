@@ -7,6 +7,7 @@ import '../styles/globals.css'
 import '../styles/fonts/fonts.css'
 import HomePage from './index.js'
 import CaseStudyPage from './case-studies/[case-study].js'
+import Loader from '../components/Loader.js'
 /* import HomeStyles from '../styles/Home.module.css'
 import CaseStudyStyles from '../styles/CaseStudy.module.css'
 import CardStyles from '../styles/components/CaseStudyCard.module.css'
@@ -81,7 +82,10 @@ function MyApp({ Component, pageProps }) {
           onExiting={exiting}
           key={router.route}
           >
-            <Component loaded={loaded} loaderView={loaderView} {...pageProps} />
+             <>
+              {(loaderView ? <Loader loaded={loaded} />: null)}
+              <Component loaded={loaded} loaderView={loaderView} {...pageProps} />
+             </>
           </Transition>
         </SwitchTransition>
   )

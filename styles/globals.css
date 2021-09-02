@@ -234,9 +234,8 @@ a {
 
 .textHeadline2,
 .textHeadline2Medium{
-  font-size: 2.5rem;
-  line-height: 3rem;  
-  letter-spacing: -0.01em;
+    font-size: 2rem;
+    line-height: 2.375rem;  
 }
 
 .textTitle,
@@ -289,12 +288,6 @@ a {
   .textHeadline1Medium{
     font-size: 2.5rem;
     line-height: 3rem;  
-  }
-  
-  .textHeadline2,
-  .textHeadline2Medium{
-    font-size: 2rem;
-    line-height: 2.375rem;  
   }
   
   

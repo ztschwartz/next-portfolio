@@ -202,6 +202,7 @@ a {
 
 .textHeadline1,
 .textHeadline2,
+.textHeadline3,
 .textTitle,
 .textBody1,
 .textBody2,
@@ -214,6 +215,7 @@ a {
 
 .textHeadline1Medium,
 .textHeadline2Medium,
+.textHeadline3Medium,
 .textTitleMedium,
 .textBody1Medium,
 .textBody2Medium,
@@ -230,6 +232,12 @@ a {
   font-size: 3.125rem;
   line-height: 3.75rem;
   letter-spacing: -0.01em;
+}
+
+.textHeadline3,
+.textHeadline3Medium{
+    font-size: 2.5rem;
+    line-height: 3rem;  
 }
 
 .textHeadline2,

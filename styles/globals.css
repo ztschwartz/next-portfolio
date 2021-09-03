@@ -61,9 +61,9 @@ a {
   --white: #F8F8F8;
   --transparentWhite: rgba(245,245,245,0.7);
   --black: #0E0E10;
-  --gray10: #EEEFF1;
-  --gray20: #AFB1B5;
-  --gray30: #565A5E;
+  --gray10: #EFF0F0;
+  --gray20: #AFB2B5;
+  --gray30: #56595E;
   --gray40: #161618;
   --transparentGray40: rgba(22, 22, 24, 0.8);
   --accentLight: #0071BB;

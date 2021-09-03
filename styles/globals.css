@@ -59,7 +59,7 @@ a {
 
 :root{
   --white: #F8F8F8;
-  --transparentWhite: rgba(245,245,245,0.7);
+  --transparentWhite: rgba(248,248,248,0.7);
   --black: #0E0E10;
   --gray10: #ECEDEE;
   --gray20: #AFB2B5;
@@ -460,21 +460,33 @@ body {
   .grid{
       gap: 1rem;
   }
+
+  .col-5{
+    grid-column: span 12;
+  }
   
   .col-6{
     grid-column: span 12;
   }
 
+  .col-7{
+    grid-column: span 12;
+  }
+
   .col-5--7{
-    grid-column: 4 / span 8;
+    grid-column: 5 / span 8;
+  }
+
+  .col-6--6{
+    grid-column: 5 / span 8;
   }
   
-  .col-5--4{
-    grid-column: 4 / span 5;
+  .col-6--3{
+    grid-column: 5 / span 4;
   }
   
   .col-9--3{
-    grid-column: 9 / span 3;
+    grid-column: 9 / span 4;
   }
 
 }

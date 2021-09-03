@@ -229,15 +229,9 @@ a {
 
 .textHeadline1,
 .textHeadline1Medium{
-  font-size: 3.125rem;
-  line-height: 3.75rem;
-  letter-spacing: -0.01em;
-}
-
-.textHeadline3,
-.textHeadline3Medium{
-    font-size: 2.5rem;
-    line-height: 3rem;  
+  font-size: 2.5rem;
+  line-height: 3rem;
+  /* letter-spacing: -0.005em; */
 }
 
 .textHeadline2,

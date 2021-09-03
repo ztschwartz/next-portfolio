@@ -18,9 +18,9 @@ const CaseStudyCard = ({title, subtitle, slug, img , postData}) => {
                     <div className={`mainBackground ${CardStyles.cardInner}`}>
                         <h1 className="mainText textTitle">{title}<br/>{subtitle}<span className="accentText">.</span></h1>
                          <div className={CardStyles.cardInnerLink}>
-                             <p className="mainText textBody2">Read the case study</p>
-                             <svg className="accentFill" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M8.84936 1.8456L0.926391 1.8456C0.416743 1.8456 0.00359069 1.43245 0.00359069 0.9228C0.00359069 0.413152 0.416742 0 0.926391 0L11.0772 1.36126e-07C11.5868 1.36126e-07 12 0.413152 12 0.922801V11.0736C12 11.5833 11.5868 11.9964 11.0772 11.9964C10.5676 11.9964 10.1544 11.5833 10.1544 11.0736L10.1544 3.15064L1.57522 11.7298C1.21484 12.0902 0.63076 12.09 0.270384 11.7296C-0.089992 11.3692 -0.090196 10.7852 0.27018 10.4248L8.84936 1.8456Z"/>
+                             {/* <p className="mainText textBody2">Read the case study</p> */}
+                            <svg className="accentFill" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M32.9565 4.85372C33.051 4.75923 32.9841 4.59766 32.8505 4.59766H0.0410156V2.09766C0.0410156 1.26923 0.71259 0.597656 1.54102 0.597656H40.041V39.0977C40.041 39.9261 39.3694 40.5977 38.541 40.5977H36.041V7.78822C36.041 7.65458 35.8794 7.58766 35.785 7.68215L3.45523 40.0119L0.626802 37.1834L32.9565 4.85372Z"/>
                             </svg>
                          </div>
                     </div>

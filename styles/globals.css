@@ -58,31 +58,29 @@ a {
 } */
 
 :root{
-  --white: #FFFFFF;
-  --transparentWhite: rgba(255,255,255,0.7);
-  --black: #0C0D0E;
-  --gray10: #F0F1F2;
-  --gray20: #DEE0E2;
-  --gray30: #CCCFD1;
-  --gray40: #B2B5B8;
-  --gray50: #9A9EA2;
-  --gray60: #797D81;
-  --gray70: #5F6367;
-  --gray80: #494C50;
-  --gray90: #252628;
-  --gray100: #161718;
-  --transparentGray100: rgba(22,23,24,0.8);
-  --accentLight: #0471F1;
-  --accentDark: #1B82FB;
+  --white: #F5F5F5;
+  --transparentWhite: rgba(245,245,245,0.7);
+  --black: #0E0E10;
+  --gray10: #E8E8E8;
+  --gray20: #B2B2B2;
+  --gray30: #565A5E;
+  --gray40: #161618;
+  --transparentGray40: rgba(22, 22, 24, 0.8);
+  --accentLight: #0071BB;
+  --accentDark: #1E87CC;
+}
+
+body {
+  background-color: var(--white);
 }
 
 
 .mainText{
-  color: var(--black);
+  color: var(--gray40);
 }
 
 .link{
-  color: var(--black);
+  color: var(--gray30);
 }
 
 .link:hover{
@@ -95,7 +93,7 @@ a {
 
 
 .softText{
-  color: var(--gray80);
+  color: var(--gray30);
 }
 
 .mainBackground{
@@ -123,7 +121,11 @@ a {
 }
 
 .mainFill{
-  fill: var(--black);
+  fill: var(--gray40);
+}
+
+.softFill{
+  fill: var(--gray30);
 }
 
 .accentFill{
@@ -137,16 +139,16 @@ a {
 @media (prefers-color-scheme: dark){
 
   body {
-    background-color: var(--gray100);
+    background-color: var(--gray40);
   }
   
 
   .mainText{
-    color: var(--white);
+    color: var(--gray10);
   }
 
   .link{
-    color: var(--white);
+    color: var(--gray10);
   }
 
   .link:hover{
@@ -158,11 +160,11 @@ a {
   }
   
   .softText{
-    color: var(--gray30);
+    color: var(--gray20);
   }
   
   .mainBackground{
-    background-color: var(--gray100);
+    background-color: var(--gray40);
   }
   
   .deepBackground{
@@ -170,7 +172,7 @@ a {
   }
   
   .softBackground{
-    background-color: var(--gray80);
+    background-color: var(--gray30);
   }
   
   .accentText{
@@ -182,7 +184,11 @@ a {
   }
 
   .mainFill{
-    fill: var(--white);
+    fill: var(--gray10);
+  }
+
+  .softFill{
+    fill: var(--gray20);
   }
   
   .accentFill{
@@ -190,7 +196,7 @@ a {
   }
 
   .transparentOverlay{
-    background-color: var(--transparentGray100);
+    background-color: var(--transparentGray40);
   }
 
 }
@@ -217,6 +223,7 @@ a {
 .textHeadline2Medium,
 .textHeadline3Medium,
 .textTitleMedium,
+.textSubtitle,
 .textBody1Medium,
 .textBody2Medium,
 .textLinkMedium{
@@ -248,11 +255,8 @@ a {
 }
 
 .textSubtitle{
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
-  font-family: 'neue_montrealbold';
-  font-weight: normal;
-  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: 0.015em;
 }
 
@@ -327,17 +331,10 @@ a {
 
 /* Container  */
 
-.largeContainer{
-  width: 100%;
-  border: solid 1rem var(--gray10);
-  margin: 0 auto;
-  display: block;
-}
-
 .container{
   width: 100%;
-  padding: 0 6rem;
-  max-width: 1280px;
+  padding: 0 4rem;
+  max-width: 1208px;
   margin: 0 auto;
   display: block;
 }
@@ -435,12 +432,12 @@ a {
   grid-column: 1 / span 12;
 }
 
-.col-5--7{
-  grid-column: 5 / span 7;
+.col-6--6{
+  grid-column: 6 / span 6;
 }
 
-.col-5--4{
-  grid-column: 5 / span 4;
+.col-6--3{
+  grid-column: 6 / span 3;
 }
 
 .col-9--3{
@@ -595,7 +592,6 @@ a {
   display: grid;
   grid-auto-flow: row;
   gap: 1.5rem;
-  padding-right: 2rem;
 }
 
 .imgGroup{

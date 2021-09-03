@@ -1,6 +1,6 @@
 .headerBar{
     width: 100%;
-    padding: 1.25rem 0px;
+    padding: 1.5rem 0px;
     position: -webkit-sticky; 
     position: sticky;
     top: 0;
@@ -40,7 +40,7 @@
 
 @media (prefers-color-scheme: dark){
     .headerBarBg{
-        border-bottom: 1px solid var(--gray90);
+        border-bottom: 1px solid #1C1E21;
     }
 
 }

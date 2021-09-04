@@ -292,8 +292,8 @@ body {
 @media (max-width: 1080px){
   .textHeadline1,
   .textHeadline1Medium{
-    font-size: 2.5rem;
-    line-height: 3rem;  
+    font-size: 2rem;
+    line-height: 2.375rem;  
   }
   
   
@@ -333,8 +333,8 @@ body {
 
 .container{
   width: 100%;
-  padding: 0 4rem;
-  max-width: 1208px;
+  padding: 0 5rem;
+  max-width: 1240px;
   margin: 0 auto;
   display: block;
 }
@@ -343,7 +343,7 @@ body {
 
 @media (max-width: 1080px){
   .container{
-      padding: 0 4rem;
+      padding: 0 5rem;
   }
 }
 
@@ -351,7 +351,7 @@ body {
 
 @media (max-width: 768px){
   .container{
-      padding: 0 4rem;
+      padding: 0 3rem;
   }
 }
 

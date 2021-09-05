@@ -58,7 +58,7 @@ a {
 } */
 
 :root{
-  --white: #F8F8F8;
+  --white: #FAFAFA;
   --transparentWhite: rgba(248,248,248,0.7);
   --black: #0E0E10;
   --gray10: #ECEDEE;
@@ -251,7 +251,7 @@ body {
 .textTitleMedium{
   font-size: 1.3125rem;
   line-height: 1.75rem;
-  letter-spacing: 0.005em;
+  /* letter-spacing: 0.005em; */
 }
 
 .textSubtitle{
@@ -462,15 +462,15 @@ body {
   }
 
   .col-5{
-    grid-column: span 12;
+    grid-column: span 6;
   }
   
   .col-6{
-    grid-column: span 12;
+    grid-column: span 6;
   }
 
   .col-7{
-    grid-column: span 12;
+    grid-column: span 6;
   }
 
   .col-5--7{

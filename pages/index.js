@@ -54,8 +54,8 @@ export default function Home({loaded , loaderView}) {
       <div className={`${HomeStyles.showcase}`} id="showcase">
         <div className="container">
           {/*  <h1 className={`textHeadline1Medium mainText fadeAni ${HomeStyles.showcaseHeadline}`}><span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>Hey there—I’m Zack. I’m a passionate </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1> */}
-          <h1 className={`textHeadline1 softText fadeAni ${HomeStyles.showcaseHeadlineGroup}`}>
-          <span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}><span className={`mainText`}>Hey there—I’m&nbsp;Zack<span className={`accentText`}>.</span><br className={HomeStyles.showcaseBr} /></span> I’m a passionate </span>
+          <h1 className={`textHeadline1 mainText fadeAni ${HomeStyles.showcaseHeadlineGroup}`}>
+          <span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>Hey there—I’m&nbsp;Zack<span className={`accentText`}>.</span><br className={HomeStyles.showcaseBr} /> I’m a passionate </span>
           <span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span>
           <span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span>
           </h1>
@@ -67,7 +67,10 @@ export default function Home({loaded , loaderView}) {
           <div className={HomeStyles.workContent}>
             <div className="container">
               <div className="grid">
-                <div className="col-12">
+                <div className="col-7">
+                  <CaseStudyCard postData={postData[0]} title={postObject[0].title} subtitle={postObject[0].subtitle} slug={postObject[0].meta.slug} img={ postObject[0].featureImg } />
+                </div>
+                <div className="col-5">
                   <CaseStudyCard postData={postData[0]} title={postObject[0].title} subtitle={postObject[0].subtitle} slug={postObject[0].meta.slug} img={ postObject[0].featureImg } />
                 </div>
                 <div className="col-5">

@@ -20,6 +20,11 @@
     transition: box-shadow 200ms ease-out;
 }
 
+
+.caseStudyCard:hover .cardImgSection{
+    margin: 1.5rem;
+}
+
 @media (prefers-color-scheme: dark){
     .caseStudyCard:hover{
         box-shadow: inset 0 0 0 2px var(--accentDark);
@@ -33,15 +38,13 @@
 }
 
 .cardImgSection{
-    margin: 1.5rem;
+    margin: 2rem;
     position: relative;
     align-self: stretch;
     justify-content: stretch;
+    transition: margin 200ms ease-out;
 }
 
-.cardImg{
-    padding: 2rem;
-}
 
 .cardInnerSection{
     align-self: end;
@@ -71,18 +74,33 @@
 }
 
 
+/* Case Study Card - Medium  */
+
+@media (max-width: 1080px){
+
+}
+
+
 
 /* Case Study Card - Small  */
 
-@media (max-width: 758px){
+@media (max-width: 768px){
     .caseStudyCard{
         height: 26rem;
     }
-    
+
+
     .cardImgSection{
         margin: 1.5rem;
     }
 
+    .caseStudyCard:hover .cardImgSection{
+        margin: 1rem;
+    }
+
+    
+    
+    
     .cardInner{
         padding: 1.25rem;
     }

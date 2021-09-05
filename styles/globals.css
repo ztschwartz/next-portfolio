@@ -67,7 +67,7 @@ a {
   --gray40: #161618;
   --transparentGray40: rgba(22, 22, 24, 0.8);
   --accentLight: #0071BB;
-  --accentDark: #1E87CC;
+  --accentDark: #F99C2A;
 }
 
 body {
@@ -548,6 +548,10 @@ body {
   }
 
   .col-5--7{
+    grid-column: span 12;
+  }
+
+  .col-6--6{
     grid-column: span 12;
   }
   

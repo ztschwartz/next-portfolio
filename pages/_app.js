@@ -62,7 +62,7 @@ function MyApp({ Component, pageProps }) {
     setLoaded(true)
     setTimeout(()=>{
       setLoaderView(false)
-    }, 300)
+    }, 1000)
   }
 
   useEffect(() =>{

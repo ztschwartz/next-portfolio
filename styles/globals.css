@@ -12,6 +12,9 @@ body {
   margin: 0;
   font-family: 'neue_montrealregular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -235,7 +238,15 @@ body {
 }
 
 
-.textSubtitleBold{
+
+.textHeadline1Bold,
+.textHeadline2Bold,
+.textHeadline3Bold,
+.textTitleBold,
+.textSubtitleBold,
+.textBody1Bold,
+.textBody2Bold,
+.textLinkBold{
   font-family: 'neue_montrealbold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
@@ -257,7 +268,8 @@ body {
 }
 
 .textTitle,
-.textTitleMedium{
+.textTitleMedium,
+.textTitleBold{
   font-size: 1.3125rem;
   line-height: 1.75rem;
   /* letter-spacing: 0.005em; */

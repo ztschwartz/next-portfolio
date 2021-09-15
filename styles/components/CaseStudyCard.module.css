@@ -8,7 +8,7 @@
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
-    height: 32rem;
+    height: 24rem;
     align-items: center;
     text-decoration: none;
     transition: box-shadow 100ms ease-out;
@@ -22,15 +22,7 @@
 
 
 .caseStudyCard:hover .cardImgSection{
-    margin: 1.5rem;
-}
-
-@media (prefers-color-scheme: dark){
-    .caseStudyCard:hover{
-        box-shadow: inset 0 0 0 2px var(--accentDark);
-        transition: box-shadow 100ms ease-out;
-
-    }
+    margin: 0.75rem;
 }
 
 .caseStudyCard:active{
@@ -38,11 +30,15 @@
 }
 
 .cardImgSection{
-    margin: 2rem;
+    margin: 1rem;
     position: relative;
     align-self: stretch;
     justify-content: stretch;
     transition: margin 100ms ease-out;
+}
+
+.caseStudyCard:hover .cardImgSection{
+    margin: 0.75rem;
 }
 
 
@@ -112,5 +108,13 @@
     .cardInnerLink p{
         display: none;
         visibility: hidden;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    .caseStudyCard:hover{
+        box-shadow: inset 0 0 0 2px var(--accentDark);
+        transition: box-shadow 100ms ease-out;
+
     }
 }

@@ -210,6 +210,7 @@ body {
 .textHeadline2,
 .textHeadline3,
 .textTitle,
+.textSubtitle,
 .textBody1,
 .textBody2,
 .textLink{
@@ -223,11 +224,19 @@ body {
 .textHeadline2Medium,
 .textHeadline3Medium,
 .textTitleMedium,
-.textSubtitle,
+.textSubtitleMedium,
 .textBody1Medium,
 .textBody2Medium,
 .textLinkMedium{
   font-family: 'neue_montrealmedium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.textSubtitleBold{
+  font-family: 'neue_montrealbold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -254,7 +263,9 @@ body {
   /* letter-spacing: 0.005em; */
 }
 
-.textSubtitle{
+.textSubtitle,
+.textSubtitleMedium,
+.textSubtitleBold{
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: 0.015em;

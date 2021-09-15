@@ -89,14 +89,14 @@ export default function Home({loaded , loaderView}) {
             <div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
               <div className="col-6--6 contentGroup">
                 <div className="textGroup">
-                  <p className="mainText textBody1Medium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                  <p className="mainText textBody1Medium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                  <p className="mainText textBody1Medium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  <p className="mainText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  <p className="mainText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  <p className="mainText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
                 </div>
                 <div className="textGroup">
-                  <p className="mainText textTitleBold">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                  <p className="mainText textBody1Medium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers. Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                  <p className="mainText textBody1Medium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  <p className="mainText textTitleMedium">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  <p className="mainText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers. Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+                  <p className="mainText textBody1">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
 
                 </div>
               </div>

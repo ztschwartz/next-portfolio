@@ -42,15 +42,15 @@ const SectionHeader = ({ title, name }) => {
 
     return (
         <div className={HeaderStyles.headerBar}>
-            <div id={`${name}HeaderBg`} className={`transparentOverlay ${HeaderStyles.headerBarBg}`}>
+            <div id={`${name}HeaderBg`} className={`bgMainTransparent ${HeaderStyles.headerBarBg}`}>
 
             </div>
             <div className="container">
                 <div className={HeaderStyles.headerBarFlex}>
-                    <h1 className="mainText textSubtitleBold">
-                        {title}<span className="accentText">.</span>
+                    <h1 className="textMain textP2 textBold">
+                        {title}<span className="textAccent">.</span>
                     </h1>
-                    <a href="#showcase" id={`${name}HeaderLink`} className="link textLink">
+                    <a href="#showcase" id={`${name}HeaderLink`} className="link textP3 textMain textLink">
                         Back to top
                     </a>
                 </div>

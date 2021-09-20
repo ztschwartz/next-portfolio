@@ -5,6 +5,7 @@ import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import '../styles/globals.css'
 import '../styles/fonts/fonts.css'
+import '../styles/type.css'
 import HomePage from './index.js'
 import CaseStudyPage from './case-studies/[case-study].js'
 import Loader from '../components/Loader.js'

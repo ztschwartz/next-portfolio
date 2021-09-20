@@ -9,9 +9,9 @@ const Navbar = ( ) => {
             <div className={NavStyles.navFlex}>
                 <NavLogo />
                 <div className={NavStyles.navLinks}>
-                    <a href="#work" className={`link textLinkMedium navAni ${NavStyles.navLink}`}>Work</a>
-                    <a href="#about" className={`link textLinkMedium navAni ${NavStyles.navLink}`}>About</a>
-                    <a href="#contact" className={`link textLinkMedium navAni ${NavStyles.navLink}`}>Contact</a>
+                    <a href="#work" className={`link textP3 textMain navAni ${NavStyles.navLink}`}>Work</a>
+                    <a href="#about" className={`link textP3 navAni textMain ${NavStyles.navLink}`}>About</a>
+                    <a href="#contact" className={`link textP3 navAni textMain ${NavStyles.navLink}`}>Contact</a>
                 </div>
             </div>
         </div>

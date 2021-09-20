@@ -100,15 +100,15 @@ const CaseStudyPage = ({postPath}) => {
                     <div className={`grid ${CaseStudyStyles.showcaseContent}`}>
                         <div className={`col-6 ${CaseStudyStyles.showcaseMain}`}>
                             <div className={`${CaseStudyStyles.showcaseHeadlineGroup}`}>
-                                <h1 className="mainText textHeadline2 fadeAni">{post.title}</h1>
-                                <h1 className="mainText textHeadline2 fadeAni">{post.subtitle}<span className="accentText">.</span></h1>
+                                <h1 className="textMain textH3 textRegular fadeAni">{post.title}</h1>
+                                <h1 className="textMain textH3 textRegular fadeAni">{post.subtitle}<span className="textAccent">.</span></h1>
                             </div>
-                            <p className="mainText textBody1 fadeAni">{post.meta.description}</p>
+                            <p className="textMain textP2 fadeAni">{post.meta.description}</p>
                         </div>
                         <div className={`col-6 fadeAni ${CaseStudyStyles.showcaseMeta}`}>
-                            <p className={`mainText textBody1Medium ${CaseStudyStyles.showcaseDate}`}>{post.meta.date}</p>
+                            <p className={`textMain textP2 ${CaseStudyStyles.showcaseDate}`}>{post.meta.date}</p>
                             <div className={`${CaseStudyStyles.showcaseTags}`}>
-                                {post.meta.tags.map((tag) => <p key={tag} className={`softText textBody2 ${CaseStudyStyles.showcaseTag}`}>{tag}</p>)}
+                                {post.meta.tags.map((tag) => <p key={tag} className={`textSoft textP3 ${CaseStudyStyles.showcaseTag}`}>{tag}</p>)}
                             </div>
                         </div>
                     </div>

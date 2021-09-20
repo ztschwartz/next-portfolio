@@ -19,9 +19,8 @@
     height: 100%;
     opacity: 0;
     z-index: 99;
-    backdrop-filter: blur(16px) saturate(160%);
-    -webkit-backdrop-filter: blur(16px) saturate(160%);
-    border-bottom: 1px solid var(--gray10);
+    backdrop-filter: blur(16px) saturate(150%);
+    -webkit-backdrop-filter: blur(16px) saturate(150%);
 }
 
 .headerBarFlex{
@@ -39,8 +38,5 @@
 }
 
 @media (prefers-color-scheme: dark){
-    .headerBarBg{
-        border-bottom: 1px solid #1C1E21;
-    }
 
 }

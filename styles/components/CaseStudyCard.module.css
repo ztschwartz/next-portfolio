@@ -8,7 +8,7 @@
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
-    height: 24rem;
+    height: 32rem;
     align-items: center;
     text-decoration: none;
     transition: box-shadow 100ms ease-out;
@@ -16,30 +16,23 @@
 }
 
 .caseStudyCard:hover{
-    box-shadow: inset 0 0 0 2px var(--accentLight);
+    box-shadow: inset 0 0 0 1px var(--accentLight);
     transition: box-shadow 100ms ease-out;
 }
 
-
-.caseStudyCard:hover .cardImgSection{
-    margin: 0.75rem;
-}
 
 .caseStudyCard:active{
     filter: brightness(0.95);
 }
 
 .cardImgSection{
-    margin: 1rem;
+    margin: 2rem;
     position: relative;
     align-self: stretch;
     justify-content: stretch;
     transition: margin 100ms ease-out;
 }
 
-.caseStudyCard:hover .cardImgSection{
-    margin: 0.75rem;
-}
 
 
 .cardInnerSection{
@@ -90,10 +83,6 @@
         margin: 1.5rem;
     }
 
-    .caseStudyCard:hover .cardImgSection{
-        margin: 1rem;
-    }
-
     
     
     
@@ -113,7 +102,7 @@
 
 @media (prefers-color-scheme: dark){
     .caseStudyCard:hover{
-        box-shadow: inset 0 0 0 2px var(--accentDark);
+        box-shadow: inset 0 0 0 1px var(--accentDark);
         transition: box-shadow 100ms ease-out;
 
     }

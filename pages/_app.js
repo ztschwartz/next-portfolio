@@ -18,10 +18,13 @@ function MyApp({ Component, pageProps }) {
 
   const router = useRouter();
 
+  const [loaded, setLoaded] = useState(false);
+
+  const [loaderView, setLoaderView] = useState(true);
+
   const enter = (node) => {
 
     document.documentElement.style.scrollBehavior = 'auto'
-
     window.scroll({
       top: 0
     });
@@ -55,9 +58,7 @@ function MyApp({ Component, pageProps }) {
   }
   
 
-  const [loaded, setLoaded] = useState(false);
-
-  const [loaderView, setLoaderView] = useState(true)
+  
 
   const firstPageLoad = () => {
     setLoaded(true)

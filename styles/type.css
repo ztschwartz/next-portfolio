@@ -128,6 +128,10 @@ body{
     .textH2{
         font: var(--text32);
     }
+
+    .textH3{
+        font: var(--text28);
+    }
   
   
 }
@@ -143,6 +147,7 @@ body{
 /* Text Styles - XSmall */
 
 @media (max-width: 640px){
+    
 
     .textH1{
         font: var(--text32);
@@ -150,6 +155,11 @@ body{
 
     .textH2{
         font: var(--text28);
+    }
+
+    .textH6{
+        font: var(--text18);
+        letter-spacing: 0.0125em;
     }
 
 }

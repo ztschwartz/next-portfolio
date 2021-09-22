@@ -45,8 +45,8 @@ a {
   --gray80: rgba(56, 61, 66, 1);
   --gray90: rgba(32, 35, 39, 1);
   --transparentGray90: rgba(32, 35, 39, 0.8);
-  --accentLight: #3762F1;
-  --accentDark:  #5D86EF;
+  --accentLight: rgba(10, 107, 235, 1);
+  --accentDark:  rgba(70, 133, 251, 1);
 }
 
 body {

@@ -23,9 +23,9 @@
 
 
 
-/* .caseStudyCard:active{
-    filter: brightness(0.95);
-} */
+.caseStudyCard:active{
+    filter: brightness(1.05);
+}
 
 .cardImgSection{
     margin: 2rem;

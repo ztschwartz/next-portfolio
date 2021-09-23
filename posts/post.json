@@ -1,7 +1,7 @@
 [{
     "title": "Total Tastings",
     "subtitle": "Ambassador App",
-    "featureImg": "tt-img-test-2.png",
+    "featureImg": "ttImage.png",
     "meta": {
         "date": "2020",
         "description": "Using real feedback and sponsor users to design an internal app that enabled ambassadors to quickly and easily manage their work responsibilities.",
@@ -150,7 +150,7 @@
 },{
     "title": "Focalpoint",
     "subtitle": "Task App",
-    "featureImg": "tt-img-test-2.png",
+    "featureImg": "fpImage.png",
     "meta": {
         "date": "2020",
         "description": "Using real feedback and sponsor users to design an internal app that enabled ambassadors to quickly and easily manage their work responsibilities.",
@@ -290,7 +290,7 @@
 },{
     "title": "Opti Portal",
     "subtitle": "Marketing Site",
-    "featureImg": "tt-img-test-2.png",
+    "featureImg": "opImage.png",
     "meta": {
         "date": "2020",
         "description": "Using real feedback and sponsor users to design an internal app that enabled ambassadors to quickly and easily manage their work responsibilities.",

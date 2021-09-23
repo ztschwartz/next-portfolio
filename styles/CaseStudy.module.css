@@ -39,6 +39,22 @@
 
 @media(max-width: 768px){
 
+    .showcaseContent{
+        gap: 2rem;
+    }
+
+    .showcaseMeta{
+        justify-items: start;
+        align-items: start;
+        gap: 0.5rem;
+    }
+
+    .showcaseTags{
+        text-align: left;
+        gap: 1rem;
+        justify-items: start;
+    }
+
     
   }
 

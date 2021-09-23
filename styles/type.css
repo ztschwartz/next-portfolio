@@ -62,32 +62,29 @@ body{
 
 .textH4{
     font: var(--text28);
-    letter-spacing: 0.005em;
 }
 
 .textH5{
     font: var(--text24);
-    letter-spacing: 0.01em;
 }
 
 .textH6{
     font: var(--text21);
-    letter-spacing: 0.01em;
 }
 
 .textP1{
     font: var(--text18);
-    letter-spacing: 0.0125em;
+    letter-spacing: 0.005em;
 }
 
 .textP2{
     font: var(--text16);
-    letter-spacing: 0.015em;
+    letter-spacing: 0.005em;
 }
 
 .textP3{
     font: var(--text14);
-    letter-spacing: 0.015em;
+    letter-spacing: 0.005em;
 }
 
 

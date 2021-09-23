@@ -55,7 +55,7 @@ body {
 
 
 .textMain{
-  color: var(--black);
+  color: var(--gray90);
 }
 
 
@@ -88,7 +88,7 @@ body {
 }
 
 .fillMain{
-  fill: var(--black);
+  fill: var(--gray90);
 }
 
 .fillSoft{
@@ -440,19 +440,39 @@ body {
   margin-top: -2.75rem;
 }
 
-.contentGroup{
+.contentSection{
   align-items: start;
   display: grid;
   grid-auto-flow: row;
-  gap: 5rem;
+  gap: 6rem;
+  align-self: start;
 }
 
+
+.textSection{
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1.75rem;
+  align-self: start;
+}
 
 .textGroup{
   display: grid;
   grid-auto-flow: row;
-  gap: 1.5rem;
+  gap: 0.5rem;
+  align-self: start;
 }
+
+.textRow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.textRow > .textGroup{
+  padding-right: 2rem;
+}
+
 
 .imgGroup{
   display: grid;
@@ -472,12 +492,12 @@ body {
   }
 
 
-  .textGroup{
+  .textSection{
     gap: 1.25rem;
     padding-right: 0;
   }
 
-  .contentGroup{
+  .contentSection{
     gap: 4rem;
   }
   

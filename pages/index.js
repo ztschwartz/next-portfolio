@@ -67,17 +67,14 @@ export default function Home({loaded , loaderView}) {
           <div className={HomeStyles.workContent}>
             <div className="container">
               <div className="grid">
-                <div className="col-7">
+                <div className="col-12">
                   <CaseStudyCard postData={postData[0]} title={postObject[0].title} subtitle={postObject[0].subtitle} slug={postObject[0].meta.slug} img={ postObject[0].featureImg } />
-                </div>
-                <div className="col-5">
-                  <CaseStudyCard postData={postData[1]} title={postObject[1].title} subtitle={postObject[1].subtitle} slug={postObject[1].meta.slug} img={postObject[1].featureImg} />
                 </div>
                 <div className="col-5">
                   <CaseStudyCard postData={postData[2]} title={postObject[2].title} subtitle={postObject[2].subtitle} slug={postObject[2].meta.slug} img={postObject[2].featureImg} />
                 </div>
                 <div className="col-7">
-                  <CaseStudyCard postData={postData[3]} title={postObject[3].title} subtitle={postObject[3].subtitle} slug={postObject[3].meta.slug} img={ postObject[3].featureImg } />
+                  <CaseStudyCard postData={postData[1]} title={postObject[1].title} subtitle={postObject[1].subtitle} slug={postObject[1].meta.slug} img={postObject[1].featureImg} />
                 </div>
               </div>
             </div>
@@ -87,17 +84,34 @@ export default function Home({loaded , loaderView}) {
           <SectionHeader title="About me" name="about" />
           <div className="container">
             <div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
-              <div className="col-6--6 contentGroup">
-                <div className="textGroup">
-                  <p className="textMain textH6">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                  <p className="textMain textH6">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                  <p className="textMain textH6">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+              <div className="col-6--6 contentSection">
+                <div className="textSection">
+                  <p className="textMain textH6 textMedium">I’m a developer-turned-product designer with 4 years of experience utilizing design and technology to solve complex problems. I value craft and approach all of my work with a deep curiosity. </p>
+                  <p className="textMain textH6 textMedium">My specific interests are interaction design, user experience, and closing the gap between design and engineering.</p>
+                  <p className="textMain textH6 textMedium">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
                 </div>
-                <div className="textGroup">
-                  <p className="textMain textH6">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                  <p className="textMain textP2">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers. Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                  <p className="textMain textP2">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-
+                <div className="textSection">
+                  <p className="textMain textH5 textMedium">Principles</p>
+                  <div className="textRow">
+                    <div className="textGroup">
+                      <p className="textMain textP2 textMedium">Solve problems</p>
+                      <p className="textSoft textP3">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
+                    </div>
+                    <div className="textGroup">
+                      <p className="textMain textP2 textMedium">Be intentional</p>
+                      <p className="textSoft textP3">gh design and strategy.</p>
+                    </div>
+                  </div>
+                  <div className="textRow">
+                    <div className="textGroup">
+                      <p className="textMain textP2 textMedium">Communicate</p>
+                      <p className="textSoft textP3">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
+                    </div>
+                    <div className="textGroup">
+                      <p className="textMain textP2 textMedium">Don’t be afraid to be wrong</p>
+                      <p className="textSoft textP3">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -107,15 +121,42 @@ export default function Home({loaded , loaderView}) {
           <SectionHeader title="Contact me" name="contact" />
           <div className="container">
             <div className={`grid sectionContent`}>
-              <div className="col-6--6 contentGroup">
-                <div className="textGroup">
-                  <p className="textMain textH6">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers. Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
-                  <p className="textMain textH6">Hey again, I’m Zack Schwartz. Recently I’ve been particularly passionate about the design process and the communication between designers and developers.</p>
+              <div className="col-6--6 contentSection">
+                <div className="textSection">
+                    <p className="textMain textH6 textMedium">If you have any questions or just want to talk about design, I'm not a hard guy to get in touch with. Just send me an email or DM me on social media</p>
+                    <p className="textMain textH6 textMedium">I could talk for hours about design, development, or any of my other hobbies.</p>
+                  </div>
+                  <div className="textRow">
+                  <div className="imgSection">
+                      <Image className={HomeStyles.aboutImg} src="/img/about-img.png" alt="A photo of Zachary Schwartz" width={500} height={500} layout="responsive" placeholder="blur" blurDataURL="/img/about-imgblur.png" />
+                    </div>
+                    <div className="textSection">
+                      <div className="textGroup">
+                        <p className="textMain textP3 textBold">Email</p>
+                        <p className="textMain link textP3">hello@zacktschwartz.com</p>
+                      </div>
+                      <div className="textGroup">
+                        <p className="textMain textP3 textBold">Twitter—</p>
+                        <p className="textMain link textP3">@zacktschwartz</p>
+                      </div>
+                      <div className="textGroup">
+                        <p className="textMain textP3 textBold">LinkedIn—</p>
+                        <p className="textMain link textP3">zacktschwartz</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+            
+              {/* <div className="col-6--6 contentSection">
+                <div className="textSection">
+                  <p className="textMain textH6">If you have any questions or just want to talk about design, I'm not a hard guy to get in touch with. Just send me an email or dm me on social media</p>
+                  <p className="textMain textH6">I could talk for hours about design, development, or any of my other hobbies.</p>
                 </div>
               </div>
-              <div className="contentGroup col-6--6">
+              <div className="contentSection col-6--6">
                 <div className="grid">
-                  <div className="col-6 textGroup">
+                  <div className="col-6 textSection">
                     <div>
                       <p className="textMain textP2 textBold">Email</p>
                       <p className="textMain link textP2">hello@zacktschwartz.com</p>
@@ -129,11 +170,11 @@ export default function Home({loaded , loaderView}) {
                       <p className="textMain link textP2">zacktschwartz</p>
                     </div>
                   </div>
-                  <div className="col-6 imgGroup">
+                  <div className="col-6 imgSection">
                     <Image className={HomeStyles.aboutImg} src="/img/about-img.png" alt="A photo of Zachary Schwartz" width={500} height={500} layout="responsive" placeholder="blur" blurDataURL="/img/about-imgblur.png" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

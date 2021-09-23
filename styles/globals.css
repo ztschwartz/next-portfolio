@@ -493,7 +493,18 @@ body {
 
 
   .textSection{
-    gap: 1.25rem;
+    gap: 1.75rem;
+    padding-right: 0;
+  }
+
+  .textRow{
+    grid-template-columns: none;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1.75rem;
+  }
+  
+  .textRow > .textGroup{
     padding-right: 0;
   }
 

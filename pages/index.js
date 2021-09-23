@@ -123,7 +123,7 @@ export default function Home({loaded , loaderView}) {
             <div className={`grid sectionContent`}>
               <div className="col-6--6 contentSection">
                 <div className="textSection">
-                    <p className="textMain textH6 textMedium">If you have any questions or just want to talk about design, I'm not a hard guy to get in touch with. Just send me an email or DM me on social media</p>
+                    <p className="textMain textH6 textMedium">If you have any questions or just want to talk about design, I`&apos;`m not a hard guy to get in touch with. Just send me an email or DM me on social media</p>
                     <p className="textMain textH6 textMedium">I could talk for hours about design, development, or any of my other hobbies.</p>
                   </div>
                   <div className="textRow">

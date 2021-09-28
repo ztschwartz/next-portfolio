@@ -82,7 +82,7 @@ function MyApp({ Component, pageProps }) {
           onEnter={enter}
           onExit={exit}
           onExiting={exiting}
-          key={router.route}
+          key={router.asPath}
           >
              <>
               {(loaderView ? <Loader loaded={loaded} />: null)}

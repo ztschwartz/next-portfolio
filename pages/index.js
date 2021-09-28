@@ -50,7 +50,7 @@ export default function Home({loaded , loaderView}) {
 
   return (
     <div className={HomeStyles.homePage}>
-      <Navbar />
+      <Navbar type='home' />
       <div className={`${HomeStyles.showcase}`} id="showcase">
         <div className="container">
           {/*  <h1 className={`textHeadline1Medium textMain fadeAni ${HomeStyles.showcaseHeadline}`}><span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>Hey there—I’m Zack. I’m a passionate </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1> */}

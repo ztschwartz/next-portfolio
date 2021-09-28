@@ -92,9 +92,10 @@ const CaseStudyPage = ({postPath}) => {
       }, [])
 
 
+
     return (
         <div className={CaseStudyStyles.caseStudyPage}>
-            <Navbar />
+            <Navbar pageNumber={post.meta.order} />
             <div className={CaseStudyStyles.showcase}>
                 <div className="container">
                     <div className={`grid ${CaseStudyStyles.showcaseContent}`}>

@@ -39,7 +39,7 @@
     display: grid;
     align-items: center;
     grid-auto-flow: column;
-    column-gap: 1rem;
+    column-gap: 0.5rem;
 }
 
 

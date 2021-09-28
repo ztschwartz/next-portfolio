@@ -1,12 +1,13 @@
 
 
 .showcase{
-    padding: 12rem 0 48rem 0;
+    padding: 16rem 0 48rem 0;
 }
 
 .showcaseContent{
     display: grid;
     align-items: end;
+    row-gap: 4rem;
 }
 
 
@@ -34,6 +35,22 @@
     grid-auto-flow: column;
     gap: 2rem;
     justify-items: end;
+}
+
+
+
+
+.showcaseImgSection{
+    border-radius: 0.75rem;
+    height: 32rem;
+    padding: 3rem;
+
+}
+
+.showcaseImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
 

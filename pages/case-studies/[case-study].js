@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 import { useRouter } from 'next/router'
-/* import Head from 'next/head'
+import Head from 'next/head'
 import Link from 'next/link'
 import Script from 'next/script'
-import Image from 'next/image' */
+import Image from 'next/image'
 import { gsap } from "gsap/dist/gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 import CaseStudyStyles from '../../styles/CaseStudy.module.css'
@@ -110,6 +110,11 @@ const CaseStudyPage = ({postPath}) => {
                             <p className={`textMain textP2 ${CaseStudyStyles.showcaseDate}`}>{post.meta.date}</p>
                             <div className={`${CaseStudyStyles.showcaseTags}`}>
                                 {post.meta.tags.map((tag) => <p key={tag} className={`textSoft textP3 ${CaseStudyStyles.showcaseTag}`}>{tag}</p>)}
+                            </div>
+                        </div>
+                        <div className={`col-12 fadeAni bgDeep ${CaseStudyStyles.showcaseImgSection}`}>
+                            <div className={`${CaseStudyStyles.showcaseImg}`}>
+                                <Image layout="fill" objectFit="contain" src={`/img/${post.featureImg}`} alt="Ambassador App Phone Mockup" />
                             </div>
                         </div>
                     </div>

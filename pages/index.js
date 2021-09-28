@@ -133,15 +133,15 @@ export default function Home({loaded , loaderView}) {
                     <div className="textSection">
                       <div className="textGroup">
                         <p className="textMain textP3 textBold">Email</p>
-                        <p className="textMain link textP3">hello@zacktschwartz.com</p>
+                        <a href="#" className="textMain link textP3">hello@zacktschwartz.com</a>
                       </div>
                       <div className="textGroup">
                         <p className="textMain textP3 textBold">Twitter—</p>
-                        <p className="textMain link textP3">@zacktschwartz</p>
+                        <a href="#" className="textMain link textP3">@zacktschwartz</a>
                       </div>
                       <div className="textGroup">
                         <p className="textMain textP3 textBold">LinkedIn—</p>
-                        <p className="textMain link textP3">zacktschwartz</p>
+                        <a href="#" className="textMain link textP3">zacktschwartz</a>
                       </div>
                     </div>
                     

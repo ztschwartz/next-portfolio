@@ -461,6 +461,7 @@ body {
   grid-auto-flow: row;
   gap: 0.5rem;
   align-self: start;
+  justify-content: start;
 }
 
 .textRow{

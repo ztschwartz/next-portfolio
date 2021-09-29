@@ -70,11 +70,11 @@ export default function Home({loaded , loaderView}) {
                 <div className="col-12">
                   <CaseStudyCard postData={postData[0]} title={postObject[0].title} subtitle={postObject[0].subtitle} slug={postObject[0].meta.slug} img={ postObject[0].featureImg } />
                 </div>
-                <div className="col-5">
-                  <CaseStudyCard postData={postData[2]} title={postObject[2].title} subtitle={postObject[2].subtitle} slug={postObject[2].meta.slug} img={postObject[2].featureImg} />
-                </div>
-                <div className="col-7">
+                <div className="col-6">
                   <CaseStudyCard postData={postData[1]} title={postObject[1].title} subtitle={postObject[1].subtitle} slug={postObject[1].meta.slug} img={postObject[1].featureImg} />
+                </div>
+                <div className="col-6">
+                  <CaseStudyCard postData={postData[2]} title={postObject[2].title} subtitle={postObject[2].subtitle} slug={postObject[2].meta.slug} img={postObject[2].featureImg} />
                 </div>
               </div>
             </div>

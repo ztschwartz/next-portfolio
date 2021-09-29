@@ -40,20 +40,6 @@
 
 
 
-.showcaseImgSection{
-    border-radius: 0.75rem;
-    height: 32rem;
-    padding: 3rem;
-
-}
-
-.showcaseImg{
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-
-
 @media(max-width: 768px){
 
     .showcaseContent{

@@ -86,9 +86,9 @@ export default function Home({loaded , loaderView}) {
             <div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
               <div className="col-6--6 contentSection">
                 <div className="textSection">
-                  <p className="textMain textH6 textMedium">I’m a developer-turned-product designer with 4 years of experience utilizing design and technology to solve complex problems. I value craft and approach all of my work with a deep curiosity. </p>
-                  <p className="textMain textH6 textMedium">My specific interests are interaction design, user experience, and closing the gap between design and engineering.</p>
-                  <p className="textMain textH6 textMedium">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
+                  <p className="textMain textH6 textRegular">I’m a developer-turned-product designer with 4 years of experience utilizing design and technology to solve complex problems. I value craft and approach all of my work with a deep curiosity. </p>
+                  <p className="textMain textH6 textRegular">My specific interests are interaction design, user experience, and closing the gap between design and engineering.</p>
+                  <p className="textMain textH6 textRegular">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
                 </div>
                 <div className="textSection">
                   <p className="textMain textH5 textMedium">Principles</p>
@@ -123,8 +123,8 @@ export default function Home({loaded , loaderView}) {
             <div className={`grid sectionContent`}>
               <div className="col-6--6 contentSection">
                 <div className="textSection">
-                    <p className="textMain textH6 textMedium">If you have any questions or just want to talk about design, I&apos;m not a hard guy to get in touch with. Just send me an email or DM me on social media</p>
-                    <p className="textMain textH6 textMedium">I could talk for hours about design, development, or any of my other hobbies.</p>
+                    <p className="textMain textH6 textRegular">If you have any questions or just want to talk about design, I&apos;m not a hard guy to get in touch with. Just send me an email or DM me on social media</p>
+                    <p className="textMain textH6 textRegular">I could talk for hours about design, development, or any of my other hobbies.</p>
                   </div>
                   <div className="textRow">
                   <div className="imgSection">

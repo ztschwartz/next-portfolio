@@ -8,6 +8,7 @@ import { gsap } from "gsap/dist/gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 import CaseStudyStyles from '../../styles/CaseStudy.module.css'
 import Navbar from '../../components/Navbar.js'
+import ImageCard from '../../components/ImageCard.js'
 import SectionHeader from '../../components/SectionHeader.js'
 import postData from '../../posts/post.json'
 
@@ -104,7 +105,7 @@ const CaseStudyPage = ({postPath}) => {
                                 <h1 className="textMain textH3 textRegular fadeAni">{post.title}</h1>
                                 <h1 className="textMain textH3 textRegular fadeAni">{post.subtitle}<span className="textAccent">.</span></h1>
                             </div>
-                            <p className="textMain textP2 fadeAni">{post.meta.description}</p>
+                            <p className="textSoft textP2 fadeAni">{post.meta.description}</p>
                         </div>
                         <div className={`col-6 fadeAni ${CaseStudyStyles.showcaseMeta}`}>
                             <p className={`textMain textP2 ${CaseStudyStyles.showcaseDate}`}>{post.meta.date}</p>
@@ -112,10 +113,10 @@ const CaseStudyPage = ({postPath}) => {
                                 {post.meta.tags.map((tag) => <p key={tag} className={`textSoft textP3 ${CaseStudyStyles.showcaseTag}`}>{tag}</p>)}
                             </div>
                         </div>
-                        <div className={`col-12 fadeAni bgDeep ${CaseStudyStyles.showcaseImgSection}`}>
-                            <div className={`${CaseStudyStyles.showcaseImg}`}>
+                        <div className={`col-12 fadeAni`}>
+                            <ImageCard>
                                 <Image layout="fill" objectFit="contain" src={`/img/${post.featureImg}`} alt="Ambassador App Phone Mockup" />
-                            </div>
+                            </ImageCard>
                         </div>
                     </div>
                 </div>

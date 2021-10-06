@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -45,6 +45,8 @@ export async function getStaticProps(context) {
 
 const CaseStudyPage = ({postPath}) => {
 
+    const [currentPage, setCurrentPage] = useState();
+
     const postString = JSON.stringify(postData)
 
     const postObject = JSON.parse(postString)
@@ -55,8 +57,12 @@ const CaseStudyPage = ({postPath}) => {
 
         const post = postArray[0]
 
+        
+
         return post
     }
+
+   
 
 
     const scrollTriggerFresh = () => ScrollTrigger.refresh();
@@ -64,7 +70,15 @@ const CaseStudyPage = ({postPath}) => {
 
     const post = getSpecificPost()
 
-    console.log(post);
+    
+    
+
+
+
+    
+    
+
+
     
 
     useEffect(() => {  
@@ -89,6 +103,8 @@ const CaseStudyPage = ({postPath}) => {
           y: 28,
           onComplete: scrollTriggerFresh
       });
+
+      setCurrentPage(post.meta.order);
     
       }, [])
 
@@ -96,7 +112,8 @@ const CaseStudyPage = ({postPath}) => {
 
     return (
         <div className={CaseStudyStyles.caseStudyPage}>
-            <Navbar pageNumber={post.meta.order} />
+            {/* <Navbar pageNumber={post.meta.order} /> */}
+            <Navbar currentPage={currentPage} />
             <div className={CaseStudyStyles.showcase}>
                 <div className="container">
                     <div className={`grid ${CaseStudyStyles.showcaseContent}`}>

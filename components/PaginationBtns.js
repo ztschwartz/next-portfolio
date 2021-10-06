@@ -5,18 +5,18 @@ import NavbarStyles from '../styles/components/Navbar.module.css'
 
 
 
-const PaginationBtns = ({pageNumber}) => {
+const PaginationBtns = ({currentPage}) => {
 
     const postString = JSON.stringify(postData)
     const postObject = JSON.parse(postString)
     const arrayLength = postObject.length;
 
-    console.log(pageNumber);
-
     const getNextPage = () => {
+        
 
+    
         console.log(arrayLength);
-        const nextPageNumber = pageNumber + 1;
+        const nextPageNumber = currentPage + 1;
 
         if (nextPageNumber <= arrayLength){
             const nextPageObject = postObject.filter(object => object.meta.order === nextPageNumber)
@@ -40,7 +40,7 @@ const PaginationBtns = ({pageNumber}) => {
     }
 
     const getPrevPage = () =>{
-        const prevPageNumber = pageNumber - 1;
+        const prevPageNumber = currentPage - 1;
         console.log(prevPageNumber);
         if (prevPageNumber > 0 ){
             const prevPageObject = postObject.filter(object => object.meta.order === prevPageNumber)

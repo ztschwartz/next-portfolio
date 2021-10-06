@@ -3,7 +3,7 @@ import NavLogo from './NavLogo.js'
 import NavStyles from '../styles/components/Navbar.module.css'
 import PaginationBtns from './PaginationBtns.js';
 
-const Navbar = ({type , pageNumber}) => {
+const Navbar = ({type , currentPage}) => {
 
 
     const pageType = type;
@@ -22,7 +22,7 @@ const Navbar = ({type , pageNumber}) => {
                         <a href="#contact" className={`link textP3 navAni textMain ${NavStyles.navLink}`}>Contact</a>
                     </div>
                 :
-                <PaginationBtns pageNumber={pageNumber} />)}
+                <PaginationBtns currentPage={currentPage} />)}
             </div>
         </div>
     </nav>

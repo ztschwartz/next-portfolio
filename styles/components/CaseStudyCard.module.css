@@ -12,11 +12,11 @@
     align-items: center;
     text-decoration: none;
     transition: box-shadow 100ms ease-out;
-    box-shadow: inset 0 0 0 2px transparent;
+    box-shadow: 0 0 0 2px transparent;
 }
 
 .caseStudyCard:hover{
-    box-shadow: inset 0 0 0 2px var(--accentLight);
+    box-shadow: 0 0 0 2px var(--accentLight);
     transition: box-shadow 100ms ease-out;
 }
 
@@ -94,12 +94,6 @@
     } */
     
 
-    
-    
-    
-    .cardInner{
-        padding: 1rem;
-    }
 
     .cardInnerLink{
         padding-bottom: 0.25rem;

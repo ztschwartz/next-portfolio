@@ -77,10 +77,10 @@ export default function Home({loaded , loaderView}) {
                   <CaseStudyCard postData={postData[2]} title={postObject[2].title} subtitle={postObject[2].subtitle} slug={postObject[2].meta.slug} img={postObject[2].featureImg} />
                 </div>
               </div>
-              <div className="sectionDividerWrapper">
+              {/* <div className="sectionDividerWrapper">
                 <div className="bgDeep sectionDivider">
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -119,10 +119,10 @@ export default function Home({loaded , loaderView}) {
                 </div>
               </div>
             </div>
-            <div className="sectionDividerWrapper">
+            {/* <div className="sectionDividerWrapper">
               <div className="bgDeep sectionDivider">
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={HomeStyles.contact} id="contact">

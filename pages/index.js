@@ -95,7 +95,7 @@ export default function Home({loaded , loaderView}) {
                   <p className="textMain textH6 textRegular">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
                 </div>
                 <div className="textSection">
-                  <p className="textMain textH5 textBold">My design principles</p>
+                  <p className="textMain textH5 textRegular">My design principles</p>
                   <div className="textRow">
                     <div className="textGroup">
                       <p className="textMain textP2 textMedium">Solve problems</p>

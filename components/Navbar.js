@@ -1,5 +1,5 @@
 import React from 'react'
-import NavLogo from './NavLogo.js'
+import LogoIcon from './LogoIcon.js'
 import NavStyles from '../styles/components/Navbar.module.css'
 import PaginationBtns from './PaginationBtns.js';
 
@@ -14,7 +14,7 @@ const Navbar = ({type , currentPage}) => {
     <nav className={NavStyles.navbar}>
         <div className="container">
             <div className={NavStyles.navFlex}>
-                <NavLogo />
+                <LogoIcon />
                 {(pageType === 'home' ?
                     <div className={NavStyles.navLinks}>
                         <a href="#work" className={`link textP3 textMain navAni ${NavStyles.navLink}`}>Work</a>

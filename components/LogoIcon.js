@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import NavStyles from '../styles/components/Navbar.module.css'
 
-const NavLogo = () => {
+const LogoIcon = () => {
     return (
         <Link scroll={false} href="/">
             <a  className={`navAni ${NavStyles.homeNavLogoSection}`}>
@@ -19,4 +19,4 @@ const NavLogo = () => {
     )
 }
 
-export default NavLogo
+export default LogoIcon

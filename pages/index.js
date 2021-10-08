@@ -10,6 +10,7 @@ import Navbar from '../components/Navbar.js'
 import SectionHeader from '../components/SectionHeader.js'
 import CaseStudyCard from '../components/CaseStudyCard.js'
 import postData from '../posts/post.json'
+import Footer from '../components/Footer'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -186,6 +187,7 @@ export default function Home({loaded , loaderView}) {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   )

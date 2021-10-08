@@ -11,6 +11,7 @@ import Navbar from '../../components/Navbar.js'
 import ImageCard from '../../components/ImageCard.js'
 import SectionHeader from '../../components/SectionHeader.js'
 import postData from '../../posts/post.json'
+import Footer from '../../components/Footer'
 
 
 
@@ -138,15 +139,8 @@ const CaseStudyPage = ({postPath}) => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
-
-
-/* {() => {
-    const tags = post.meta.tags
-    tags.map((tag) => {
-    <p className={`textBody2 ${CaseStudyStyles.showcaseTag}`}>{tag}</p>
- })
-}} */
 export default CaseStudyPage

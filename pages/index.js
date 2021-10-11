@@ -96,24 +96,26 @@ export default function Home({loaded , loaderView}) {
                   <p className="textMain textH6 textRegular">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
                 </div>
                 <div className="textSection">
-                  <p className="textMain textH5 textRegular">My design principles</p>
+                  <p className="textMain textH6 textBold">My design principles</p>
+                  <p className="textMain textH6 textRegular">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
+
                   <div className="textRow">
                     <div className="textGroup">
-                      <p className="textMain textP2 textMedium">Solve problems</p>
+                      <p className="textMain textP2 textBold">Solve problems</p>
                       <p className="textSoft textP2">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
                     </div>
                     <div className="textGroup">
-                      <p className="textMain textP2 textMedium">Be intentional</p>
+                      <p className="textMain textP2 textBold">Be intentional</p>
                       <p className="textSoft textP2">gh design and strategy.</p>
                     </div>
                   </div>
                   <div className="textRow">
                     <div className="textGroup">
-                      <p className="textMain textP2 textMedium">Communicate</p>
+                      <p className="textMain textP2 textBold">Communicate</p>
                       <p className="textSoft textP2">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
                     </div>
                     <div className="textGroup">
-                      <p className="textMain textP2 textMedium">Don’t be afraid to be wrong</p>
+                      <p className="textMain textP2 textBold">Don’t be afraid to be wrong</p>
                       <p className="textSoft textP2">I started my career as a freelance web developer and shortly found a passion for design. In 2018, I founded a RYSE Digtial, a boutique agency that helps small businesses thrive thorugh design and strategy.</p>
                     </div>
                   </div>

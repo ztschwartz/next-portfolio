@@ -25,10 +25,18 @@ const Footer = () => {
                     <div className={`col-3 ${Styles.sitemapSection}`}>
                         <h3 className="textMain textP2 textBold">Sitemap</h3>
                         <div className={Styles.linksListSection}>
-                            <Link scroll={false} href="/"><a className="textP3 link textSoft">Introduction</a></Link>
-                            <Link scroll={false} href="/#work"><a className="textP3 link textSoft">Work</a></Link>
-                            <Link scroll={false} href="/#about"><a className="textP3 link textSoft">About</a></Link>
-                            <Link scroll={false} href="/#contact"><a className="textP3 link textSoft">Contact</a></Link>
+                            <Link scroll={false} href="/">
+                                <a className="textP3 link textSoft">Introduction</a>
+                            </Link>
+                            <Link scroll={false} href="/#work">
+                                <a className="textP3 link textSoft">Work</a>
+                            </Link>
+                            <Link scroll={false} href="/#about">
+                                <a className="textP3 link textSoft">About</a>
+                            </Link>
+                            <Link scroll={false} href="/#contact">
+                                <a className="textP3 link textSoft">Contact</a>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -12,11 +12,11 @@ const CaseStudyCard = ({title, subtitle, slug, img , postData}) => {
         <Link scroll={false} href={`/case-studies/${encodeURIComponent(slug)}`}>
             <a className={`bgDeep ${CardStyles.caseStudyCard}`}>
                 <div className={CardStyles.cardImgSection}>
-                    <Image layout="fill" objectFit="contain" src={`/img/${img}`} alt="Ambassador App Phone Mockup" />
+                    <Image layout="fill" objectFit="cover" src={`/img/${img}`} alt="Ambassador App Phone Mockup" />
                 </div>
                 <div className={CardStyles.cardInnerSection}>
-                    <div className={`bgMain ${CardStyles.cardInner}`}>
-                        <h1 className="textMain textH6">{title}<br/>{subtitle}<span className="textAccent">.</span></h1>
+                    <div className={`bgMainTransparent ${CardStyles.cardInner}`}>
+                        <h1 className="textMain textH6 textMedium">{title}<br/>{subtitle}<span className="textAccent">.</span></h1>
                          <div className={CardStyles.cardInnerLink}>
                              {/* <p className="textMain textBody2">Read the case study</p> */}
                             <svg className="fillAccent" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg">

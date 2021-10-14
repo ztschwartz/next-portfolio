@@ -31,9 +31,9 @@ a {
 /**** COLORS ****/
 
 
-:root{
+/* :root{
   --white: rgba(249, 250, 251, 1);
-  --transparentWhite: rgba(249, 250, 251, 0.8);
+  --transparentWhite: rgba(249, 250, 251, 0.95);
   --black: rgba(23, 25, 28, 1);
   --gray10: rgba(229, 232, 235, 1);
   --gray20: rgba(206, 212, 217, 1);
@@ -44,7 +44,24 @@ a {
   --gray70: rgba(81, 87, 93, 1);
   --gray80: rgba(56, 61, 66, 1);
   --gray90: rgba(28, 30, 34, 1);
-  --transparentGray90: rgba(28, 30, 34, 0.8);
+  --transparentGray90: rgba(28, 30, 34, 0.95);
+  --accentLight: rgba(10, 107, 235, 1);
+  --accentDark:  rgba(70, 133, 251, 1);
+} */
+:root{
+  --white: rgba(249, 250, 251, 1);
+  --transparentWhite: rgba(249, 250, 251, 0.95);
+  --black: rgba(20, 23, 31, 1);
+  --gray10: rgba(228, 232, 236, 1);
+  --gray20: rgba(205, 212, 218, 1);
+  --gray30: rgba(175, 184, 192, 1);
+  --gray40: rgba(150, 159, 171, 1);
+  --gray50: rgba(123, 133, 147, 1);
+  --gray60: rgba(95, 105, 119, 1);
+  --gray70: rgba(70, 80, 93, 1);
+  --gray80: rgba(42, 49, 60, 1);
+  --gray90: rgba(26, 31, 40, 1);
+  --transparentGray90: rgba(26, 31, 40, 0.95);
   --accentLight: rgba(10, 107, 235, 1);
   --accentDark:  rgba(70, 133, 251, 1);
 }
@@ -55,7 +72,7 @@ body {
 
 
 .textMain{
-  color: var(--gray90);
+  color: var(--black);
 }
 
 

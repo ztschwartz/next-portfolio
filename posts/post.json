@@ -1,7 +1,7 @@
 [{
     "title": "Total Tastings",
     "subtitle": "Ambassador App",
-    "featureImg": "ttImage.png",
+    "featureImg": "tt-feature-img.png",
     "meta": {
         "date": "2020",
         "description": "Using real feedback and sponsor users to design an internal app that enabled ambassadors to quickly and easily manage their work responsibilities.",

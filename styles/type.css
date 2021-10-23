@@ -33,7 +33,7 @@ body{
 /* TYPE SCALE - VARIABLES */
 
 :root{
-    --text42: 2.625rem/3.125rem 'Neue-Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --text48: 3rem/3.5rem 'Neue-Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     --text36: 2.25rem/2.75rem 'Neue-Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     --text32: 2rem/2.375rem 'Neue-Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     --text28: 1.75rem/2rem 'Neue-Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -49,7 +49,7 @@ body{
 /* TEXT STYLES */
 
 .textH1{
-    font: var(--text42);
+    font: var(--text48);
 }
 
 .textH2{

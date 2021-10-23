@@ -15,17 +15,17 @@
     overflow: hidden;
 }
 
-.caseStudyCard:hover{
+.caseStudyCard:hover .cardImgSection{
     /* box-shadow: 0 0 0 2px var(--accentLight);
     transition: box-shadow 100ms ease-out; */
-    filter: brightness(0.98);
+    filter: brightness(0.95);
 }
 
 
 
 
 .caseStudyCard:active{
-    filter: brightness(0.96);
+    filter: brightness(0.92);
 }
 
 .cardImgSection{
@@ -121,8 +121,6 @@
 @media (prefers-color-scheme: dark){
 
     .caseStudyCard:hover{
-        box-shadow: 0 0 0 2px var(--accentDark);
-        transition: box-shadow 100ms ease-out;
     }
 
     .cardInner{

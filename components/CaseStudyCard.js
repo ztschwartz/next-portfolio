@@ -16,7 +16,7 @@ const CaseStudyCard = ({title, subtitle, slug, img , postData}) => {
                 </div>
                 <div className={CardStyles.cardInnerSection}>
                     <div className={`bgMainTransparent ${CardStyles.cardInner}`}>
-                        <h1 className="textMain textH6 textMedium">{title}<br/>{subtitle}<span className="textAccent">.</span></h1>
+                        <h1 className="textMain textP1 textMedium">{title}<br/>{subtitle}<span className="textAccent">.</span></h1>
                          <div className={CardStyles.cardInnerLink}>
                              {/* <p className="textMain textBody2">Read the case study</p> */}
                             <svg className="fillAccent" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg">

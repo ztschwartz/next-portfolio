@@ -33,7 +33,8 @@ const SectionHeader = ({ title, name }) => {
               },
               opacity: 1,
               duration: 0.2,
-              ease: "Power2.easeOut"
+              ease: "Power2.easeOut",
+              
           });
       
           })

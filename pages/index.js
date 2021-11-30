@@ -122,10 +122,6 @@ export default function Home({loaded , loaderView}) {
                 </div>
               </div>
             </div>
-            {/* <div className="sectionDividerWrapper">
-              <div className="bgDeep sectionDivider">
-              </div>
-            </div> */}
           </div>
         </div>
         <div className={HomeStyles.contact} id="contact">

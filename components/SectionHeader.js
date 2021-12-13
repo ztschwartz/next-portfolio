@@ -49,7 +49,7 @@ const SectionHeader = ({ title, name }) => {
             <div className="container">
                 <div className={HeaderStyles.headerBarFlex}>
                     <h1 className="textMain textP2 textBold">
-                        {title}<span className="textAccent">.</span>
+                        {title}<span className="textAccent">/</span>
                     </h1>
                     <a href="#showcase" id={`${name}HeaderLink`} className="link textP3 textMain textLink">
                         Back to top

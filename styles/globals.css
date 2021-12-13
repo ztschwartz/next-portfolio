@@ -50,7 +50,7 @@ a {
 } */
 :root{
   --white: rgba(249, 250, 251, 1);
-  --transparentWhite: rgba(249, 250, 251, 0.95);
+  --transparentWhite: rgba(249, 250, 251, 0.9);
   --black: rgba(20, 23, 31, 1);
   --gray10: rgba(228, 232, 236, 1);
   --gray20: rgba(205, 212, 218, 1);
@@ -61,7 +61,7 @@ a {
   --gray70: rgba(70, 80, 93, 1);
   --gray80: rgba(42, 49, 60, 1);
   --gray90: rgba(26, 31, 40, 1);
-  --transparentGray90: rgba(26, 31, 40, 0.95);
+  --transparentGray90: rgba(26, 31, 40, 0.9);
   --accentLight: rgba(10, 107, 235, 1);
   --accentDark:  rgba(70, 133, 251, 1);
 }
@@ -195,7 +195,7 @@ body {
 .container{
   width: 100%;
   padding: 0 5rem;
-  max-width: 1240px;
+  max-width: 1120px;
   margin: 0 auto;
   display: block;
 }
@@ -294,7 +294,7 @@ body {
 }
 
 .col-6--6{
-  grid-column: span 8;
+  grid-column: 5 / span 8;
 }
 
 .col-6--3{

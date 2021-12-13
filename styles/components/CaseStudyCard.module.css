@@ -7,7 +7,7 @@
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
-    height: 32rem;
+    height: 28rem;
     align-items: center;
     text-decoration: none;
     transition: box-shadow 100ms ease-out;

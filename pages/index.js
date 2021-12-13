@@ -55,7 +55,7 @@ export default function Home({loaded , loaderView}) {
       <div className={`${HomeStyles.showcase}`} id="showcase">
         <div className="container">
           {/*  <h1 className={`textHeadline1Medium textMain fadeAni ${HomeStyles.showcaseHeadline}`}><span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>Hey there—I’m Zack. I’m a passionate </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1> */}
-          <h1 className={`textH1 textRegular textSoft fadeAni ${HomeStyles.showcaseHeadlineGroup}`}>
+          <h1 className={`textH2 textRegular textSoft fadeAni ${HomeStyles.showcaseHeadlineGroup}`}>
             <span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}><span className="textMedium textMain">Hey there—I’m&nbsp;Zack<span className={`textAccent`}>.</span></span><br className={HomeStyles.showcaseBr} /> I’m a passionate </span>
             <span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span>
             <span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span>

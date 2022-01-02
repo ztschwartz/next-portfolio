@@ -1,49 +1,48 @@
 /** FOOTER - LARGE **/
 
-.footer{
-    padding: 4rem 0 2rem 0;
+.footer {
+	padding: 4rem 0 2rem 0;
 }
 
-.infoSection{
-    display: grid;
-    grid-auto-flow: row;
-    row-gap: 1rem;
-    justify-items: start;
-    align-items: start;
+.infoSection {
+	display: grid;
+	grid-auto-flow: row;
+	row-gap: 1rem;
+	justify-items: start;
+	align-items: start;
 }
 
-.contactSection{
-    display: grid;
-    grid-auto-flow: row;
-    row-gap: 1rem;
-    justify-items: start;
-    align-items: start;
+.contactSection {
+	display: grid;
+	grid-auto-flow: row;
+	row-gap: 1rem;
+	justify-items: start;
+	align-items: start;
 }
 
-
-.sitemapSection{
-    display: grid;
-    grid-auto-flow: row;
-    row-gap: 1rem;
-    justify-items: start;
-    align-items: start;
+.sitemapSection {
+	display: grid;
+	grid-auto-flow: row;
+	row-gap: 1rem;
+	justify-items: start;
+	align-items: start;
 }
 
-.linksListSection{
-    display: grid;
-    grid-auto-flow: row;
-    row-gap: 0.25rem;
-    justify-items: start;
-    align-items: start;
+.linksListSection {
+	display: grid;
+	grid-auto-flow: row;
+	row-gap: 0.25rem;
+	justify-items: start;
+	align-items: start;
 }
 
-.sitemapSection a{
-    display: inline-block;
+.sitemapSection a {
+	display: inline-block;
 }
 
-.logoSection{
-    padding-top: 4rem;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+.logoSection {
+	padding-top: 4rem;
+	display: grid;
+	align-items: center;
+	justify-content: center;
 }

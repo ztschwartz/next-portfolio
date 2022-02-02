@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import NavStyles from "../styles/components/Navbar.module.css";
+import NavStyles from "./Navbar/Navbar.module.css";
 
 const LogoIcon = () => {
 	return (

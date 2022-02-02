@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import postData from "../posts/post.json";
-import NavbarStyles from "../styles/components/Navbar.module.css";
+import postData from "../../posts/post.json";
+import NavbarStyles from "./Navbar.module.css";
 
 const PaginationBtns = ({ currentPage }) => {
 	const postString = JSON.stringify(postData);

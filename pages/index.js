@@ -6,11 +6,11 @@ import Image from "next/image";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import HomeStyles from "../styles/Home.module.css";
-import Navbar from "../components/Navbar.js";
-import SectionHeader from "../components/SectionHeader.js";
-import CaseStudyCard from "../components/CaseStudyCard.js";
+import Navbar from "../components/Navbar/Navbar.js";
+import SectionHeader from "../components/SectionHeader/SectionHeader.js";
+import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard.js";
 import postData from "../posts/post.json";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,18 +52,14 @@ export default function Home({ loaded, loaderView }) {
 				<div className="container">
 					{/*  <h1 className={`textHeadline1Medium textMain fadeAni ${HomeStyles.showcaseHeadline}`}><span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>Hey there—I’m Zack. I’m a passionate </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1> */}
 					<h1
-						className={`textH2 textRegular textSoft fadeAni ${HomeStyles.showcaseHeadlineGroup}`}>
+						className={`textH3 textMedium textSoft fadeAni ${HomeStyles.showcaseHeadlineGroup}`}>
 						<span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>
-							<span className="textMedium textMain">
-								Hey there—I’m&nbsp;Zack<span className={`textAccent`}>.</span>
+							<span className="textMain">
+								Hey there—I’m&nbsp;Zack<span className={`textAccent`}>. </span>
 							</span>
-							<br className={HomeStyles.showcaseBr} /> I’m a passionate{" "}
-						</span>
-						<span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>
-							product designer & developer currently{" "}
-						</span>
-						<span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>
-							based in St. Louis, Missouri.
+							I’m a passionate product designer & developer currently based in
+							St. Louis, Missouri. I’ve spent the last 4 years utilizing design
+							and technology to solve complex human&nbsp;problems.
 						</span>
 					</h1>
 				</div>
@@ -119,14 +115,11 @@ export default function Home({ loaded, loaderView }) {
 										I’m a developer-turned-product designer with 4 years of
 										experience utilizing design and technology to solve complex
 										problems. I value craft and approach all of my work with a
-										deep curiosity.{" "}
+										deep curiosity. My specific interests are interaction
+										design, user experience, and closing the gap between design
+										and engineering.
 									</p>
-									<p className="textMain textP2 textRegular">
-										My specific interests are interaction design, user
-										experience, and closing the gap between design and
-										engineering.
-									</p>
-									<p className="textMain textP2 textRegular">
+									<p className="textSoft textP2 textRegular">
 										I started my career as a freelance web developer and shortly
 										found a passion for design. In 2018, I founded a RYSE
 										Digtial, a boutique agency that helps small businesses
@@ -137,7 +130,7 @@ export default function Home({ loaded, loaderView }) {
 									<p className="textMain textP1 textMedium">
 										My design principles
 									</p>
-									<p className="textMain textP2 textRegular">
+									<p className="textSoft textP2 textRegular">
 										I started my career as a freelance web developer and shortly
 										found a passion for design. In 2018, I founded a RYSE
 										Digtial, a boutique agency that helps small businesses

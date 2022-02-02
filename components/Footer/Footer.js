@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import LogoIcon from "./LogoIcon.js";
-import Styles from "../styles/components/Footer.module.css";
+import LogoIcon from "../LogoIcon.js";
+import Styles from "./Footer.module.css";
 
 const Footer = () => {
 	return (

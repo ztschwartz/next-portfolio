@@ -47,8 +47,8 @@ a {
   --accentDark:  rgba(70, 133, 251, 1);
 } */
 :root {
-	--white: rgba(249, 250, 251, 1);
-	--transparentWhite: rgba(249, 250, 251, 0.9);
+	--white: rgba(255, 255, 255, 1);
+	--transparentWhite: rgba(255, 255, 255, 0.95);
 	--black: rgba(20, 23, 31, 1);
 	--gray10: rgba(228, 232, 236, 1);
 	--gray20: rgba(205, 212, 218, 1);
@@ -59,7 +59,7 @@ a {
 	--gray70: rgba(70, 80, 93, 1);
 	--gray80: rgba(42, 49, 60, 1);
 	--gray90: rgba(26, 31, 40, 1);
-	--transparentGray90: rgba(26, 31, 40, 0.9);
+	--transparentGray90: rgba(26, 31, 40, 1);
 	--accentLight: rgba(10, 107, 235, 1);
 	--accentDark: rgba(70, 133, 251, 1);
 }
@@ -73,7 +73,7 @@ body {
 }
 
 .textSoft {
-	color: var(--gray60);
+	color: var(--gray70);
 }
 
 .bgMain {
@@ -134,7 +134,7 @@ body {
 	}
 
 	.textSoft {
-		color: var(--gray40);
+		color: var(--gray30);
 	}
 
 	.bgMain {
@@ -194,7 +194,7 @@ body {
 
 @media (max-width: 1080px) {
 	.container {
-		padding: 0 5rem;
+		padding: 0 3rem;
 	}
 }
 
@@ -280,7 +280,7 @@ body {
 }
 
 .col-6--6 {
-	grid-column: 1 / span 8;
+	grid-column: 4 / span 8;
 }
 
 .col-6--3 {
@@ -322,7 +322,7 @@ body {
 	}
 
 	.col-6--6 {
-		grid-column: 5 / span 8;
+		grid-column: 4 / span 9;
 	}
 
 	.col-6--3 {
@@ -432,7 +432,7 @@ body {
 /* Layout Components - Large */
 
 .sectionContent {
-	/* margin-top: -2.75rem; */
+	margin-top: -2.75rem;
 }
 
 .sectionDividerWrapper {
@@ -456,7 +456,7 @@ body {
 .textSection {
 	display: grid;
 	grid-auto-flow: row;
-	gap: 1.75rem;
+	gap: 1.5rem;
 	align-self: start;
 }
 

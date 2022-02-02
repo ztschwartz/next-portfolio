@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import CardStyles from "../styles/components/CaseStudyCard.module.css";
+import CardStyles from "./CaseStudyCard.module.css";
 import Image from "next/image";
 import TTImg from "/public/img/tt-img-test-2.png";
 

@@ -1,6 +1,6 @@
 import React from "react";
-import LogoIcon from "./LogoIcon.js";
-import NavStyles from "../styles/components/Navbar.module.css";
+import LogoIcon from "../LogoIcon.js";
+import NavStyles from "./Navbar.module.css";
 import PaginationBtns from "./PaginationBtns.js";
 
 const Navbar = ({ type, currentPage }) => {

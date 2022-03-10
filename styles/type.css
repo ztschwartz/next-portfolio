@@ -68,24 +68,20 @@ body {
 }
 
 .textH4 {
-	font: var(--text28);
-}
-
-.textH5 {
 	font: var(--text24);
 }
 
-.textP1 {
-	font: var(--text20);
+.textH5 {
+	font: var(--text18);
 	letter-spacing: 0.0075em;
 }
 
-.textP2 {
+.textP1 {
 	font: var(--text16);
 	letter-spacing: 0.0125em;
 }
 
-.textP3 {
+.textP2 {
 	font: var(--text14);
 	letter-spacing: 0.005em;
 }

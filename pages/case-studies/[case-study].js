@@ -7,6 +7,7 @@ import Image from "next/image";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CaseStudyStyles from "../../styles/CaseStudy.module.css";
+import PageTransition from "../../animations/PageTransition";
 import Navbar from "../../components/Navbar/Navbar.js";
 import ImageCard from "../../components/ImageCard/ImageCard.js";
 import SectionHeader from "../../components/SectionHeader/SectionHeader.js";
@@ -49,30 +50,10 @@ const CaseStudyPage = ({ postPath }) => {
 		return post;
 	};
 
-	const scrollTriggerFresh = () => ScrollTrigger.refresh();
-
 	const post = getSpecificPost();
 
 	useEffect(() => {
-		gsap.from(".navAni", {
-			ease: "power3.out",
-			delay: 0.3,
-			opacity: 0,
-			stagger: 0.12,
-			duration: 1,
-			y: -32,
-			onComplete: scrollTriggerFresh,
-		});
-
-		gsap.from(".fadeAni", {
-			ease: "power3.out",
-			opacity: 0,
-			stagger: 0.12,
-			delay: 0.2,
-			duration: 1,
-			y: 28,
-			onComplete: scrollTriggerFresh,
-		});
+		PageTransition();
 
 		setCurrentPage(post.meta.order);
 	}, []);
@@ -94,17 +75,17 @@ const CaseStudyPage = ({ postPath }) => {
 									<span className="textAccent">.</span>
 								</h1>
 							</div>
-							<p className="textSoft textP2 fadeAni">{post.meta.description}</p>
+							<p className="textSoft textP1 fadeAni">{post.meta.description}</p>
 						</div>
 						<div className={`col-6 fadeAni ${CaseStudyStyles.showcaseMeta}`}>
-							<p className={`textMain textP2 ${CaseStudyStyles.showcaseDate}`}>
+							<p className={`textMain textP1 ${CaseStudyStyles.showcaseDate}`}>
 								{post.meta.date}
 							</p>
 							<div className={`${CaseStudyStyles.showcaseTags}`}>
 								{post.meta.tags.map((tag) => (
 									<p
 										key={tag}
-										className={`textSoft textP3 ${CaseStudyStyles.showcaseTag}`}>
+										className={`textSoft textP2 ${CaseStudyStyles.showcaseTag}`}>
 										{tag}
 									</p>
 								))}

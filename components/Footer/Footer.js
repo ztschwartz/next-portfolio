@@ -20,9 +20,9 @@ const Footer = () => {
 					<div className={`col-3 ${Styles.contactSection}`}>
 						<h3 className="textMain textP2 textBold ">Get in touch</h3>
 						<div className={Styles.linksListSection}>
-							<a className="textP3 link textSoft">hello@zacktschwartz.com</a>
-							<a className="textP3 link textSoft">Message me on LinkedIn</a>
-							<a className="textP3 link textSoft">Message me on Polywork</a>
+							<a className="textP2 link textSoft">hello@zacktschwartz.com</a>
+							<a className="textP2 link textSoft">Message me on LinkedIn</a>
+							<a className="textP2 link textSoft">Message me on Polywork</a>
 						</div>
 					</div>
 				</div>

@@ -17,8 +17,8 @@ const CaseStudyCard = ({ title, subtitle, slug, img, postData }) => {
 					/>
 				</div>
 				<div className={CardStyles.cardInnerSection}>
-					<div className={`bgMainTransparent ${CardStyles.cardInner}`}>
-						<h1 className="textMain textP1 textMedium">
+					<div className={`bgMain ${CardStyles.cardInner}`}>
+						<h1 className="textMain textH5 textMedium">
 							{title}
 							<br />
 							{subtitle}

@@ -48,7 +48,7 @@ a {
 } */
 :root {
 	--white: rgba(255, 255, 255, 1);
-	--transparentWhite: rgba(255, 255, 255, 0.7);
+	--transparentWhite: rgba(255, 255, 255, 0.95);
 	--black: rgba(20, 23, 31, 1);
 	--gray10: rgba(228, 232, 236, 1);
 	--gray20: rgba(205, 212, 218, 1);
@@ -59,7 +59,7 @@ a {
 	--gray70: rgba(70, 80, 93, 1);
 	--gray80: rgba(42, 49, 60, 1);
 	--gray90: rgba(26, 31, 40, 1);
-	--transparentGray90: rgba(26, 31, 40, 0.7);
+	--transparentGray90: rgba(26, 31, 40, 1);
 	--accentLight: rgba(10, 107, 235, 1);
 	--accentDark: rgba(70, 133, 251, 1);
 }
@@ -68,59 +68,59 @@ body {
 	background-color: var(--white);
 }
 
-.textMain {
+:global(.textMain) {
 	color: var(--black);
 }
 
-.textSoft {
+:global(.textSoft) {
 	color: var(--gray70);
 }
 
-.bgMain {
+:global(.bgMain) {
 	background-color: var(--white);
 }
 
-.bgDeep {
+:global(.bgDeep) {
 	background-color: var(--gray10);
 }
 
-.bgSoft {
+:global(.bgSoft) {
 	background-color: var(--gray20);
 }
 
-.textAccent {
+:global(.textAccent) {
 	color: var(--accentLight);
 }
 
-.bgAccent {
+:global(.bgAccent) {
 	background-color: var(--accentLight);
 }
 
-.bgMainTransparent {
+:global(.bgMainTransparent) {
 	background-color: var(--transparentWhite);
 }
 
-.fillMain {
+:global(.fillMain) {
 	fill: var(--gray90);
 }
 
-.fillSoft {
+:global(.fillSoft) {
 	fill: var(--gray30);
 }
 
-.fillAccent {
+:global(.fillAccent) {
 	fill: var(--accentLight);
 }
 
-.fillWhite {
+:global(.fillWhite) {
 	fill: var(--white);
 }
 
-.link:hover {
+:global(.link:hover) {
 	color: var(--accentLight);
 }
 
-.link:active {
+:global(.link:active) {
 	filter: brightness(0.9);
 }
 
@@ -129,51 +129,51 @@ body {
 		background-color: var(--gray90);
 	}
 
-	.textMain {
+	:global(.textMain) {
 		color: var(--white);
 	}
 
-	.textSoft {
+	:global(.textSoft) {
 		color: var(--gray30);
 	}
 
-	.bgMain {
+	:global(.bgMain) {
 		background-color: var(--gray90);
 	}
 
-	.bgDeep {
+	:global(.bgDeep) {
 		background-color: var(--black);
 	}
 
-	.bgSoft {
+	:global(.bgSoft) {
 		background-color: var(--gray80);
 	}
 
-	.textAccent {
+	:global(.textAccent) {
 		color: var(--accentDark);
 	}
 
-	.bgAccent {
+	:global(.bgAccent) {
 		background-color: var(--accentDark);
 	}
 
-	.bgMainTransparent {
+	:global(.bgMainTransparent) {
 		background-color: var(--transparentGray90);
 	}
 
-	.fillMain {
+	:global(.fillMain) {
 		fill: var(--white);
 	}
 
-	.fillSoft {
+	:global(.fillSoft) {
 		fill: var(--gray60);
 	}
 
-	.fillAccent {
+	:global(.fillAccent) {
 		fill: var(--accentDark);
 	}
 
-	.link:hover {
+	:global(.link:hover) {
 		color: var(--accentDark);
 	}
 }
@@ -182,7 +182,7 @@ body {
 
 /* Container  */
 
-.container {
+:global(.container) {
 	width: 100%;
 	padding: 0 3rem;
 	max-width: 1120px;
@@ -193,7 +193,7 @@ body {
 /* Container - Medium */
 
 @media (max-width: 1080px) {
-	.container {
+	:global(.container) {
 		padding: 0 3rem;
 	}
 }
@@ -201,7 +201,7 @@ body {
 /* Container - Small */
 
 @media (max-width: 768px) {
-	.container {
+	:global(.container) {
 		padding: 0 3rem;
 	}
 }
@@ -209,14 +209,14 @@ body {
 /* Container - XSmall */
 
 @media (max-width: 640px) {
-	.container {
+	:global(.container) {
 		padding: 0 1.75rem;
 	}
 }
 
 /* Grid  */
 
-.grid {
+:global(.grid) {
 	width: 100%;
 	display: grid;
 	align-items: start;
@@ -226,110 +226,111 @@ body {
 
 /* Grid - Columns - Large */
 
-.col-2 {
+:global(.col-2) {
 	grid-column: span 2;
 }
 
-.col-4 {
+:global(.col-4) {
 	grid-column: span 4;
 }
 
-.col-5 {
+:global(.col-5) {
 	grid-column: span 5;
 }
 
-.col-6 {
+:global(.col-6) {
 	grid-column: span 6;
 }
 
-.col-7 {
+:global(.col-7) {
 	grid-column: span 7;
 }
 
-.col-8 {
+:global(.col-8) {
 	grid-column: span 8;
 }
-.col-10 {
+
+:global(.col-10) {
 	grid-column: span 10;
 }
 
-.col-12 {
+:global(.col-12) {
 	grid-column: span 12;
 }
 
-.col-2-center {
+:global(.col-2-center) {
 	grid-column: 6 / span 2;
 }
 
-.col-4-center {
+:global(.col-4-center) {
 	grid-column: 5 / span 4;
 }
-.col-6-center {
+:global(.col-6-center) {
 	grid-column: 4 / span 6;
 }
 
-.col-8-center {
+:global(.col-8-center) {
 	grid-column: 3 / span 8;
 }
-.col-10-center {
+:global(.col-10-center) {
 	grid-column: 2 / span 10;
 }
 
-.col-12-center {
+:global(.col-12-center) {
 	grid-column: 1 / span 12;
 }
 
-.col-6--6 {
+:global(.col-6--6) {
 	grid-column: 4 / span 8;
 }
 
-.col-6--3 {
+:global(.col-6--3) {
 	grid-column: 6 / span 3;
 }
 
-.col-9--3 {
+:global(.col-9--3) {
 	grid-column: 9 / span 3;
 }
 
-.col-7-right {
+:global(.col-7-right) {
 	grid-column: 6 / span 7;
 }
 
-.col-8-right {
+:global(.col-8-right) {
 	grid-column: 5 / span 8;
 }
 
 /* Grid - Columns - Medium */
 @media (max-width: 1080px) {
-	.grid {
+	:global(.grid) {
 		gap: 1rem;
 	}
 
-	.col-5 {
+	:global(.col-5) {
 		grid-column: span 6;
 	}
 
-	.col-6 {
+	:global(.col-6) {
 		grid-column: span 6;
 	}
 
-	.col-7 {
+	:global(.col-7) {
 		grid-column: span 6;
 	}
 
-	.col-5--7 {
+	:global(.col-5--7) {
 		grid-column: 5 / span 8;
 	}
 
-	.col-6--6 {
+	:global(.col-6--6) {
 		grid-column: 4 / span 9;
 	}
 
-	.col-6--3 {
+	:global(.col-6--3) {
 		grid-column: 5 / span 4;
 	}
 
-	.col-9--3 {
+	:global(.col-9--3) {
 		grid-column: 9 / span 4;
 	}
 }
@@ -337,38 +338,39 @@ body {
 /* Grid - Columns - Small */
 
 @media (max-width: 768px) {
-	.col-2 {
+	:global(.col-2) {
 		grid-column: span 12;
 	}
 
-	.col-4 {
+	:global(.col-4) {
 		grid-column: span 12;
 	}
 
-	.col-5 {
+	:global(.col-5) {
 		grid-column: span 12;
 	}
 
-	.col-6 {
+	:global(.col-6) {
 		grid-column: span 12;
 	}
 
-	.col-7 {
+	:global(.col-7) {
 		grid-column: span 12;
 	}
 
-	.col-8 {
-		grid-column: span 12;
-	}
-	.col-10 {
+	:global(.col-8) {
 		grid-column: span 12;
 	}
 
-	.col-12 {
+	:global(.col-10) {
 		grid-column: span 12;
 	}
 
-	.col-2-center {
+	:global(.col-12) {
+		grid-column: span 12;
+	}
+
+	:global(.col-2-center) {
 		grid-column: span 12;
 	}
 
@@ -379,38 +381,38 @@ body {
 		grid-column: span 12;
 	}
 
-	.col-8-center {
+	:global(.col-8-center) {
 		grid-column: span 12;
 	}
-	.col-10-center {
-		grid-column: span 12;
-	}
-
-	.col-12-center {
+	:global(.col-10-center) {
 		grid-column: span 12;
 	}
 
-	.col-5--7 {
+	:global(.col-12-center) {
 		grid-column: span 12;
 	}
 
-	.col-6--6 {
+	:global(.col-5--7) {
 		grid-column: span 12;
 	}
 
-	.col-5--4 {
+	:global(.col-6--6) {
+		grid-column: span 12;
+	}
+
+	:global(.col-5--4) {
 		grid-column: span 6;
 	}
 
-	.col-9--3 {
+	:global(.col-9--3) {
 		grid-column: span 6;
 	}
 
-	.col-7-right {
+	:global(.col-7-right) {
 		grid-column: span 12;
 	}
 
-	.col-8-right {
+	:global(.col-8-right) {
 		grid-column: span 12;
 	}
 }
@@ -418,11 +420,11 @@ body {
 /* Grid - Columns - XSmall */
 
 @media (max-width: 640px) {
-	.col-5--4 {
+	:global(.col-5--4) {
 		grid-column: span 12;
 	}
 
-	.col-9--3 {
+	:global(.col-9--3) {
 		grid-column: span 12;
 	}
 }
@@ -431,21 +433,21 @@ body {
 
 /* Layout Components - Large */
 
-.sectionContent {
+:global(.sectionContent) {
 	margin-top: -2.75rem;
 }
 
-.sectionDividerWrapper {
+:global(.sectionDividerWrapper) {
 	padding: 6rem 0 0 0;
 	width: 100%;
 }
 
-.sectionDivider {
+:global(.sectionDivider) {
 	height: 1px;
 	width: 100%;
 }
 
-.contentSection {
+:global(.contentSection) {
 	align-items: start;
 	display: grid;
 	grid-auto-flow: row;
@@ -453,14 +455,14 @@ body {
 	align-self: start;
 }
 
-.textSection {
+:global(.textSection) {
 	display: grid;
 	grid-auto-flow: row;
 	gap: 1.5rem;
 	align-self: start;
 }
 
-.textGroup {
+:global(.textGroup) {
 	display: grid;
 	grid-auto-flow: row;
 	gap: 0.5rem;
@@ -468,17 +470,17 @@ body {
 	justify-content: start;
 }
 
-.textRow {
+:global(.textRow) {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
 }
 
-.textRow > .textGroup {
+:global(.textRow) > :global(.textGroup) {
 	padding-right: 2rem;
 }
 
-.imgGroup {
+:global(.imgGroup) {
 	display: grid;
 	grid-auto-flow: row;
 	gap: 1.5rem;
@@ -489,27 +491,27 @@ body {
 /* Layout Components - Small */
 
 @media (max-width: 768px) {
-	.sectionContent {
+	:global(.sectionContent) {
 		margin-top: 0;
 	}
 
-	.textSection {
+	:global(.textSection) {
 		gap: 1.75rem;
 		padding-right: 0;
 	}
 
-	.textRow {
+	:global(.textRow) {
 		grid-template-columns: none;
 		display: grid;
 		grid-auto-flow: row;
 		gap: 1.75rem;
 	}
 
-	.textRow > .textGroup {
+	:global(.textRow) > :global(.textGroup) {
 		padding-right: 0;
 	}
 
-	.contentSection {
+	:global(.contentSection) {
 		gap: 4rem;
 	}
 

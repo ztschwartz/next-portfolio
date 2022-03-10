@@ -15,17 +15,17 @@ const Navbar = ({ type, currentPage }) => {
 						<div className={NavStyles.navLinks}>
 							<a
 								href="#work"
-								className={`link textP3 textMain navAni ${NavStyles.navLink}`}>
+								className={`link textP2 textMain navAni ${NavStyles.navLink}`}>
 								Work
 							</a>
 							<a
 								href="#about"
-								className={`link textP3 navAni textMain ${NavStyles.navLink}`}>
+								className={`link textP2 navAni textMain ${NavStyles.navLink}`}>
 								About
 							</a>
 							<a
 								href="#contact"
-								className={`link textP3 navAni textMain ${NavStyles.navLink}`}>
+								className={`link textP2 navAni textMain ${NavStyles.navLink}`}>
 								Contact
 							</a>
 						</div>

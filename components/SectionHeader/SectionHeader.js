@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import HeaderStyles from "./SectionHeader.module.css";
+import HeaderTransition from "./SectionHeaderTransition";
 
 const SectionHeader = ({ title, name }) => {
 	const headerLink = `${name}HeaderLink`;
@@ -9,31 +10,7 @@ const SectionHeader = ({ title, name }) => {
 	const headerBg = `${name}HeaderBg`;
 
 	useEffect(() => {
-		window.requestAnimationFrame(() => {
-			gsap.from(`#${headerLink}`, {
-				scrollTrigger: {
-					trigger: `#${name}`,
-					start: "top top",
-					toggleActions: "play none none reverse",
-				},
-				display: "none",
-				duration: 0.3,
-				ease: "Power2.easeOut",
-				opacity: 0,
-				x: 24,
-			});
-
-			gsap.to(`#${headerBg}`, {
-				scrollTrigger: {
-					trigger: `#${name}`,
-					start: "top top",
-					toggleActions: "play none none reverse",
-				},
-				opacity: 1,
-				duration: 0.2,
-				ease: "Power2.easeOut",
-			});
-		});
+		HeaderTransition(name, headerLink, headerBg);
 	}, []);
 
 	return (
@@ -43,14 +20,14 @@ const SectionHeader = ({ title, name }) => {
 				className={`bgMainTransparent ${HeaderStyles.headerBarBg}`}></div>
 			<div className="container">
 				<div className={HeaderStyles.headerBarFlex}>
-					<h1 className="textMain textP2 textBold">
+					<h1 className="textMain textH5 textMedium">
 						{title}
 						<span className="textAccent">/</span>
 					</h1>
 					<a
 						href="#showcase"
 						id={`${name}HeaderLink`}
-						className="link textP3 textMain textLink">
+						className="link textP2 textMain textLink">
 						Back to top
 					</a>
 				</div>

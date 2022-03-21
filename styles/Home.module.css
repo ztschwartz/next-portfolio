@@ -3,12 +3,12 @@
 /*  Showcase - Large */
 
 .showcase {
-	padding: 20rem 0 4rem 0;
+	padding: 18rem 0 8rem 0;
 }
 
 .showcaseMainHeadline {
 	display: block;
-	max-width: 60rem;
+	max-width: 56rem;
 }
 
 .showcaseHeadline {
@@ -99,7 +99,7 @@
 .aboutImg {
 	justify-self: stretch;
 	height: auto;
-	border-radius: 0.5rem;
+	border-radius: 0.625rem;
 }
 
 @media (max-width: 768px) {

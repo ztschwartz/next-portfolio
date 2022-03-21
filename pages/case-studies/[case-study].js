@@ -67,25 +67,26 @@ const CaseStudyPage = ({ postPath }) => {
 					<div className={`grid ${CaseStudyStyles.showcaseContent}`}>
 						<div className={`col-6 ${CaseStudyStyles.showcaseMain}`}>
 							<div className={`${CaseStudyStyles.showcaseHeadlineGroup}`}>
-								<h1 className="textMain textH3 textMedium fadeAni">
+								<h1 className="textMain textH1 textMedium fadeAni">
 									{post.title}
 								</h1>
-								<h1 className="textMain textH3 textMedium fadeAni">
+								<h1 className="textMain textH1 textMedium fadeAni">
 									{post.subtitle}
 									<span className="textAccent">.</span>
 								</h1>
 							</div>
-							<p className="textSoft textP1 fadeAni">{post.meta.description}</p>
+							<p className="textMain textP1 fadeAni">{post.meta.description}</p>
 						</div>
 						<div className={`col-6 fadeAni ${CaseStudyStyles.showcaseMeta}`}>
-							<p className={`textMain textP1 ${CaseStudyStyles.showcaseDate}`}>
+							<p
+								className={`textMain textP1 textMedium ${CaseStudyStyles.showcaseDate}`}>
 								{post.meta.date}
 							</p>
 							<div className={`${CaseStudyStyles.showcaseTags}`}>
 								{post.meta.tags.map((tag) => (
 									<p
 										key={tag}
-										className={`textSoft textP2 ${CaseStudyStyles.showcaseTag}`}>
+										className={`textMain textP2 ${CaseStudyStyles.showcaseTag}`}>
 										{tag}
 									</p>
 								))}

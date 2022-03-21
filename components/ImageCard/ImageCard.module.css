@@ -1,12 +1,11 @@
-.imgCardSection{
-    border-radius: 0.75rem;
-    height: 32rem;
-    padding: 3rem;
-
+.imgCardSection {
+	border-radius: 0.875rem;
+	height: 32rem;
+	padding: 3rem;
 }
 
-.imgCardInner{
-    height: 100%;
-    width: 100%;
-    position: relative;
+.imgCardInner {
+	height: 100%;
+	width: 100%;
+	position: relative;
 }

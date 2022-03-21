@@ -20,9 +20,9 @@ const SectionHeader = ({ title, name }) => {
 				className={`bgMainTransparent ${HeaderStyles.headerBarBg}`}></div>
 			<div className="container">
 				<div className={HeaderStyles.headerBarFlex}>
-					<h1 className="textMain textH5 textMedium">
+					<h1 className="textMain textP1 textBold">
 						{title}
-						<span className="textAccent">/</span>
+						<span className="textAccent">.</span>
 					</h1>
 					<a
 						href="#showcase"

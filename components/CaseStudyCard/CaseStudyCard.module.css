@@ -1,0 +1,142 @@
+/* Case Study Card - Large  */
+
+.caseStudyCard {
+	border-radius: 0.875rem;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	grid-template-columns: 1fr;
+	height: 36rem;
+	align-items: center;
+	text-decoration: none;
+	transition: box-shadow 150ms ease-out, background-color 150ms ease-out,
+		height 150ms ease-out, width 150ms ease-out;
+	box-shadow: 0 0 0 0px transparent;
+	overflow: hidden;
+}
+
+.caseStudyCard:hover {
+	background: var(--gray20);
+}
+
+.caseStudyCard:active {
+	background: var(--gray30);
+}
+
+.cardImgSection {
+	grid-row: 1 / 3;
+	grid-column: 1 / 2;
+	margin: 2rem;
+	position: relative;
+	align-self: stretch;
+	justify-content: stretch;
+	transition: margin 100ms ease-out;
+	z-index: 1;
+}
+
+/* .caseStudyCard:active .cardImgSection{
+    margin: 2.25rem;
+} */
+
+.cardInnerSection {
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+	padding: 0.25rem;
+	justify-self: start;
+	align-self: end;
+	z-index: 2;
+}
+
+.cardInner {
+	border-radius: 0.625rem;
+	padding: 1.25rem;
+	display: grid;
+	max-width: 36rem;
+	grid-auto-flow: column;
+	gap: 8rem;
+	justify-content: space-between;
+	align-items: center;
+	backdrop-filter: blur(4px) saturate(150%);
+	-webkit-backdrop-filter: blur(4px) saturate(150%);
+}
+.cardInnerContent {
+	display: grid;
+	grid-auto-flow: row;
+	gap: 0.5rem;
+}
+
+.cardInner p {
+	display: none;
+}
+
+.caseStudyCard:hover .cardInner p {
+	display: block;
+}
+
+.cardInnerLink {
+	text-decoration: none;
+	display: inline-grid;
+	grid-auto-flow: column;
+	gap: 0.75rem;
+	justify-content: center;
+	align-items: center;
+	height: 1.75rem;
+	width: 1.75rem;
+	border: 1px solid var(--gray20);
+	transition: border 150ms ease;
+	border-radius: 0.25rem;
+}
+
+.caseStudyCard:hover .cardInnerLink {
+	transition: border 150ms ease;
+	border: 1px solid var(--accentLight);
+}
+
+.cardInnerLink svg {
+	height: 0.75rem;
+}
+
+/* Case Study Card - Medium  */
+
+@media (max-width: 1080px) {
+}
+
+/* Case Study Card - Small  */
+
+@media (max-width: 768px) {
+	.caseStudyCard {
+		height: 26rem;
+	}
+
+	.cardImgSection {
+		margin: 1.5rem;
+	}
+
+	/* .caseStudyCard:active .cardImgSection{
+        margin: 1.75rem;
+    } */
+
+	.cardInnerLink {
+		padding-bottom: 0.25rem;
+	}
+
+	.cardInnerLink p {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.caseStudyCard:hover {
+	}
+
+	.cardInner {
+		/* border: 1px solid var(--accentDark); */
+	}
+}
+
+@media (hover: none) {
+	.caseStudyCard:hover {
+		box-shadow: inherit;
+	}
+}

@@ -88,12 +88,28 @@ body {
 	background-color: var(--gray20);
 }
 
+.borderMain {
+	border: 1px solid var(--white);
+}
+
+.borderDeep {
+	border: 1px solid var(--gray10);
+}
+
+.borderSoft {
+	border: 1px solid var(--gray20);
+}
+
 .textAccent {
 	color: var(--accentLight);
 }
 
 .bgAccent {
 	background-color: var(--accentLight);
+}
+
+.borderAccent {
+	border: 1px solid var(--accentLight);
 }
 
 .bgMainTransparent {
@@ -149,12 +165,28 @@ body {
 		background-color: var(--gray80);
 	}
 
+	.borderMain {
+		border: 1px solid var(--gray90);
+	}
+
+	.borderDeep {
+		border: 1px solid var(--black);
+	}
+
+	.borderSoft {
+		border: 1px solid var(--gray80);
+	}
+
 	.textAccent {
 		color: var(--accentDark);
 	}
 
 	.bgAccent {
 		background-color: var(--accentDark);
+	}
+
+	.borderAccent {
+		border: 1px solid var(--accentDark);
 	}
 
 	.bgMainTransparent {
@@ -210,7 +242,7 @@ body {
 
 @media (max-width: 640px) {
 	.container {
-		padding: 0 1.75rem;
+		padding: 0 1.5rem;
 	}
 }
 

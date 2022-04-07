@@ -89,17 +89,17 @@ body {
 
 .textH3 {
 	font: var(--text20);
-	letter-spacing: 0.01em;
+	letter-spacing: 0.005em;
 }
 
 .textP1 {
 	font: var(--text16);
-	letter-spacing: 0.0125em;
+	letter-spacing: 0.01em;
 }
 
 .textP2 {
 	font: var(--text14);
-	letter-spacing: 0.005em;
+	letter-spacing: 0.015em;
 }
 
 /* WEIGHTS */
@@ -121,43 +121,63 @@ body {
 .link {
 	text-decoration: underline;
 	display: inline-block;
+	font-weight: 500;
 }
 
 /* Text Styles - Medium */
 
 @media (max-width: 1080px) {
-	.textH1 {
-		font: var(--text36);
+	.textRegular {
+		font-weight: 400;
 	}
 
-	.textH2 {
-		font: var(--text32);
+	.textMedium {
+		font-weight: 500;
 	}
 
-	.textH3 {
-		font: var(--text28);
+	.textBold {
+		font-weight: 600;
 	}
 }
 
 /* Text Styles - Small */
 
 @media (max-width: 768px) {
+	.textH1 {
+		font: var(--text28);
+	}
+	.textRegular {
+		font-weight: 400;
+	}
+
+	.textMedium {
+		font-weight: 500;
+	}
+
+	.textBold {
+		font-weight: 600;
+	}
 }
 
 /* Text Styles - XSmall */
 
 @media (max-width: 640px) {
 	.textH1 {
-		font: var(--text32);
+		font: var(--text24);
 	}
 
 	.textH2 {
 		font: var(--text28);
 	}
+	.textRegular {
+		font-weight: 400;
+	}
 
-	/* .textH6{
-        font: var(--text18);
-        letter-spacing: 0.0125em;
-    }
- */
+	.textMedium {
+		font-weight: 500;
+	}
+
+	.textBold {
+		font-weight: 600;
+	}
 }

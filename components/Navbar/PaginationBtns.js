@@ -87,7 +87,7 @@ const PaginationBtns = ({ currentPage }) => {
 						/>
 					</svg>
 					<p
-						className={`textP2 textMain textMedium ${NavbarStyles.nextPageBtnLabel}`}>
+						className={`textP2 textMain textMedium ${NavbarStyles.pageBtnLabel}`}>
 						{prevPageText}
 					</p>
 				</a>
@@ -98,7 +98,7 @@ const PaginationBtns = ({ currentPage }) => {
 				<a
 					className={`bgDeep navAni ${NavbarStyles.nextPageBtn} ${NavbarStyles.pageBtn}`}>
 					<p
-						className={`textP2 textMain textMedium ${NavbarStyles.nextPageBtnLabel}`}>
+						className={`textP2 textMain textMedium ${NavbarStyles.pageBtnLabel}`}>
 						{nextPageText}
 					</p>
 					<svg

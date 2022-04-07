@@ -79,14 +79,14 @@ const CaseStudyPage = ({ postPath }) => {
 						</div>
 						<div className={`col-6 fadeAni ${CaseStudyStyles.showcaseMeta}`}>
 							<p
-								className={`textMain textP2 textMedium borderSoft ${CaseStudyStyles.showcaseTag}`}>
+								className={`textMain textP2 textMedium borderDeep ${CaseStudyStyles.showcaseTag}`}>
 								Date: {post.meta.date}
 							</p>
 							<div className={`${CaseStudyStyles.showcaseTags}`}>
 								{post.meta.tags.map((tag) => (
 									<p
 										key={tag}
-										className={`textMain textP2 borderSoft ${CaseStudyStyles.showcaseTag}`}>
+										className={`textMain textP2 borderDeep ${CaseStudyStyles.showcaseTag}`}>
 										{tag}
 									</p>
 								))}

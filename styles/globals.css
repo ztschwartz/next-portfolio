@@ -132,8 +132,10 @@ body {
 	fill: var(--white);
 }
 
-.link:hover {
-	color: var(--accentLight);
+@media (hover: hover) {
+	.link:hover {
+		color: var(--accentLight);
+	}
 }
 
 .link:active {
@@ -205,8 +207,10 @@ body {
 		fill: var(--accentDark);
 	}
 
-	.link:hover {
-		color: var(--accentDark);
+	@media (hover: hover) {
+		.link:hover {
+			color: var(--accentDark);
+		}
 	}
 }
 

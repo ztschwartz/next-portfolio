@@ -57,11 +57,13 @@
 	transition: box-shadow 100ms ease-out;
 }
 
-.pageBtn:hover {
-	width: auto;
-	padding: 0 1rem;
-	box-shadow: 0 0 0 1px var(--accentLight);
-	transition: box-shadow 100ms ease-out;
+@media (hover: hover) {
+	.pageBtn:hover {
+		width: auto;
+		padding: 0 1rem;
+		box-shadow: 0 0 0 1px var(--accentLight);
+		transition: box-shadow 100ms ease-out;
+	}
 }
 
 .pageBtn:active {
@@ -80,10 +82,11 @@
 	display: none;
 	padding-top: 1px;
 }
-
-.pageBtn:hover > p {
-	visibility: visible;
-	display: block;
+@media (hover: hover) {
+	.pageBtn:hover > p {
+		visibility: visible;
+		display: block;
+	}
 }
 
 .prevPageBtn > svg {
@@ -96,7 +99,7 @@
 	height: 0.5rem;
 }
 
-@media (hover: none) {
+/* @media (hover: none) {
 	.pageBtn:hover {
 		width: 2.5rem;
 		padding: inherit;
@@ -107,7 +110,7 @@
 		visibility: hidden;
 		display: none;
 	}
-}
+} */
 
 @media (max-width: 768px) {
 	.navLinks {

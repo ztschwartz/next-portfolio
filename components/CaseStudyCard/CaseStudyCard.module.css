@@ -15,8 +15,10 @@
 	overflow: hidden;
 }
 
-.caseStudyCard:hover {
-	background: var(--gray20);
+@media (hover: hover) {
+	.caseStudyCard:hover {
+		background: var(--gray20);
+	}
 }
 
 .caseStudyCard:active {
@@ -68,8 +70,10 @@
 	display: none;
 }
 
-.caseStudyCard:hover .cardInner p {
-	display: block;
+@media (hover: hover) {
+	.caseStudyCard:hover .cardInner p {
+		display: block;
+	}
 }
 
 .cardInnerLink {
@@ -89,9 +93,11 @@
 	display: inline-block;
 }
 
-.caseStudyCard:hover .cardInnerLink {
-	transition: border 150ms ease;
-	border: 1px solid var(--accentLight);
+@media (hover: hover) {
+	.caseStudyCard:hover .cardInnerLink {
+		transition: border 150ms ease;
+		border: 1px solid var(--accentLight);
+	}
 }
 
 .cardInnerLink svg {
@@ -138,18 +144,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	.caseStudyCard:hover {
-		background: var(--gray80);
+	@media (hover: hover) {
+		.caseStudyCard:hover {
+			background: var(--gray80);
+		}
 	}
 
-	.caseStudyCard:hover .cardInnerLink {
-		transition: border 150ms ease;
-		border: 1px solid var(--accentDark);
-	}
-}
-
-@media (hover: none) {
-	.caseStudyCard:hover {
-		box-shadow: inherit;
+	@media (hover: hover) {
+		.caseStudyCard:hover .cardInnerLink {
+			transition: border 150ms ease;
+			border: 1px solid var(--accentDark);
+		}
 	}
 }

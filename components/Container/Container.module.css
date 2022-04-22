@@ -1,0 +1,33 @@
+/* Container  */
+
+.container {
+	width: 100%;
+	padding: 0 3rem;
+	max-width: 1120px;
+	margin: 0 auto;
+	display: block;
+}
+
+/* Container - Medium */
+
+@media (max-width: 1080px) {
+	.container {
+		padding: 0 3rem;
+	}
+}
+
+/* Container - Small */
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 3rem;
+	}
+}
+
+/* Container - XSmall */
+
+@media (max-width: 640px) {
+	.container {
+		padding: 0 1.5rem;
+	}
+}

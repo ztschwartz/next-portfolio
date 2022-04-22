@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import HeaderStyles from "./SectionHeader.module.css";
@@ -11,7 +11,7 @@ const SectionHeader = ({ title, name }) => {
 
 	useEffect(() => {
 		HeaderTransition(name, headerLink, headerBg);
-	}, []);
+	}, [name, headerLink, headerBg]);
 
 	return (
 		<div className={HeaderStyles.headerBar}>

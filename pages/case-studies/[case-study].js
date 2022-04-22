@@ -6,11 +6,14 @@ import Script from "next/script";
 import Image from "next/image";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import TotalTastingsContent from "../../posts/total-tastings.mdx";
+import FocalpointsContent from "../../posts/focalpoints.mdx";
 import CaseStudyStyles from "../../styles/CaseStudy.module.css";
 import PageTransition from "../../animations/PageTransition";
 import Navbar from "../../components/Navbar/Navbar.js";
 import ImageCard from "../../components/ImageCard/ImageCard.js";
 import SectionHeader from "../../components/SectionHeader/SectionHeader.js";
+import SectionHeaderTransition from "../../components/SectionHeader/SectionHeaderTransition.js";
 import postData from "../../posts/post.json";
 import Footer from "../../components/Footer/Footer.js";
 
@@ -54,7 +57,6 @@ const CaseStudyPage = ({ postPath }) => {
 
 	useEffect(() => {
 		PageTransition();
-
 		setCurrentPage(post.meta.order);
 	}, []);
 
@@ -79,14 +81,14 @@ const CaseStudyPage = ({ postPath }) => {
 						</div>
 						<div className={`col-6 fadeAni ${CaseStudyStyles.showcaseMeta}`}>
 							<p
-								className={`textMain textP2 textMedium borderDeep ${CaseStudyStyles.showcaseTag}`}>
+								className={`textMain textP2 textMedium bgDeep ${CaseStudyStyles.showcaseTag}`}>
 								Date: {post.meta.date}
 							</p>
 							<div className={`${CaseStudyStyles.showcaseTags}`}>
 								{post.meta.tags.map((tag) => (
 									<p
 										key={tag}
-										className={`textMain textP2 borderDeep ${CaseStudyStyles.showcaseTag}`}>
+										className={`textMain textP2 bgDeep ${CaseStudyStyles.showcaseTag}`}>
 										{tag}
 									</p>
 								))}
@@ -105,6 +107,12 @@ const CaseStudyPage = ({ postPath }) => {
 					</div>
 				</div>
 			</div>
+			{post.title === "Total Tastings" ? (
+				<TotalTastingsContent />
+			) : post.title === "Focalpoints" ? (
+				<FocalpointsContent />
+			) : post.title === "Opti Portal" ? null : null}
+
 			<Footer />
 		</div>
 	);

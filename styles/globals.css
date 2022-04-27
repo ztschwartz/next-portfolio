@@ -48,7 +48,7 @@ a {
 } */
 :root {
 	--white: rgba(255, 255, 255, 1);
-	--transparentWhite: rgba(255, 255, 255, 0.7);
+	--transparentWhite: rgba(255, 255, 255, 0.8);
 	--black: rgba(20, 23, 31, 1);
 	--gray10: rgba(228, 232, 236, 1);
 	--gray20: rgba(205, 212, 218, 1);
@@ -59,7 +59,7 @@ a {
 	--gray70: rgba(70, 80, 93, 1);
 	--gray80: rgba(42, 49, 60, 1);
 	--gray90: rgba(26, 31, 40, 1);
-	--transparentGray90: rgba(26, 31, 40, 0.7);
+	--transparentGray90: rgba(26, 31, 40, 0.8);
 	--accentLight: rgba(10, 107, 235, 1);
 	--accentDark: rgba(70, 133, 251, 1);
 }
@@ -485,21 +485,21 @@ body {
 	align-items: start;
 	display: grid;
 	grid-auto-flow: row;
-	gap: 6rem;
+	row-gap: 6rem;
 	align-self: start;
 }
 
 .textSection {
 	display: grid;
 	grid-auto-flow: row;
-	gap: 1.5rem;
+	row-gap: 1.5rem;
 	align-self: start;
 }
 
 .textGroup {
 	display: grid;
 	grid-auto-flow: row;
-	gap: 0.5rem;
+	row-gap: 0.5rem;
 	align-self: start;
 	justify-content: start;
 }

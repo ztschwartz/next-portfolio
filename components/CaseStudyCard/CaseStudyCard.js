@@ -4,10 +4,10 @@ import style from "./CaseStudyCard.module.css";
 import Image from "next/image";
 import TTImg from "/public/img/tt-img-test-2.png";
 
-const CaseStudyCard = ({ title, subtitle, slug, img, postData }) => {
+const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 	return (
 		<Link scroll={false} href={`/case-studies/${encodeURIComponent(slug)}`}>
-			<a className={`bgDeep ${style.caseStudyCard}`}>
+			<a className={`bgDeep borderSoft ${style.caseStudyCard}`}>
 				<div className={style.cardImgSection}>
 					<Image
 						layout="fill"
@@ -17,13 +17,14 @@ const CaseStudyCard = ({ title, subtitle, slug, img, postData }) => {
 					/>
 				</div>
 				<div className={style.cardInnerSection}>
-					<div className={`bgMain ${style.cardInner}`}>
+					<div className={`bgMainTransparent ${style.cardInner}`}>
 						<div className={style.cardInnerContent}>
 							<h1 className="textMain textH3 textMedium">
 								<span className={style.titleLine}>{title}</span>{" "}
 								<span className={style.titleLine}>{subtitle}</span>
 								<span className="textAccent">.</span>
 							</h1>
+							<p className="textSoft textP2 textRgular">{description}</p>
 						</div>
 						<div className={`${style.cardInnerLink} borderDeep`}>
 							{/* <p className="textMain textBody2">Read the case study</p> */}

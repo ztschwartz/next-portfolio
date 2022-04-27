@@ -13,7 +13,8 @@ import Navbar from "../../components/Navbar/Navbar.js";
 import ImageCard from "../../components/ImageCard/ImageCard.js";
 import Footer from "../../components/Footer/Footer.js";
 import Section from "../../components/Section/Section";
-import GridContainer from "../../components/GridContainer/GridContainer";
+// import GridContainer from "../../components/GridContainer/GridContainer";
+import { GridChild, GridContainer } from "../../components/Grid/Grid";
 
 export const getStaticPaths = async (context) => {
 	const client = contentful.createClient({
@@ -58,11 +59,9 @@ const renderOptions = {
 	renderNode: {
 		// eslint-disable-next-line react/display-name
 		[BLOCKS.PARAGRAPH]: (node, children) => (
-			<div className="col-6--6 contentSection">
-				<div className="textSection">
-					<p className="textP1 textMain">{children}</p>
-				</div>
-			</div>
+			<GridChild colSpan={8} colStart={5}>
+				<p className="textP1 textMain">{children}</p>
+			</GridChild>
 		),
 	},
 };
@@ -81,49 +80,47 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 		<div className={style.caseStudyPage}>
 			<Navbar currentPage={currentPage} cmsData={cmsData} />
 			<div className={style.showcase}>
-				<div className="container">
-					<div className={`grid ${style.showcaseContent}`}>
-						<div className={`col-6 ${style.showcaseMain}`}>
-							<div className={`${style.showcaseHeadlineGroup}`}>
-								<h1 className="textMain textH1 textMedium fadeAni">
-									{postContent.fields.title}
-								</h1>
-								<h1 className="textMain textH1 textMedium fadeAni">
-									{postContent.fields.subtitle}
-									<span className="textAccent">.</span>
-								</h1>
-							</div>
-							<p className="textMain textP1 fadeAni">
-								{postContent.fields.description}
-							</p>
+				<GridContainer className={style.showcaseContent}>
+					<GridChild colSpan={6} className={style.showcaseMain}>
+						<div className={`${style.showcaseHeadlineGroup}`}>
+							<h1 className="textMain textH1 textMedium fadeAni">
+								{postContent.fields.title}
+							</h1>
+							<h1 className="textMain textH1 textMedium fadeAni">
+								{postContent.fields.subtitle}
+								<span className="textAccent">.</span>
+							</h1>
 						</div>
-						<div className={`col-6 fadeAni ${style.showcaseMeta}`}>
-							<p
-								className={`textMain textP2 textMedium bgDeep ${style.showcaseTag}`}>
-								Date: {postContent.fields.year}
-							</p>
-							<div className={`${style.showcaseTags}`}>
-								{postContent.fields.tags.map((tag) => (
-									<p
-										key={tag}
-										className={`textMain textP2 bgDeep ${style.showcaseTag}`}>
-										{tag}
-									</p>
-								))}
-							</div>
+						<p className="textMain textP1 fadeAni">
+							{postContent.fields.description}
+						</p>
+					</GridChild>
+					<GridChild colSpan={6} className={`fadeAni ${style.showcaseMeta}`}>
+						<p
+							className={`textMain textP2 textMedium bgDeep ${style.showcaseTag}`}>
+							Date: {postContent.fields.year}
+						</p>
+						<div className={`${style.showcaseTags}`}>
+							{postContent.fields.tags.map((tag) => (
+								<p
+									key={tag}
+									className={`textMain textP2 bgDeep ${style.showcaseTag}`}>
+									{tag}
+								</p>
+							))}
 						</div>
-						<div className={`col-12 fadeAni`}>
-							<ImageCard>
-								<Image
-									layout="fill"
-									objectFit="contain"
-									src={`https:${postContent.fields.featureImage.fields.file.url}`}
-									alt="Ambassador App Phone Mockup"
-								/>
-							</ImageCard>
-						</div>
-					</div>
-				</div>
+					</GridChild>
+					<GridChild colStart={1} colSpan={12} className="fadeAni">
+						<ImageCard>
+							<Image
+								layout="fill"
+								objectFit="contain"
+								src={`https:${postContent.fields.featureImage.fields.file.url}`}
+								alt="Ambassador App Phone Mockup"
+							/>
+						</ImageCard>
+					</GridChild>
+				</GridContainer>
 			</div>
 			{postContent.fields.bodySection.map((section) => (
 				<Section

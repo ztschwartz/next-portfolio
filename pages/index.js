@@ -5,7 +5,8 @@ import Script from "next/script";
 import Image from "next/image";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import HomeStyles from "../styles/Home.module.css";
+import style from "../styles/Home.module.css";
+import { client, fetchContentfulData } from "../utils/contentful-client";
 import PageTransition from "../animations/PageTransition";
 import Navbar from "../components/Navbar/Navbar.js";
 import SectionHeader from "../components/SectionHeader/SectionHeader.js";
@@ -15,7 +16,17 @@ import Footer from "../components/Footer/Footer.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home({ loaded, loaderView }) {
+export const getStaticProps = async (context) => {
+	const cmsData = await fetchContentfulData().then((data) => data);
+
+	const featuredPosts = cmsData.items.slice(0, 2);
+
+	return {
+		props: { cmsData, featuredPosts },
+	};
+};
+
+export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 	const postString = JSON.stringify(postData);
 
 	const postObject = JSON.parse(postString);
@@ -29,59 +40,58 @@ export default function Home({ loaded, loaderView }) {
 	return (
 		<>
 			<Head></Head>
-			<div className={HomeStyles.homePage}>
+			<div className={style.homePage}>
 				<Navbar type="home" />
-				<div className={`${HomeStyles.showcase}`} id="showcase">
+				<div className={`${style.showcase}`} id="showcase">
 					<div className="container">
-						{/*  <h1 className={`textHeadline1Medium textMain fadeAni ${HomeStyles.showcaseHeadline}`}><span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>Hey there—I’m Zack. I’m a passionate </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>product designer & developer currently </span><span className={`fadeAni ${HomeStyles.showcaseHeadline}`}>based in St. Louis, Missouri.</span></h1> */}
 						<h1
-							className={`textH1 textRegular textSoft fadeAni ${HomeStyles.showcaseHeadlineGroup}`}>
-							<span className={`fadeAni ${HomeStyles.showcaseMainHeadline}`}>
+							className={`textH1 textRegular textSoft fadeAni ${style.showcaseHeadlineGroup}`}>
+							<span className={`fadeAni ${style.showcaseMainHeadline}`}>
 								<span className="textMain textMedium">
 									Hey there—I’m&nbsp;Zack
 									<span className={`textAccent`}>. </span>
 								</span>
 								I’m a passionate product designer & developer currently based in
 								St. Louis, Missouri. I’ve spent the last 4 years utilizing
-								design and technology to solve complex human&nbsp;problems.
+								design and technology to build products & solve problems.
 							</span>
 						</h1>
 					</div>
 				</div>
 				<div className="fadeAni">
-					<div className={HomeStyles.work} id="work">
+					<div className={style.work} id="work">
 						<SectionHeader title="My work" name="work" />
-						<div className={HomeStyles.workContent}>
-							<div className="container">
-								<div className="grid">
-									<div className="col-12">
-										<CaseStudyCard
-											postData={postData[0]}
-											title={postObject[0].title}
-											subtitle={postObject[0].subtitle}
-											slug={postObject[0].meta.slug}
-											img={postObject[0].featureImg}
-										/>
-									</div>
-									<div className="col-6">
-										<CaseStudyCard
-											postData={postData[1]}
-											title={postObject[1].title}
-											subtitle={postObject[1].subtitle}
-											slug={postObject[1].meta.slug}
-											img={postObject[1].featureImg}
-										/>
-									</div>
-									<div className="col-6">
-										<CaseStudyCard
-											postData={postData[2]}
-											title={postObject[2].title}
-											subtitle={postObject[2].subtitle}
-											slug={postObject[2].meta.slug}
-											img={postObject[2].featureImg}
-										/>
-									</div>
+						<div className={style.workContent}>
+							<div className="container grid">
+								{/* <div className="grid"> */}
+								<div className="col-12">
+									<CaseStudyCard
+										postData={cmsData.items[0]}
+										title={cmsData.items[0].fields.title}
+										subtitle={cmsData.items[0].fields.subtitle}
+										slug={cmsData.items[0].fields.slug}
+										img={cmsData.items[0].fields.featureImage.fields.file.url}
+									/>
 								</div>
+								<div className="col-6">
+									<CaseStudyCard
+										postData={cmsData.items[1]}
+										title={cmsData.items[1].fields.title}
+										subtitle={cmsData.items[1].fields.subtitle}
+										slug={cmsData.items[1].fields.slug}
+										img={cmsData.items[1].fields.featureImage.fields.file.url}
+									/>
+								</div>
+								<div className="col-6">
+									<CaseStudyCard
+										postData={cmsData.items[0]}
+										title={cmsData.items[0].fields.title}
+										subtitle={cmsData.items[0].fields.subtitle}
+										slug={cmsData.items[0].fields.slug}
+										img={cmsData.items[0].fields.featureImage.fields.file.url}
+									/>
+								</div>
+								{/* </div> */}
 								{/* <div className="sectionDividerWrapper">
                 <div className="bgDeep sectionDivider">
                 </div>
@@ -89,10 +99,10 @@ export default function Home({ loaded, loaderView }) {
 							</div>
 						</div>
 					</div>
-					<div className={HomeStyles.about} id="about">
+					<div className={style.about} id="about">
 						<SectionHeader title="About me" name="about" />
 						<div className="container">
-							<div className={`grid sectionContent ${HomeStyles.aboutContent}`}>
+							<div className={`grid sectionContent ${style.aboutContent}`}>
 								<div className="col-6--6 contentSection">
 									<div className="textSection">
 										<p className="textMain textP1 textRegular">
@@ -133,7 +143,7 @@ export default function Home({ loaded, loaderView }) {
 							</div>
 						</div>
 					</div>
-					<div className={HomeStyles.contact} id="contact">
+					<div className={style.contact} id="contact">
 						<SectionHeader title="Contact me" name="contact" />
 						<div className="container">
 							<div className={`grid sectionContent`}>
@@ -152,7 +162,7 @@ export default function Home({ loaded, loaderView }) {
 									<div className="textRow">
 										<div className="imgSection">
 											<Image
-												className={HomeStyles.aboutImg}
+												className={style.aboutImg}
 												src="/img/about-img.png"
 												alt="A photo of Zachary Schwartz"
 												width={500}

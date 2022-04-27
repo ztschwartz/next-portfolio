@@ -1,6 +1,7 @@
 /** FOOTER - LARGE **/
 
 .footer {
+	border-top: 1px solid var(--gray10);
 	padding: 4rem 0 2rem 0;
 }
 
@@ -45,4 +46,10 @@
 	display: grid;
 	align-items: center;
 	justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+	.footer {
+		border-top: 1px solid var(--gray80);
+	}
 }

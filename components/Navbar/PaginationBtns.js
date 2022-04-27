@@ -1,35 +1,35 @@
 import React from "react";
 import Link from "next/link";
 import postData from "../../posts/post.json";
+import { client, fetchContentfulData } from "../../utils/contentful-client";
 import NavbarStyles from "./Navbar.module.css";
 
-const PaginationBtns = ({ currentPage }) => {
+const PaginationBtns = ({ currentPage, cmsData }) => {
 	const postString = JSON.stringify(postData);
 	const postObject = JSON.parse(postString);
-	const arrayLength = postObject.length;
+
+	const posts = cmsData.items;
+	const arrayLength = posts.length;
 
 	const getNextPage = () => {
-		console.log(arrayLength);
 		const nextPageNumber = currentPage + 1;
 
 		if (nextPageNumber <= arrayLength) {
-			const nextPageObject = postObject.filter(
-				(object) => object.meta.order === nextPageNumber
+			const nextPagePost = posts.filter(
+				(post) => post.fields.order === nextPageNumber
 			);
-			const nextPageSlug = nextPageObject[0].meta.slug;
-			const nextPageTitle = nextPageObject[0].title;
-			const nextPageSubTitle = nextPageObject[0].subtitle;
+			const nextPageSlug = nextPagePost[0].fields.slug;
+			const nextPageTitle = nextPagePost[0].fields.title;
+			const nextPageSubTitle = nextPagePost[0].fields.subtitle;
 
 			const nextPageText = `${nextPageTitle} ${nextPageSubTitle}`;
 
 			return [nextPageSlug, nextPageText];
 		} else {
-			const nextPageObject = postObject.filter(
-				(object) => object.meta.order === 1
-			);
-			const nextPageSlug = nextPageObject[0].meta.slug;
-			const nextPageTitle = nextPageObject[0].title;
-			const nextPageSubTitle = nextPageObject[0].subtitle;
+			const nextPagePost = posts.filter((post) => post.fields.order === 1);
+			const nextPageSlug = nextPagePost[0].fields.slug;
+			const nextPageTitle = nextPagePost[0].fields.title;
+			const nextPageSubTitle = nextPagePost[0].fields.subtitle;
 
 			const nextPageText = `${nextPageTitle} ${nextPageSubTitle}`;
 
@@ -39,26 +39,24 @@ const PaginationBtns = ({ currentPage }) => {
 
 	const getPrevPage = () => {
 		const prevPageNumber = currentPage - 1;
-		console.log(prevPageNumber);
 		if (prevPageNumber > 0) {
-			const prevPageObject = postObject.filter(
-				(object) => object.meta.order === prevPageNumber
+			const nextPagePost = posts.filter(
+				(post) => post.fields.order === prevPageNumber
 			);
-			const prevPageSlug = prevPageObject[0].meta.slug;
-			const prevPageTitle = prevPageObject[0].title;
-			const prevPageSubTitle = prevPageObject[0].subtitle;
+			const prevPageSlug = nextPagePost[0].fields.slug;
+			const prevPageTitle = nextPagePost[0].fields.title;
+			const prevPageSubTitle = nextPagePost[0].fields.subtitle;
 
 			const prevPageText = `${prevPageTitle} ${prevPageSubTitle}`;
 
 			return [prevPageSlug, prevPageText];
 		} else {
-			console.log(arrayLength);
-			const prevPageObject = postObject.filter(
-				(object) => object.meta.order === arrayLength
+			const prevPagePost = posts.filter(
+				(post) => post.fields.order === arrayLength
 			);
-			const prevPageSlug = prevPageObject[0].meta.slug;
-			const prevPageTitle = prevPageObject[0].title;
-			const prevPageSubTitle = prevPageObject[0].subtitle;
+			const prevPageSlug = prevPagePost[0].fields.slug;
+			const prevPageTitle = prevPagePost[0].fields.title;
+			const prevPageSubTitle = prevPagePost[0].fields.subtitle;
 
 			const prevPageText = `${prevPageTitle} ${prevPageSubTitle}`;
 

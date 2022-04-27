@@ -1,10 +1,10 @@
 import React from "react";
-import ImageCardStyles from "./ImageCard.module.css";
+import style from "./ImageCard.module.css";
 
 const ImageCard = ({ children }) => {
 	return (
-		<div className={`bgDeep ${ImageCardStyles.imgCardSection}`}>
-			<div className={`${ImageCardStyles.imgCardInner}`}>{children}</div>
+		<div className={`bgDeep ${style.imgCardSection}`}>
+			<div className={`${style.imgCardInner}`}>{children}</div>
 		</div>
 	);
 };

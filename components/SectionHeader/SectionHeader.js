@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import HeaderStyles from "./SectionHeader.module.css";
+import style from "./SectionHeader.module.css";
 import HeaderTransition from "./SectionHeaderTransition";
 
 const SectionHeader = ({ title, name }) => {
@@ -14,12 +14,12 @@ const SectionHeader = ({ title, name }) => {
 	}, [name, headerLink, headerBg]);
 
 	return (
-		<div className={HeaderStyles.headerBar}>
+		<div className={style.headerBar}>
 			<div
 				id={`${name}HeaderBg`}
-				className={`bgMainTransparent ${HeaderStyles.headerBarBg}`}></div>
+				className={`bgMainTransparent ${style.headerBarBg}`}></div>
 			<div className="container">
-				<div className={HeaderStyles.headerBarFlex}>
+				<div className={style.headerBarFlex}>
 					<h1 className="textMain textP1 textBold">
 						{title}
 						<span className="textAccent">.</span>

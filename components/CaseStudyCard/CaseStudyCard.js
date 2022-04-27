@@ -1,31 +1,31 @@
 import React from "react";
 import Link from "next/link";
-import CardStyles from "./CaseStudyCard.module.css";
+import style from "./CaseStudyCard.module.css";
 import Image from "next/image";
 import TTImg from "/public/img/tt-img-test-2.png";
 
 const CaseStudyCard = ({ title, subtitle, slug, img, postData }) => {
 	return (
 		<Link scroll={false} href={`/case-studies/${encodeURIComponent(slug)}`}>
-			<a className={`bgDeep ${CardStyles.caseStudyCard}`}>
-				<div className={CardStyles.cardImgSection}>
+			<a className={`bgDeep ${style.caseStudyCard}`}>
+				<div className={style.cardImgSection}>
 					<Image
 						layout="fill"
 						objectFit="contain"
-						src={`/img/${img}`}
+						src={`https:${img}`}
 						alt="Ambassador App Phone Mockup"
 					/>
 				</div>
-				<div className={CardStyles.cardInnerSection}>
-					<div className={`bgMain ${CardStyles.cardInner}`}>
-						<div className={CardStyles.cardInnerContent}>
+				<div className={style.cardInnerSection}>
+					<div className={`bgMain ${style.cardInner}`}>
+						<div className={style.cardInnerContent}>
 							<h1 className="textMain textH3 textMedium">
-								<span className={CardStyles.titleLine}>{title}</span>{" "}
-								<span className={CardStyles.titleLine}>{subtitle}</span>
+								<span className={style.titleLine}>{title}</span>{" "}
+								<span className={style.titleLine}>{subtitle}</span>
 								<span className="textAccent">.</span>
 							</h1>
 						</div>
-						<div className={`${CardStyles.cardInnerLink} borderDeep`}>
+						<div className={`${style.cardInnerLink} borderDeep`}>
 							{/* <p className="textMain textBody2">Read the case study</p> */}
 							<svg
 								className="fillAccent"

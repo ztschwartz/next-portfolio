@@ -1,36 +1,36 @@
 import React from "react";
 import LogoIcon from "../LogoIcon.js";
-import NavStyles from "./Navbar.module.css";
+import style from "./Navbar.module.css";
 import PaginationBtns from "./PaginationBtns.js";
 
-const Navbar = ({ type, currentPage }) => {
+const Navbar = ({ type, currentPage, cmsData }) => {
 	const pageType = type;
 
 	return (
-		<nav className={NavStyles.navbar}>
+		<nav className={style.navbar}>
 			<div className="container">
-				<div className={NavStyles.navFlex}>
+				<div className={style.navFlex}>
 					<LogoIcon />
 					{pageType === "home" ? (
-						<div className={NavStyles.navLinks}>
+						<div className={style.navLinks}>
 							<a
 								href="#work"
-								className={`link textP2 textMain navAni ${NavStyles.navLink}`}>
+								className={`link textP2 textMain navAni ${style.navLink}`}>
 								Work
 							</a>
 							<a
 								href="#about"
-								className={`link textP2 navAni textMain ${NavStyles.navLink}`}>
+								className={`link textP2 navAni textMain ${style.navLink}`}>
 								About
 							</a>
 							<a
 								href="#contact"
-								className={`link textP2 navAni textMain ${NavStyles.navLink}`}>
+								className={`link textP2 navAni textMain ${style.navLink}`}>
 								Contact
 							</a>
 						</div>
 					) : (
-						<PaginationBtns currentPage={currentPage} />
+						<PaginationBtns currentPage={currentPage} cmsData={cmsData} />
 					)}
 				</div>
 			</div>

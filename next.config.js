@@ -1,12 +1,7 @@
 // next.config.js
 
-const withMDX = require("@next/mdx")({
-	extension: /\.mdx?$/,
-	// options: {
-	// 	remarkPlugins: [],
-	// 	rehypePlugins: [],
-	// },
-});
-module.exports = withMDX({
-	pageExtensions: ["js", "jsx", "md", "mdx"],
-});
+module.exports = {
+	images: {
+		domains: ["images.ctfassets.net"],
+	},
+};

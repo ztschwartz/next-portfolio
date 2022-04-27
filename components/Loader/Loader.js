@@ -1,15 +1,12 @@
 import React from "react";
-import LoaderStyles from "./Loader.module.css";
+import style from "./Loader.module.css";
 
 const Loader = ({ loaded }) => {
 	return (
-		<div
-			className={`bgMain ${
-				loaded ? LoaderStyles.loaderHidden : LoaderStyles.loader
-			}`}>
-			<div className={LoaderStyles.loaderContent}>
+		<div className={`bgMain ${loaded ? style.loaderHidden : style.loader}`}>
+			<div className={style.loaderContent}>
 				<svg
-					className={`fillSoft ${LoaderStyles.loaderLogo}`}
+					className={`fillSoft ${style.loaderLogo}`}
 					viewBox="0 0 120 76"
 					xmlns="http://www.w3.org/2000/svg">
 					<path

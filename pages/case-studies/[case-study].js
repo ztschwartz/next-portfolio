@@ -1,94 +1,105 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
-import Script from "next/script";
 import Image from "next/image";
-import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import TotalTastingsContent from "../../posts/total-tastings.mdx";
-import FocalpointsContent from "../../posts/focalpoints.mdx";
-import CaseStudyStyles from "../../styles/CaseStudy.module.css";
+import style from "../../styles/CaseStudy.module.css";
+import { client, fetchContentfulData } from "../../utils/contentful-client";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { BLOCKS } from "@contentful/rich-text-types";
 import PageTransition from "../../animations/PageTransition";
 import Navbar from "../../components/Navbar/Navbar.js";
 import ImageCard from "../../components/ImageCard/ImageCard.js";
-import SectionHeader from "../../components/SectionHeader/SectionHeader.js";
-import SectionHeaderTransition from "../../components/SectionHeader/SectionHeaderTransition.js";
-import postData from "../../posts/post.json";
 import Footer from "../../components/Footer/Footer.js";
+import Section from "../../components/Section/Section";
+import GridContainer from "../../components/GridContainer/GridContainer";
 
-export async function getStaticPaths(context) {
-	const paths = postData.map((post) => ({
-		params: { "case-study": post.meta.slug },
+export const getStaticPaths = async (context) => {
+	const cmsCaseStudies = await fetchContentfulData().then((data) => data);
+	const paths = cmsCaseStudies.items.map((post) => ({
+		params: { "case-study": post.fields.slug },
 	}));
+	// const paths = postData.map((post) => ({
+	// 	params: { "case-study": post.meta.slug },
+	// }));
 
 	return {
 		paths,
 		fallback: false,
 	};
-}
+};
 
-export async function getStaticProps(context) {
+export const getStaticProps = async (context) => {
+	const cmsData = await fetchContentfulData().then((data) => data);
+
 	const postParams = context.params;
 
 	const postPath = postParams["case-study"];
 
+	const postArray = cmsData.items.filter(
+		(post) => post.fields.slug === postPath
+	);
+
+	const postContent = postArray[0];
+
 	return {
-		props: { postPath },
+		props: { postPath, cmsData, postContent },
 	};
-}
+};
 
-const CaseStudyPage = ({ postPath }) => {
+const renderOptions = {
+	renderNode: {
+		// eslint-disable-next-line react/display-name
+		[BLOCKS.PARAGRAPH]: (node, children) => (
+			<div className="col-6--6 contentSection">
+				<div className="textSection">
+					<p className="textP1 textMain">{children}</p>
+				</div>
+			</div>
+		),
+	},
+};
+
+const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 	const [currentPage, setCurrentPage] = useState();
-
-	const postString = JSON.stringify(postData);
-
-	const postObject = JSON.parse(postString);
-
-	const getSpecificPost = () => {
-		const postArray = postObject.filter((post) => post.meta.slug === postPath);
-
-		const post = postArray[0];
-
-		return post;
-	};
-
-	const post = getSpecificPost();
+	const [postState, setPostState] = useState("");
 
 	useEffect(() => {
 		PageTransition();
-		setCurrentPage(post.meta.order);
+		setCurrentPage(postContent.fields.order);
+		console.log(postContent);
 	}, []);
 
 	return (
-		<div className={CaseStudyStyles.caseStudyPage}>
-			{/* <Navbar pageNumber={post.meta.order} /> */}
-			<Navbar currentPage={currentPage} />
-			<div className={CaseStudyStyles.showcase}>
+		<div className={style.caseStudyPage}>
+			<Navbar currentPage={currentPage} cmsData={cmsData} />
+			<div className={style.showcase}>
 				<div className="container">
-					<div className={`grid ${CaseStudyStyles.showcaseContent}`}>
-						<div className={`col-6 ${CaseStudyStyles.showcaseMain}`}>
-							<div className={`${CaseStudyStyles.showcaseHeadlineGroup}`}>
+					<div className={`grid ${style.showcaseContent}`}>
+						<div className={`col-6 ${style.showcaseMain}`}>
+							<div className={`${style.showcaseHeadlineGroup}`}>
 								<h1 className="textMain textH1 textMedium fadeAni">
-									{post.title}
+									{postContent.fields.title}
 								</h1>
 								<h1 className="textMain textH1 textMedium fadeAni">
-									{post.subtitle}
+									{postContent.fields.subtitle}
 									<span className="textAccent">.</span>
 								</h1>
 							</div>
-							<p className="textMain textP1 fadeAni">{post.meta.description}</p>
-						</div>
-						<div className={`col-6 fadeAni ${CaseStudyStyles.showcaseMeta}`}>
-							<p
-								className={`textMain textP2 textMedium bgDeep ${CaseStudyStyles.showcaseTag}`}>
-								Date: {post.meta.date}
+							<p className="textMain textP1 fadeAni">
+								{postContent.fields.description}
 							</p>
-							<div className={`${CaseStudyStyles.showcaseTags}`}>
-								{post.meta.tags.map((tag) => (
+						</div>
+						<div className={`col-6 fadeAni ${style.showcaseMeta}`}>
+							<p
+								className={`textMain textP2 textMedium bgDeep ${style.showcaseTag}`}>
+								Date: {postContent.fields.year}
+							</p>
+							<div className={`${style.showcaseTags}`}>
+								{postContent.fields.tags.map((tag) => (
 									<p
 										key={tag}
-										className={`textMain textP2 bgDeep ${CaseStudyStyles.showcaseTag}`}>
+										className={`textMain textP2 bgDeep ${style.showcaseTag}`}>
 										{tag}
 									</p>
 								))}
@@ -99,7 +110,7 @@ const CaseStudyPage = ({ postPath }) => {
 								<Image
 									layout="fill"
 									objectFit="contain"
-									src={`/img/${post.featureImg}`}
+									src={`https:${postContent.fields.featureImage.fields.file.url}`}
 									alt="Ambassador App Phone Mockup"
 								/>
 							</ImageCard>
@@ -107,14 +118,22 @@ const CaseStudyPage = ({ postPath }) => {
 					</div>
 				</div>
 			</div>
-			{post.title === "Total Tastings" ? (
-				<TotalTastingsContent />
-			) : post.title === "Focalpoints" ? (
-				<FocalpointsContent />
-			) : post.title === "Opti Portal" ? null : null}
-
+			{postContent.fields.bodySection.map((section) => (
+				<Section
+					key={section.fields.sectionId}
+					title={section.fields.name}
+					id={section.fields.sectionId}>
+					<GridContainer offset={true}>
+						{documentToReactComponents(
+							section.fields.sectionContent,
+							renderOptions
+						)}
+					</GridContainer>
+				</Section>
+			))}
 			<Footer />
 		</div>
 	);
 };
+
 export default CaseStudyPage;

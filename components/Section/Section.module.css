@@ -1,0 +1,9 @@
+.section {
+	padding-bottom: 6rem;
+}
+
+@media (max-width: 768px) {
+	.section {
+		padding-bottom: 5rem;
+	}
+}

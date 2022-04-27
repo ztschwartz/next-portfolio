@@ -1,7 +1,9 @@
 // next.config.js
 
-module.exports = {
+const nextConfig = {
 	images: {
 		domains: ["images.ctfassets.net"],
 	},
 };
+
+module.exports = nextConfig;

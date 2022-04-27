@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import style from "../../styles/CaseStudy.module.css";
+import * as contentful from "contentful";
 import { client, fetchContentfulData } from "../../utils/contentful-client";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
@@ -15,14 +16,15 @@ import Section from "../../components/Section/Section";
 import GridContainer from "../../components/GridContainer/GridContainer";
 
 export const getStaticPaths = async (context) => {
-	const cmsCaseStudies = await fetchContentfulData().then((data) => data);
+	const client = contentful.createClient({
+		space: process.env.CONTENTFUL_SPACE_ID,
+		accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+	});
+
+	const cmsCaseStudies = await fetchContentfulData(client).then((data) => data);
 	const paths = cmsCaseStudies.items.map((post) => ({
 		params: { "case-study": post.fields.slug },
 	}));
-	// const paths = postData.map((post) => ({
-	// 	params: { "case-study": post.meta.slug },
-	// }));
-
 	return {
 		paths,
 		fallback: false,
@@ -30,7 +32,12 @@ export const getStaticPaths = async (context) => {
 };
 
 export const getStaticProps = async (context) => {
-	const cmsData = await fetchContentfulData().then((data) => data);
+	const client = contentful.createClient({
+		space: process.env.CONTENTFUL_SPACE_ID,
+		accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+	});
+
+	const cmsData = await fetchContentfulData(client).then((data) => data);
 
 	const postParams = context.params;
 

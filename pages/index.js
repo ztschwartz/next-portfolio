@@ -6,6 +6,7 @@ import Image from "next/image";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import style from "../styles/Home.module.css";
+import * as contentful from "contentful";
 import { client, fetchContentfulData } from "../utils/contentful-client";
 import PageTransition from "../animations/PageTransition";
 import Navbar from "../components/Navbar/Navbar.js";
@@ -17,7 +18,11 @@ import Footer from "../components/Footer/Footer.js";
 gsap.registerPlugin(ScrollTrigger);
 
 export const getStaticProps = async (context) => {
-	const cmsData = await fetchContentfulData().then((data) => data);
+	const client = contentful.createClient({
+		space: process.env.CONTENTFUL_SPACE_ID,
+		accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+	});
+	const cmsData = await fetchContentfulData(client).then((data) => data);
 
 	const featuredPosts = cmsData.items.slice(0, 2);
 

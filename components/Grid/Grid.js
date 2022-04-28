@@ -18,6 +18,7 @@ export const GridChild = ({
 	colStart,
 	className,
 	wrapperType,
+	innerGrid,
 }) => {
 	const getColStart = (colStartProp) => {
 		const colStartClass = `colStart${colStartProp}`;
@@ -38,6 +39,8 @@ export const GridChild = ({
 	return (
 		<div
 			className={`${style[wrapperType]} ${className} ${
+				innerGrid ? style.innerGridContainer : null
+			} ${
 				colStart && colSpan
 					? style[getColSpanTo(colSpan, colStart)]
 					: style[getColSpan(colSpan)]

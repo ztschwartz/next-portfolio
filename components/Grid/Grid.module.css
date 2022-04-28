@@ -12,6 +12,14 @@
 	row-gap: 1rem;
 }
 
+.innerGridContainer {
+	display: grid;
+	align-items: start;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 1rem;
+	row-gap: 1rem;
+}
+
 /* Grid Container - Medium */
 
 @media (max-width: 1080px) {
@@ -384,12 +392,16 @@
 
 .contentWrapper {
 	display: grid;
-	row-gap: 6rem;
+	row-gap: 4rem;
 }
 
 .textWrapper {
 	display: grid;
 	row-gap: 1.5rem;
+}
+
+.noPadding {
+	padding: 0;
 }
 
 /* Grid Utilities - Medium */
@@ -404,7 +416,7 @@
 		margin-top: 0;
 	}
 	.contentWrapper {
-		row-gap: 4rem;
+		row-gap: 2rem;
 	}
 }
 

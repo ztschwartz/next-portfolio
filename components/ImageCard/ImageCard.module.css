@@ -4,8 +4,24 @@
 	padding: 3rem;
 }
 
+.sectionPadding {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.sectionPadding:last-child {
+	padding-top: 4rem;
+	padding-bottom: 0;
+}
+
 .imgCardInner {
 	height: 100%;
 	width: 100%;
 	position: relative;
+}
+
+@media (max-width: 1080px) {
+	.imgCardSection {
+		height: 20rem;
+	}
 }

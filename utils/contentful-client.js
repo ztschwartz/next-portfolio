@@ -5,6 +5,7 @@ export const fetchContentfulData = async (client) => {
 		const data = await client.getEntries({
 			content_type: "caseStudy",
 			order: "fields.order",
+			include: 5,
 		});
 		console.log(data);
 		return data;

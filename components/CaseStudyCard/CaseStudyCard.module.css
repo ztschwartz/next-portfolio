@@ -9,7 +9,7 @@
 	height: 32rem;
 	align-items: center;
 	text-decoration: none;
-	transition: border 300ms ease-out, background-color 150ms ease-out,
+	transition: border 200ms ease-out, background-color 150ms ease-out,
 		height 150ms ease-out, width 150ms ease-out;
 	box-shadow: 0 0 0 0px transparent;
 	overflow: hidden;
@@ -36,8 +36,25 @@
 	z-index: 1;
 }
 
-/* .caseStudyCard:active .cardImgSection{
-    margin: 2.25rem;
+/* .cardInnerSection {
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+	padding: 0 1rem 0 0;
+	justify-self: start;
+	align-self: end;
+	z-index: 2;
+}
+
+.cardInner {
+	border-radius: 0 0.625rem 0 0.875rem;
+	padding: 1.25rem;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 4rem;
+	justify-content: space-between;
+	align-items: center;
+	backdrop-filter: saturate(100%) blur(16px);
+	-webkit-backdrop-filter: saturate(100%) blur(16px);
 } */
 
 .cardInnerSection {

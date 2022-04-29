@@ -21,20 +21,26 @@ function MyApp({ Component, pageProps }) {
 
 	const [loaderView, setLoaderView] = useState(true);
 
-	const enter = (node) => {
+	const scrollToTop = () => {
 		document.documentElement.style.scrollBehavior = "auto";
 		window.scroll({
 			top: 0,
 		});
-
+		console.log(window.scrollY);
+		window.scrollTo({
+			top: 0,
+		});
 		document.documentElement.style.scrollBehavior = "smooth";
+	};
 
+	const enter = (node) => {
 		gsap.from(node, {
 			ease: "power3.out",
 			opacity: 0,
 			duration: 0.2,
 			onComplete: ScrollTrigger.refresh(),
 		});
+		scrollToTop();
 	};
 
 	const exiting = (node) => {
@@ -70,7 +76,9 @@ function MyApp({ Component, pageProps }) {
 		<SwitchTransition mode={"out-in"}>
 			<Transition
 				timeout={500}
-				onEnter={enter}
+				onEnter={scrollToTop}
+				onEntering={enter}
+				onEntered={scrollToTop}
 				onExit={exit}
 				onExiting={exiting}
 				key={router.asPath}>

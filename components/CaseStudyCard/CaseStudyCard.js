@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import style from "./CaseStudyCard.module.css";
+import { gsap } from "gsap/dist/gsap";
+import { Flip } from "gsap/dist/Flip";
+import { animateToHeight, animateBack } from "../../animations/HeightAnimation";
 import Image from "next/image";
-import TTImg from "/public/img/tt-img-test-2.png";
 
 const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
+	const [cardHover, setCardHover] = useState(null);
+
+	const caseStudyDescription = useRef(null);
+
+	useEffect(() => {
+		cardHover === "hovered"
+			? animateToHeight(caseStudyDescription, style.heightAniAfter)
+			: cardHover === "unhovered"
+			? animateBack(caseStudyDescription, style.heightAniAfter)
+			: null;
+	}, [cardHover, caseStudyDescription]);
+
 	return (
 		<Link scroll={false} href={`/case-studies/${encodeURIComponent(slug)}`}>
-			<a className={`bgDeep borderSoft ${style.caseStudyCard}`}>
+			<a
+				onMouseEnter={() => {
+					setCardHover("hovered");
+				}}
+				onMouseLeave={() => {
+					setCardHover("unhovered");
+				}}
+				className={`bgDeep borderSoft ${style.caseStudyCard}`}>
 				<div className={style.cardImgSection}>
 					<Image
 						layout="fill"
@@ -16,9 +37,9 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 						alt="Ambassador App Phone Mockup"
 					/>
 				</div>
-				<div className={style.cardInnerSection}>
-					<div className={`bgMainTransparent ${style.cardInner}`}>
-						<div className={style.cardInnerContent}>
+				<div className={`${style.cardInnerSection}`}>
+					<div className={`bgMainTransparent heightAni ${style.cardInner}`}>
+						<div className={`heightAni ${style.cardInnerContent}`}>
 							<h1 className="textMain textH3 textMedium">
 								<span className={style.titleLine}>{title}</span>{" "}
 								<span className={style.titleLine}>
@@ -26,9 +47,13 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 									<span className="textAccent">.</span>
 								</span>
 							</h1>
-							<p className="textSoft textP2 textRgular">{description}</p>
+							<p
+								ref={caseStudyDescription}
+								className="textSoft textP2 textRegular heightAni">
+								{description}
+							</p>
 						</div>
-						<div className={`${style.cardInnerLink} borderDeep`}>
+						<div className={`${style.cardInnerLink} borderDeep heightAni`}>
 							{/* <p className="textMain textBody2">Read the case study</p> */}
 							<svg
 								className="fillAccent"

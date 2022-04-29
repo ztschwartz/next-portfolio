@@ -73,9 +73,9 @@
 	border-radius: 0 0 0.875rem 0.875rem;
 	padding: 1.25rem;
 	display: grid;
-	grid-auto-flow: column;
+	grid-template-columns: 1fr auto;
 	gap: 4rem;
-	justify-content: space-between;
+	justify-content: stretch;
 	align-items: center;
 	backdrop-filter: saturate(100%) blur(16px);
 	-webkit-backdrop-filter: saturate(100%) blur(16px);
@@ -83,6 +83,7 @@
 .cardInnerContent {
 	display: grid;
 	grid-auto-flow: row;
+	justify-self: stretch;
 	gap: 0.25rem;
 }
 
@@ -94,10 +95,12 @@
 @media (hover: hover) {
 	.cardInner p {
 		display: none;
+		opacity: 0;
 	}
-	.caseStudyCard:hover .cardInner p {
-		display: block;
-		max-width: 32rem;
+	.heightAniAfter {
+		display: block !important;
+		max-width: 32rem !important;
+		opacity: 1 !important;
 	}
 }
 
@@ -160,6 +163,12 @@
 		.cardInner p {
 			display: block;
 			max-width: 32rem;
+			opacity: 1;
+		}
+		.heightAniAfter {
+			display: initial;
+			max-width: initial;
+			opacity: initial;
 		}
 	}
 }

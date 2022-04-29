@@ -60,33 +60,6 @@ export const getStaticProps = async (context) => {
 	};
 };
 
-const renderOptions = {
-	renderNode: {
-		// eslint-disable-next-line react/display-name
-		[BLOCKS.PARAGRAPH]: (node, children) => (
-			<GridChild colSpan={8} colStart={5}>
-				<p className="textP1 textMain">{children}</p>
-			</GridChild>
-		),
-		// [BLOCKS.PARAGRAPH]: (node, children) => (
-		// 	<GridChild colSpan={8} colStart={5}>
-		// 		<p className="textP1 textMain">{children}</p>
-		// 	</GridChild>
-		// ),
-		// eslint-disable-next-line react/display-name
-		[BLOCKS.EMBEDDED_ASSET]: (node, children) => (
-			<ImageCard sectionPadding={true} colSpan={12}>
-				<Image
-					layout="fill"
-					objectFit="contain"
-					src={`https:${node.data.target.fields.file.url}`}
-					alt="Ambassador App Phone Mockup"
-				/>
-			</ImageCard>
-		),
-	},
-};
-
 const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 	const [currentPage, setCurrentPage] = useState();
 	const [postState, setPostState] = useState("");
@@ -183,13 +156,3 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 };
 
 export default CaseStudyPage;
-
-/* {documentToReactComponents(
-							section.fields.sectionContent,
-							renderOptions
-						)} 
-						documentToReactComponents(
-								innerSection.fields.textContent,
-								renderOptions
-							)
-						*/

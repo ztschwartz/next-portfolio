@@ -152,41 +152,39 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 									other hobbies.
 								</p>
 							</GridChild>
-							<GridChild colStart={5} colSpan={8}>
-								<GridContainer>
-									<GridChild colSpan={6}>
-										<Image
-											className={style.aboutImg}
-											src="/img/about-img.png"
-											alt="A photo of Zachary Schwartz"
-											width={500}
-											height={500}
-											layout="responsive"
-											placeholder="blur"
-											blurDataURL="/img/about-imgblur.png"
-										/>
-									</GridChild>
-									<GridChild wrapperType="textWrapper" colSpan={6}>
-										<div className="textGroup">
-											<p className="textMain textP2 textBold">Email</p>
-											<a href="#" className="textMain link textP2">
-												hello@zacktschwartz.com
-											</a>
-										</div>
-										<div className="textGroup">
-											<p className="textMain textP2 textBold">Twitter—</p>
-											<a href="#" className="textMain link textP2">
-												@zacktschwartz
-											</a>
-										</div>
-										<div className="textGroup">
-											<p className="textMain textP2 textBold">LinkedIn—</p>
-											<a href="#" className="textMain link textP2">
-												zacktschwartz
-											</a>
-										</div>
-									</GridChild>
-								</GridContainer>
+							<GridChild innerGrid={true} colStart={5} colSpan={8}>
+								<GridChild colSpan={6}>
+									<Image
+										className={style.aboutImg}
+										src="/img/about-img.png"
+										alt="A photo of Zachary Schwartz"
+										width={500}
+										height={500}
+										layout="responsive"
+										placeholder="blur"
+										blurDataURL="/img/about-imgblur.png"
+									/>
+								</GridChild>
+								<GridChild wrapperType="textWrapper" colSpan={6}>
+									<div className="textGroup">
+										<p className="textMain textP2 textBold">Email</p>
+										<a href="#" className="textMain link textP2">
+											hello@zacktschwartz.com
+										</a>
+									</div>
+									<div className="textGroup">
+										<p className="textMain textP2 textBold">Twitter—</p>
+										<a href="#" className="textMain link textP2">
+											@zacktschwartz
+										</a>
+									</div>
+									<div className="textGroup">
+										<p className="textMain textP2 textBold">LinkedIn—</p>
+										<a href="#" className="textMain link textP2">
+											zacktschwartz
+										</a>
+									</div>
+								</GridChild>
 							</GridChild>
 						</GridContainer>
 					</Section>

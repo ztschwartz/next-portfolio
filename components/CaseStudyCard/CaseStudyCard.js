@@ -21,8 +21,10 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 						<div className={style.cardInnerContent}>
 							<h1 className="textMain textH3 textMedium">
 								<span className={style.titleLine}>{title}</span>{" "}
-								<span className={style.titleLine}>{subtitle}</span>
-								<span className="textAccent">.</span>
+								<span className={style.titleLine}>
+									{subtitle}
+									<span className="textAccent">.</span>
+								</span>
 							</h1>
 							<p className="textSoft textP2 textRgular">{description}</p>
 						</div>

@@ -1,9 +1,8 @@
 import { gsap } from "gsap/dist/gsap";
 import { Flip } from "gsap/dist/Flip";
 
-// gsap.registerPlugin(Flip);
-
 export const animateToHeight = (description, newStyle) => {
+	gsap.registerPlugin(Flip);
 	const state = Flip.getState(".heightAni");
 
 	description.current.classList.toggle(newStyle);
@@ -17,6 +16,7 @@ export const animateToHeight = (description, newStyle) => {
 };
 
 export const animateBack = (description, newStyle) => {
+	gsap.registerPlugin(Flip);
 	const state = Flip.getState(".heightAni");
 
 	description.current.classList.toggle(newStyle);

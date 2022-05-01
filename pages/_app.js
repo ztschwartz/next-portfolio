@@ -34,11 +34,11 @@ function MyApp({ Component, pageProps }) {
 	};
 
 	const enter = (node) => {
+		scrollToTop();
 		gsap.from(node, {
 			ease: "power3.out",
 			opacity: 0,
 			duration: 0.2,
-			onComplete: ScrollTrigger.refresh(),
 		});
 		scrollToTop();
 	};
@@ -49,7 +49,6 @@ function MyApp({ Component, pageProps }) {
 			opacity: 0,
 			duration: 0.4,
 			y: -24,
-			onComplete: ScrollTrigger.refresh(),
 		});
 	};
 
@@ -70,17 +69,19 @@ function MyApp({ Component, pageProps }) {
 
 	useEffect(() => {
 		firstPageLoad();
+		ScrollTrigger.refresh();
 	});
 
 	return (
 		<SwitchTransition mode={"out-in"}>
 			<Transition
 				timeout={500}
-				onEnter={scrollToTop}
+				// onEnter={scrollToTop}
 				onEntering={enter}
-				onEntered={scrollToTop}
+				// onEntered={scrollToTop}
 				onExit={exit}
 				onExiting={exiting}
+				onExited={scrollToTop}
 				key={router.asPath}>
 				<>
 					{loaderView ? <Loader loaded={loaded} /> : null}

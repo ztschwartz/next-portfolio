@@ -27,6 +27,41 @@
 	gap: 3rem;
 }
 
+.backHomeLink {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 0.75rem;
+	align-items: center;
+	transition: color 100ms ease-out;
+}
+
+@media (hover: hover) {
+	.backHomeLink:hover {
+		color: var(--accentLight);
+	}
+}
+
+.backHomeLink:active {
+	color: var(--accentLight);
+}
+
+@media (prefers-color-scheme: dark) {
+	@media (hover: hover) {
+		.backHomeLink:hover {
+			color: var(--accentDark);
+		}
+	}
+
+	.backHomeLink:active {
+		color: var(--accentDark);
+	}
+}
+
+.backHomeSvg {
+	transform: rotate(-135deg);
+	height: 0.5rem;
+}
+
 .navLogo {
 	height: 1.5rem;
 	display: block;
@@ -53,28 +88,30 @@
 	grid-auto-flow: column;
 	gap: 1rem;
 	border-radius: 0.625rem;
-	box-shadow: 0 0 0 1px transparent;
-	transition: box-shadow 100ms ease-out;
+	/* box-shadow: 0 0 0 1px transparent; */
+	transition: border 100ms ease-out;
 }
 
 @media (hover: hover) {
 	.pageBtn:hover {
 		width: auto;
 		padding: 0 1rem;
-		box-shadow: 0 0 0 1px var(--accentLight);
-		transition: box-shadow 100ms ease-out;
+		/* box-shadow: 0 0 0 1px var(--accentLight);
+		transition: box-shadow 100ms ease-out; */
+		border: 1px solid var(--accentLight);
+		transition: border 100ms ease-out;
 	}
 }
 
 .pageBtn:active {
 	filter: brightness(0.98);
-	box-shadow: 0 0 0 1px var(--accentLight);
+	border: 1px solid var(--accentLight);
 }
 
 @media (prefers-color-scheme: dark) {
 	.pageBtn:active {
 		filter: brightness(0.98);
-		box-shadow: 0 0 0 1px var(--accentDark);
+		border: 1px solid var(--accentDark);
 	}
 }
 

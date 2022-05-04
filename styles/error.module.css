@@ -1,0 +1,86 @@
+.errorPage {
+	min-height: 100vh;
+}
+/**** SHOWCASE ****/
+
+/*  Showcase - Large */
+
+.showcase {
+	padding: 16rem 0 12rem 0;
+}
+
+.showcaseContent {
+	justify-content: start;
+	row-gap: 6rem;
+}
+
+.showcaseMainHeadline {
+	display: block;
+	text-align: center;
+}
+
+.showcaseLinks {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.backHomeLink {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 0.75rem;
+	align-items: center;
+	transition: color 100ms ease-out;
+}
+
+@media (hover: hover) {
+	.backHomeLink:hover {
+		color: var(--accentLight);
+	}
+}
+
+.backHomeLink:active {
+	color: var(--accentLight);
+}
+
+@media (prefers-color-scheme: dark) {
+	@media (hover: hover) {
+		.backHomeLink:hover {
+			color: var(--accentDark);
+		}
+	}
+
+	.backHomeLink:active {
+		color: var(--accentDark);
+	}
+}
+
+.backHomeSvg {
+	transform: rotate(-135deg);
+	height: 0.5rem;
+}
+/*  Showcase - Medium */
+
+@media (max-width: 1080px) {
+	.showcase {
+		padding: 16rem 0 6rem 0;
+	}
+}
+
+/*  Showcase - Small */
+
+@media (max-width: 768px) {
+	.showcase {
+		padding: 14rem 0 5rem 0;
+	}
+}
+
+/*  Showcase - XSmall */
+
+@media (max-width: 640px) {
+	.showcase {
+		padding: 13rem 0 4rem 0;
+	}
+}

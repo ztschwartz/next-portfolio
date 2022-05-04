@@ -35,11 +35,11 @@ export const getStaticProps = async (context) => {
 };
 
 export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
-	const postString = JSON.stringify(postData);
+	// const postString = JSON.stringify(postData);
 
-	const postObject = JSON.parse(postString);
+	// const postObject = JSON.parse(postString);
 
-	const scrollTriggerFresh = () => ScrollTrigger.refresh();
+	// const scrollTriggerFresh = () => ScrollTrigger.refresh();
 
 	useEffect(() => {
 		PageTransition();

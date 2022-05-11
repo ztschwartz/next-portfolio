@@ -5,6 +5,7 @@
 	position: sticky;
 	top: 0;
 	z-index: 100;
+	pointer-events: none;
 }
 
 .headerBar * {
@@ -21,6 +22,7 @@
 	z-index: 99;
 	backdrop-filter: saturate(100%) blur(12px);
 	-webkit-backdrop-filter: saturate(100%) blur(12px);
+	display: "none";
 }
 
 .headerBarFlex {
@@ -28,6 +30,14 @@
 	align-items: center;
 	justify-content: space-between;
 	overflow: visible;
+}
+
+.sectionTitle {
+	pointer-events: all;
+}
+
+.topLink {
+	pointer-events: all;
 }
 
 @media (max-width: 640px) {

@@ -73,7 +73,7 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 	return (
 		<div className={style.caseStudyPage}>
 			<Navbar currentPage={currentPage} cmsData={cmsData} />
-			<div className={style.showcase}>
+			<div id="showcase" className={style.showcase}>
 				<GridContainer className={style.showcaseContent}>
 					<GridChild colSpan={6} className={style.showcaseMain}>
 						<div className={`${style.showcaseHeadlineGroup}`}>

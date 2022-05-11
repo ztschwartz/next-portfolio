@@ -20,14 +20,14 @@ const SectionHeader = ({ title, name }) => {
 				className={`bgMainTransparent ${style.headerBarBg}`}></div>
 			<div className="container">
 				<div className={style.headerBarFlex}>
-					<h1 className="textMain textP1 textBold">
+					<h1 className={`textMain textP1 textBold ${style.sectionTitle}`}>
 						{title}
 						<span className="textAccent">.</span>
 					</h1>
 					<a
 						href="#showcase"
 						id={`${name}HeaderLink`}
-						className="link textP2 textMain textLink">
+						className={`link textP2 textMain textLink ${style.topLink}`}>
 						Back to top
 					</a>
 				</div>

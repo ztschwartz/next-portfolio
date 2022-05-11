@@ -24,6 +24,7 @@ const HeaderTransition = (name, link, bg) => {
 				start: "top top",
 				toggleActions: "play none none reverse",
 			},
+			display: "block",
 			opacity: 1,
 			duration: 0.2,
 			ease: "Power2.easeOut",

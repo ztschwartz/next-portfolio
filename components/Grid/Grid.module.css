@@ -397,7 +397,7 @@
 
 .textWrapper {
 	display: grid;
-	row-gap: 1.5rem;
+	row-gap: 1.25rem;
 }
 
 .noPadding {

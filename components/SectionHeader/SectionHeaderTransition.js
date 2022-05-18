@@ -15,7 +15,6 @@ const HeaderTransition = (name, link, bg) => {
 			duration: 0.3,
 			ease: "Power2.easeOut",
 			opacity: 0,
-			x: 24,
 		});
 
 		gsap.to(`#${bg}`, {

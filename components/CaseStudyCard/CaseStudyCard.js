@@ -7,28 +7,9 @@ import { animateToHeight, animateBack } from "../../animations/HeightAnimation";
 import Image from "next/image";
 
 const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
-	const [cardHover, setCardHover] = useState(null);
-
-	const caseStudyDescription = useRef(null);
-
-	useEffect(() => {
-		cardHover === "hovered"
-			? animateToHeight(caseStudyDescription, style.heightAniAfter)
-			: cardHover === "unhovered"
-			? animateBack(caseStudyDescription, style.heightAniAfter)
-			: null;
-	}, [cardHover, caseStudyDescription]);
-
 	return (
 		<Link scroll={false} href={`/case-studies/${encodeURIComponent(slug)}`}>
-			<a
-				onMouseEnter={() => {
-					setCardHover("hovered");
-				}}
-				onMouseLeave={() => {
-					setCardHover("unhovered");
-				}}
-				className={`bgDeep borderSoft ${style.caseStudyCard}`}>
+			<a className={`bgDeep borderSoft ${style.caseStudyCard}`}>
 				<div className={style.cardImgSection}>
 					<Image
 						layout="fill"
@@ -38,7 +19,7 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 					/>
 				</div>
 				<div className={`${style.cardInnerSection}`}>
-					<div className={`bgMainTransparent heightAni ${style.cardInner}`}>
+					<div className={`bgMain heightAni ${style.cardInner}`}>
 						<div className={`heightAni ${style.cardInnerContent}`}>
 							<h1 className="textMain textH3 textMedium">
 								<span className={style.titleLine}>{title}</span>{" "}
@@ -47,9 +28,7 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 									<span className="textAccent">.</span>
 								</span>
 							</h1>
-							<p
-								ref={caseStudyDescription}
-								className="textSoft textP2 textRegular heightAni">
+							<p className="textSoft textP2 textRegular heightAni">
 								{description}
 							</p>
 						</div>

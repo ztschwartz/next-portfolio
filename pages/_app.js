@@ -26,7 +26,6 @@ function MyApp({ Component, pageProps }) {
 		window.scroll({
 			top: 0,
 		});
-		console.log(window.scrollY);
 		window.scrollTo({
 			top: 0,
 		});

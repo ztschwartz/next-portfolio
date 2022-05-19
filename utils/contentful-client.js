@@ -7,7 +7,6 @@ export const fetchContentfulData = async (client) => {
 			order: "fields.order",
 			include: 5,
 		});
-		console.log(data);
 		return data;
 	} catch (error) {
 		console.error(error);

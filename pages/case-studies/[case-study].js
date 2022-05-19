@@ -67,7 +67,6 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 	useEffect(() => {
 		PageTransition();
 		setCurrentPage(postContent.fields.order);
-		console.log(postContent);
 	}, []);
 
 	return (

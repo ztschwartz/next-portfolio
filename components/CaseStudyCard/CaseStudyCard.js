@@ -33,7 +33,10 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 							</p>
 						</div>
 						<div className={`${style.cardInnerLink} borderDeep heightAni`}>
-							<p className="underline textAccent textP2">Read the case study</p>
+							<p
+								className={`${style.cardInnerLinkText} underline textAccent textP2`}>
+								Read the case study
+							</p>
 							<svg
 								className="fillAccent"
 								viewBox="0 0 40 40"

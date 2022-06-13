@@ -9,7 +9,7 @@
 	height: 36rem;
 	align-items: center;
 	text-decoration: none;
-	transition: border 150ms ease-out, background-color 150ms ease-out,
+	transition: box-shadow 150ms ease-out, background-color 150ms ease-out,
 		width 150ms ease-out;
 	box-shadow: 0 0 0 0px transparent;
 	overflow: hidden;
@@ -17,7 +17,7 @@
 
 @media (hover: hover) {
 	.caseStudyCard:hover {
-		border: 1px solid var(--accentLight);
+		box-shadow: 0 0 0 2px var(--accentLight);
 	}
 }
 
@@ -31,7 +31,7 @@
 .cardImgSection {
 	grid-row: 1 / 2;
 	grid-column: 1 / 2;
-	margin: 3rem;
+	margin: 1rem;
 	position: relative;
 	align-self: stretch;
 	justify-content: stretch;
@@ -63,20 +63,20 @@
 .cardInnerSection {
 	grid-row: 2 / 3;
 	grid-column: 1 / 2;
-	padding: 0;
+	padding: 0.25rem;
 	justify-self: stretch;
 	align-self: end;
 	z-index: 2;
 }
 
 .cardInner {
-	border-radius: 0 0 0.875rem 0.875rem;
+	border-radius: 0.625rem;
 	padding: 1.25rem;
 	display: grid;
 	grid-template-columns: 1fr auto;
 	gap: 4rem;
 	justify-content: stretch;
-	align-items: center;
+	align-items: end;
 	backdrop-filter: saturate(100%) blur(16px);
 	-webkit-backdrop-filter: saturate(100%) blur(16px);
 }
@@ -157,6 +157,23 @@
 		justify-self: stretch;
 		align-items: end;
 		gap: 1rem;
+		grid-template-columns: auto;
+	}
+
+	.cardInnerLink {
+		justify-content: start;
+		justify-items: start;
+		align-items: center;
+		height: auto;
+		width: auto;
+		border: none;
+	}
+
+	@media (hover: hover) {
+		.caseStudyCard:hover .cardInnerLink {
+			transition: border 150ms ease;
+			border: none;
+		}
 	}
 
 	@media (hover: hover) {

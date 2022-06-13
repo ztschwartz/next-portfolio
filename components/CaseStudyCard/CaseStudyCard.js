@@ -9,7 +9,7 @@ import Image from "next/image";
 const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 	return (
 		<Link scroll={false} href={`/case-studies/${encodeURIComponent(slug)}`}>
-			<a className={`bgDeep borderSoft ${style.caseStudyCard}`}>
+			<a className={`bgDeep ${style.caseStudyCard}`}>
 				<div className={style.cardImgSection}>
 					<Image
 						layout="fill"
@@ -33,10 +33,12 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 							</p>
 						</div>
 						<div className={`${style.cardInnerLink} borderDeep heightAni`}>
-							{/* <p className="textMain textBody2">Read the case study</p> */}
+							<p className="underline textAccent textBody2">
+								Read the case study
+							</p>
 							<svg
 								className="fillAccent"
-								viewBox="0 0 41 41"
+								viewBox="0 0 40 40"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
 									fillRule="evenodd"

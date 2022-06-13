@@ -90,14 +90,14 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 					</GridChild>
 					<GridChild colSpan={6} className={`fadeAni ${style.showcaseMeta}`}>
 						<p
-							className={`textMain textP2 textMedium bgDeep borderSoft ${style.showcaseTag}`}>
+							className={`textMain textP2 textMedium bgDeep ${style.showcaseTag}`}>
 							Year: {postContent.fields.year}
 						</p>
 						<div className={`${style.showcaseTags}`}>
 							{postContent.fields.tags.map((tag) => (
 								<p
 									key={tag}
-									className={`textMain textP2 bgDeep borderSoft ${style.showcaseTag}`}>
+									className={`textMain textP2 bgDeep ${style.showcaseTag}`}>
 									{tag}
 								</p>
 							))}

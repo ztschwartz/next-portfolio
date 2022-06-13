@@ -80,7 +80,7 @@ body {
 /* TEXT STYLES */
 
 .textH1 {
-	font: var(--text34);
+	font: var(--text36);
 }
 
 .textH2 {
@@ -89,17 +89,17 @@ body {
 
 .textH3 {
 	font: var(--text20);
-	letter-spacing: 0.005em;
+	letter-spacing: 0.01em;
 }
 
 .textP1 {
 	font: var(--text16);
-	letter-spacing: 0.01em;
+	letter-spacing: 0.015em;
 }
 
 .textP2 {
 	font: var(--text14);
-	letter-spacing: 0.015em;
+	letter-spacing: 0.02em;
 }
 
 /* WEIGHTS */
@@ -163,7 +163,7 @@ body {
 
 @media (max-width: 640px) {
 	.textH1 {
-		font: var(--text24);
+		font: var(--text28);
 	}
 
 	.textH2 {

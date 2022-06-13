@@ -75,9 +75,7 @@ function MyApp({ Component, pageProps }) {
 		<SwitchTransition mode={"out-in"}>
 			<Transition
 				timeout={500}
-				// onEnter={scrollToTop}
 				onEntering={enter}
-				// onEntered={scrollToTop}
 				onExit={exit}
 				onExiting={exiting}
 				onExited={scrollToTop}

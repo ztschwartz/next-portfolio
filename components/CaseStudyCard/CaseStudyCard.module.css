@@ -74,7 +74,7 @@
 	padding: 1.25rem;
 	display: grid;
 	grid-template-columns: 1fr auto;
-	gap: 4rem;
+	gap: 2rem;
 	justify-content: stretch;
 	align-items: end;
 	backdrop-filter: saturate(100%) blur(16px);
@@ -115,6 +115,10 @@
 	width: 1.75rem;
 	transition: border 150ms ease;
 	border-radius: 0.25rem;
+}
+
+.cardInnerLinkText {
+	display: none;
 }
 
 .titleLine {
@@ -167,6 +171,10 @@
 		height: auto;
 		width: auto;
 		border: none;
+	}
+
+	.cardInnerLinkText {
+		display: block;
 	}
 
 	@media (hover: hover) {

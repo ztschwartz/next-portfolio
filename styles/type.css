@@ -63,10 +63,12 @@ body {
 		BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	--text34: 2.125rem/2.5rem "PP-Neue-Montreal", -apple-system,
 		BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-	--text28: 1.75rem/2rem "PP-Neue-Montreal", -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	--text28: 1.75rem/2.25rem "PP-Neue-Montreal", -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	--text24: 1.5rem/1.875rem "PP-Neue-Montreal", -apple-system,
 		BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	--text22: 1.375rem/2rem "PP-Neue-Montreal", -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	--text20: 1.25rem/1.75rem "PP-Neue-Montreal", --apple-system,
 		BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	--text18: 1.125rem/1.625rem "PP-Neue-Montreal", -apple-system,
@@ -80,7 +82,7 @@ body {
 /* TEXT STYLES */
 
 .textH1 {
-	font: var(--text36);
+	font: var(--text34);
 }
 
 .textH2 {
@@ -99,7 +101,7 @@ body {
 
 .textP2 {
 	font: var(--text14);
-	letter-spacing: 0.02em;
+	letter-spacing: 0.025em;
 }
 
 /* WEIGHTS */
@@ -163,11 +165,11 @@ body {
 
 @media (max-width: 640px) {
 	.textH1 {
-		font: var(--text28);
+		font: var(--text24);
 	}
 
 	.textH2 {
-		font: var(--text28);
+		font: var(--text24);
 	}
 	.textRegular {
 		font-weight: 400;

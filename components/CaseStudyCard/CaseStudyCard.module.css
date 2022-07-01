@@ -17,7 +17,7 @@
 
 @media (hover: hover) {
 	.caseStudyCard:hover {
-		box-shadow: 0 0 0 2px var(--accentLight);
+		box-shadow: 0 0 0px 2px var(--gray20);
 	}
 }
 
@@ -61,6 +61,7 @@
 } */
 
 .cardInnerSection {
+	display: grid;
 	grid-row: 2 / 3;
 	grid-column: 1 / 2;
 	padding: 0.25rem;
@@ -71,7 +72,7 @@
 
 .cardInner {
 	border-radius: 0.625rem;
-	padding: 1.25rem;
+	padding: 1.5rem;
 	display: grid;
 	grid-template-columns: 1fr auto;
 	gap: 2rem;
@@ -84,12 +85,12 @@
 	display: grid;
 	grid-auto-flow: row;
 	justify-self: stretch;
-	gap: 0.25rem;
+	gap: 0;
 }
 
 .cardInner p {
 	display: block;
-	max-width: 32rem;
+	max-width: 24rem;
 }
 
 /* @media (hover: hover) {
@@ -115,10 +116,6 @@
 	width: 1.75rem;
 	transition: border 150ms ease;
 	border-radius: 0.25rem;
-}
-
-.cardInnerLinkText {
-	display: none;
 }
 
 .titleLine {
@@ -158,20 +155,25 @@
 	}
 
 	.cardInner {
+		padding: 1.25rem;
 		justify-self: stretch;
 		align-items: end;
 		gap: 1rem;
-		grid-template-columns: auto;
+		grid-template-columns: 1fr auto;
 	}
 
-	.cardInnerLink {
+	.cardInner p {
+		display: none;
+	}
+
+	/* .cardInnerLink {
 		justify-content: start;
 		justify-items: start;
 		align-items: center;
 		height: auto;
 		width: auto;
 		border: none;
-	}
+	} */
 
 	.cardInnerLinkText {
 		display: block;
@@ -180,29 +182,14 @@
 	@media (hover: hover) {
 		.caseStudyCard:hover .cardInnerLink {
 			transition: border 150ms ease;
-			border: none;
-		}
-	}
-
-	@media (hover: hover) {
-		.cardInner p {
-			display: block;
-			max-width: 32rem;
-			opacity: 1;
-		}
-		.heightAniAfter {
-			display: initial;
-			max-width: initial;
-			opacity: initial;
+			border: 1px solid var(--accentLight);
 		}
 	}
 }
 
 @media (prefers-color-scheme: dark) {
-	@media (hover: hover) {
-		.caseStudyCard:hover {
-			border: 1px solid var(--accentDark);
-		}
+	.caseStudyCard:hover {
+		box-shadow: 0 0 0px 2px var(--gray80);
 	}
 
 	.caseStudyCard:active {

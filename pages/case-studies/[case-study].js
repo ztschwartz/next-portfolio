@@ -67,7 +67,7 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 	useEffect(() => {
 		PageTransition();
 		setCurrentPage(postContent.fields.order);
-	}, []);
+	}, [postContent.fields.order]);
 
 	return (
 		<div className={style.caseStudyPage}>
@@ -79,10 +79,10 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 							<h1 className="textMain textH1 textMedium fadeAni">
 								{postContent.fields.title}
 							</h1>
-							<h1 className="textMain textH1 textMedium fadeAni">
+							<h3 className="textSoft textH1 textRegular fadeAni">
 								{postContent.fields.subtitle}
 								<span className="textAccent">.</span>
-							</h1>
+							</h3>
 						</div>
 						<p className="textMain textP1 fadeAni">
 							{postContent.fields.description}

@@ -168,19 +168,19 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 								</GridChild>
 								<GridChild wrapperType="textWrapper" colSpan={6}>
 									<div className="textGroup">
-										<p className="textMain textP2 textBold">Email</p>
+										<p className="textMain textP2 textBold">Email:</p>
 										<a href="#" className="textMain link textP2">
 											hello@zacktschwartz.com
 										</a>
 									</div>
 									<div className="textGroup">
-										<p className="textMain textP2 textBold">Twitter—</p>
+										<p className="textMain textP2 textBold">Twitter:</p>
 										<a href="#" className="textMain link textP2">
 											@zacktschwartz
 										</a>
 									</div>
 									<div className="textGroup">
-										<p className="textMain textP2 textBold">LinkedIn—</p>
+										<p className="textMain textP2 textBold">LinkedIn:</p>
 										<a href="#" className="textMain link textP2">
 											zacktschwartz
 										</a>

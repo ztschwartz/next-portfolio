@@ -3,7 +3,7 @@
 /*  Showcase - Large */
 
 .showcase {
-	padding: 16rem 0 6rem 0;
+	padding: 16rem 0 5rem 0;
 }
 
 .showcaseMainHeadline {
@@ -22,9 +22,6 @@
 
 .showcaseHealineName {
 	display: inline;
-}
-
-.showcaseTextGroup {
 }
 
 .showcaseTextLine {
@@ -63,7 +60,7 @@
 
 @media (max-width: 640px) {
 	.showcase {
-		padding: 13rem 0 4rem 0;
+		padding: 10rem 0 4rem 0;
 	}
 
 	.showcaseHealineName {
@@ -81,7 +78,7 @@
 
 .work {
 	height: auto;
-	padding-bottom: 6rem;
+	padding-bottom: 4rem;
 }
 
 /*  Showcase - Small */

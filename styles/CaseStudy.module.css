@@ -5,13 +5,13 @@
 .showcaseContent {
 	display: grid;
 	align-items: end;
-	row-gap: 4rem;
+	row-gap: 2rem;
 }
 
 .showcaseMain {
 	display: grid;
 	grid-auto-flow: row;
-	gap: 1rem;
+	gap: 1.5rem;
 }
 
 .showcaseMeta {
@@ -68,6 +68,6 @@
 
 @media (max-width: 640px) {
 	.showcase {
-		padding: 13rem 0 5rem 0;
+		padding: 10rem 0 5rem 0;
 	}
 }

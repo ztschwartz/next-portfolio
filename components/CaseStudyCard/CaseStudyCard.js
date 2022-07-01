@@ -21,22 +21,16 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 				<div className={`${style.cardInnerSection}`}>
 					<div className={`bgMain heightAni ${style.cardInner}`}>
 						<div className={`heightAni ${style.cardInnerContent}`}>
-							<h1 className="textMain textH3 textMedium">
-								<span className={style.titleLine}>{title}</span>{" "}
-								<span className={style.titleLine}>
-									{subtitle}
-									<span className="textAccent">.</span>
-								</span>
-							</h1>
-							<p className="textSoft textP2 textRegular heightAni">
+							<h1 className="textMain textH3 textMedium">{title}</h1>
+							<h3 className="textSoft textH3 textRegular">
+								{subtitle}
+								<span className="textAccent">.</span>
+							</h3>
+							{/* <p className="textSoft textP2 textRegular heightAni">
 								{description}
-							</p>
+							</p> */}
 						</div>
 						<div className={`${style.cardInnerLink} borderDeep heightAni`}>
-							<p
-								className={`${style.cardInnerLinkText} underline textAccent textP2`}>
-								Read the case study
-							</p>
 							<svg
 								className="fillAccent"
 								viewBox="0 0 40 40"

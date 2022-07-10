@@ -63,7 +63,7 @@
 }
 
 .navLogo {
-	height: 1.5rem;
+	height: 1rem;
 	display: block;
 }
 
@@ -109,6 +109,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
+	.pageBtn:hover {
+		width: auto;
+		padding: 0 1rem;
+		border: 1px solid var(--accentDark);
+		transition: border 100ms ease-out;
+	}
 	.pageBtn:active {
 		filter: brightness(0.98);
 		border: 1px solid var(--accentDark);

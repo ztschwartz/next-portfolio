@@ -57,12 +57,12 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 								className={`textH1 textRegular textSoft fadeAni ${style.showcaseHeadlineGroup}`}>
 								<span className={`fadeAni ${style.showcaseMainHeadline}`}>
 									<span className="textMain textMedium">
-										Hey there—I’m&nbsp;Zack
-										<span className={`textAccent`}>. </span>
+										Hey there—I’m&nbsp;Zack<span className="textAccent">.</span>{" "}
 									</span>
 									I’m a passionate product designer & developer currently based
 									in St. Louis, Missouri. I’ve spent the last 4 years utilizing
-									design and technology to build products & solve problems.
+									design & technology to build products that solve
+									complex problems.
 								</span>
 							</h1>
 						</GridChild>
@@ -82,7 +82,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 										img={cmsData.items[0].fields.featureImage.fields.file.url}
 									/>
 								</GridChild>
-								<GridChild colSpan={6}>
+								<GridChild colSpan={12}>
 									<CaseStudyCard
 										postData={cmsData.items[1]}
 										title={cmsData.items[1].fields.title}
@@ -90,16 +90,6 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 										description={cmsData.items[1].fields.description}
 										slug={cmsData.items[1].fields.slug}
 										img={cmsData.items[1].fields.featureImage.fields.file.url}
-									/>
-								</GridChild>
-								<GridChild colSpan={6}>
-									<CaseStudyCard
-										postData={cmsData.items[0]}
-										title={cmsData.items[0].fields.title}
-										subtitle={cmsData.items[0].fields.subtitle}
-										description={cmsData.items[0].fields.description}
-										slug={cmsData.items[0].fields.slug}
-										img={cmsData.items[0].fields.featureImage.fields.file.url}
 									/>
 								</GridChild>
 							</GridContainer>
@@ -154,7 +144,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 								</p>
 							</GridChild>
 							<GridChild innerGrid={true} colStart={5} colSpan={8}>
-								<GridChild colSpan={6}>
+								<GridChild colSpan={5}>
 									<Image
 										className={style.aboutImg}
 										src="/img/about-img.png"
@@ -166,7 +156,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 										blurDataURL="/img/about-imgblur.png"
 									/>
 								</GridChild>
-								<GridChild wrapperType="textWrapper" colSpan={6}>
+								<GridChild wrapperType="textWrapper" colSpan={7}>
 									<div className="textGroup">
 										<p className="textMain textP2 textBold">Email:</p>
 										<a href="#" className="textMain link textP2">

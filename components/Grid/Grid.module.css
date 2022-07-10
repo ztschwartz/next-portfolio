@@ -2,8 +2,8 @@
 
 .gridContainer {
 	width: 100%;
-	padding: 0 3rem;
-	max-width: 68rem;
+	padding: 0 4rem;
+	max-width: 64rem;
 	margin: 0 auto;
 	display: grid;
 	align-items: start;

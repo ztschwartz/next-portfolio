@@ -29,23 +29,6 @@ a {
 
 /**** COLORS ****/
 
-/* :root{
-  --white: rgba(249, 250, 251, 1);
-  --transparentWhite: rgba(249, 250, 251, 0.95);
-  --black: rgba(23, 25, 28, 1);
-  --gray10: rgba(229, 232, 235, 1);
-  --gray20: rgba(206, 212, 217, 1);
-  --gray30: rgba(174, 182, 188, 1);
-  --gray40: rgba(153, 160, 168, 1);
-  --gray50: rgba(131, 137, 145, 1);
-  --gray60: rgba(105, 112, 119, 1);
-  --gray70: rgba(81, 87, 93, 1);
-  --gray80: rgba(56, 61, 66, 1);
-  --gray90: rgba(28, 30, 34, 1);
-  --transparentGray90: rgba(28, 30, 34, 0.95);
-  --accentLight: rgba(10, 107, 235, 1);
-  --accentDark:  rgba(70, 133, 251, 1);
-} */
 :root {
 	--white: rgba(255, 255, 255, 1);
 	--transparentWhite: rgba(255, 255, 255, 0.8);
@@ -61,8 +44,27 @@ a {
 	--gray90: rgba(26, 31, 40, 1);
 	--transparentGray90: rgba(26, 31, 40, 0.8);
 	--accentLight: rgba(10, 107, 235, 1);
-	--accentDark: rgba(70, 133, 251, 1);
+	--accentDark: rgba(247, 209, 95, 1);
+	--shadow: rgba(0, 0, 0, 0.05);
 }
+/* :root {
+	--white: rgba(255, 255, 255, 1);
+	--transparentWhite: rgba(255, 255, 255, 0.8);
+	--black: rgba(25, 25, 25, 1);
+	--gray10: rgba(245, 245, 245, 1);
+	--gray20: rgba(210, 210, 210, 1);
+	--gray30: rgba(180, 180, 180, 1);
+	--gray40: rgba(160, 160, 160, 1);
+	--gray50: rgba(130, 130, 130, 1);
+	--gray60: rgba(100, 100, 100, 1);
+	--gray70: rgba(80, 80, 80, 1);
+	--gray80: rgba(50, 50, 50, 1);
+	--gray90: rgba(35, 35, 35, 1);
+	--transparentGray90: rgba(35, 35, 35, 0.8);
+	--accentLight: rgba(10, 107, 235, 1);
+	--accentDark: rgba(247, 209, 95, 1);
+	--shadow: rgba(0, 0, 0, 0.05);
+} */
 
 body {
 	background-color: var(--white);
@@ -220,8 +222,8 @@ body {
 
 .container {
 	width: 100%;
-	padding: 0 3rem;
-	max-width: 68rem;
+	padding: 0 4rem;
+	max-width: 64rem;
 	margin: 0 auto;
 	display: block;
 }

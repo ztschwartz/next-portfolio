@@ -73,7 +73,7 @@ const PaginationBtns = ({ currentPage, cmsData }) => {
 				scroll={false}
 				href={`/case-studies/${encodeURIComponent(prevPageSlug)}`}>
 				<a
-					className={`borderSoft navAni ${NavbarStyles.prevPageBtn} ${NavbarStyles.pageBtn}`}>
+					className={`borderDeep navAni ${NavbarStyles.prevPageBtn} ${NavbarStyles.pageBtn}`}>
 					<svg
 						className="fillAccent"
 						viewBox="0 0 16 16"
@@ -95,7 +95,7 @@ const PaginationBtns = ({ currentPage, cmsData }) => {
 				scroll={false}
 				href={`/case-studies/${encodeURIComponent(nextPageSlug)}`}>
 				<a
-					className={`borderSoft navAni ${NavbarStyles.nextPageBtn} ${NavbarStyles.pageBtn}`}>
+					className={`borderDeep navAni ${NavbarStyles.nextPageBtn} ${NavbarStyles.pageBtn}`}>
 					<p
 						className={`textP2 textMain textMedium ${NavbarStyles.pageBtnLabel}`}>
 						<span className="textP2 textSoft textRegular">Next: </span>

@@ -22,7 +22,6 @@ const SectionHeader = ({ title, name }) => {
 				<div className={style.headerBarFlex}>
 					<h1 className={`textMain textP1 textBold ${style.sectionTitle}`}>
 						{title}
-						<span className="textAccent">.</span>
 					</h1>
 					<a
 						href="#showcase"

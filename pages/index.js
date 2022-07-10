@@ -47,7 +47,34 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 
 	return (
 		<>
-			<Head></Head>
+			<Head>
+				<title>Zachary Schwartz | Product Designer & Developer</title>
+				<meta description="I’m Zack Schwartz, a developer-turned-product designer currently solving problems for small businesses at RYSE Digital. I enjoy applying the design process to complex problems and carving out interesting and usesful solutions." />
+				<meta charSet="utf-8" />
+				<meta
+					property="og:title"
+					content="Zachary Schwartz | Product Designer & Developer"
+					key="title"
+				/>
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+				<link
+					rel="apple-touch-icon"
+					sizes="180x180"
+					href="/apple-touch-icon.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="32x32"
+					href="/favicon-32x32.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="16x16"
+					href="/favicon-16x16.png"
+				/>
+			</Head>
 			<div className={style.homePage}>
 				<Navbar type="home" />
 				<div className={`${style.showcase}`} id="showcase">

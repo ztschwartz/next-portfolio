@@ -21,30 +21,32 @@ export const GridChild = ({
 	innerGrid,
 }) => {
 	const getColStart = (colStartProp) => {
-		const colStartClass = `colStart${colStartProp}`;
-		return colStartClass;
+		if (colStartProp !== undefined) {
+			const colStartClass = `colStart${colStartProp}`;
+			return colStartClass;
+		}
+		return "colStartAuto";
 	};
 
-	const getColSpanTo = (colSpanProp, colStartProp) => {
-		const colEnd = colStartProp + colSpanProp;
-		const colSpanToClass = `colSpanTo${colEnd}`;
-		return colSpanToClass;
-	};
+	// const getColSpanTo = (colSpanProp, colStartProp) => {
+	// 	const colEnd = colStartProp + colSpanProp;
+	// 	const colSpanToClass = `colSpanTo${colEnd}`;
+	// 	return colSpanToClass;
+	// };
 
 	const getColSpan = (colSpanProp) => {
-		const colSpanClass = `colSpan${colSpanProp}`;
-		return colSpanClass;
+		if (colSpanProp !== undefined) {
+			const colSpanClass = `colSpan${colSpanProp}`;
+			return colSpanClass;
+		}
+		return "colSpanAuto";
 	};
 
 	return (
 		<div
 			className={`${style[wrapperType]} ${className} ${
 				innerGrid ? style.innerGridContainer : null
-			} ${
-				colStart && colSpan
-					? style[getColSpanTo(colSpan, colStart)]
-					: style[getColSpan(colSpan)]
-			} ${style[getColStart(colStart)]}`}>
+			} ${style[getColSpan(colSpan)]} ${style[getColStart(colStart)]}`}>
 			{children}
 		</div>
 	);

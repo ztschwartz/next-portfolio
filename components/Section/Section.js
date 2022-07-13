@@ -1,5 +1,4 @@
 import React from "react";
-import GridContainer from "../GridContainer/GridContainer";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import * as style from "./Section.module.css";
 

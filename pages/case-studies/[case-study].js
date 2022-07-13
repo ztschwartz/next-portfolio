@@ -18,7 +18,6 @@ import Navbar from "../../components/Navbar/Navbar.js";
 import ImageCard from "../../components/ImageCard/ImageCard.js";
 import Footer from "../../components/Footer/Footer.js";
 import Section from "../../components/Section/Section";
-// import GridContainer from "../../components/GridContainer/GridContainer";
 import { GridChild, GridContainer } from "../../components/Grid/Grid";
 
 export const getStaticPaths = async (context) => {

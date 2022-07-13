@@ -50,7 +50,6 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 							<h4
 								className={`textH3 textRegular textSoft  fadeAni ${style.showcaseMainHeadline}`}>
 								404
-								<span className={`textAccent`}>.</span>
 							</h4>
 							<h1
 								className={`textH1 textMain textMedium fadeAni ${style.showcaseMainHeadline}`}>

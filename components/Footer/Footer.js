@@ -20,7 +20,10 @@ const Footer = () => {
 					<h3 className="textMain textP2 textBold">
 						Website designed and developed by Zack Schwartz.
 					</h3>
-					<p className="textP2 textSoft">Site developed using Next.js</p>
+					<p className="textP2 textMedium textSoft">
+						<span className="textMain textP2 textBold">Built with: </span>
+						Next.js | Contentful | Github
+					</p>
 				</GridChild>
 			</GridContainer>
 		</footer>

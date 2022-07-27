@@ -75,27 +75,27 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 				<GridContainer className={style.showcaseContent}>
 					<GridChild colSpan={6} className={style.showcaseMain}>
 						<div className={`${style.showcaseHeadlineGroup}`}>
-							<h1 className="textMain textH1 textMedium fadeAni">
+							<h1 className="textMain textH1 textBold fadeAni">
 								{postContent.fields.title}
 							</h1>
 							<h3 className="textSoft textH1 textRegular fadeAni">
 								{postContent.fields.subtitle}
 							</h3>
 						</div>
-						<p className="textMain textP1 fadeAni">
+						<p className="textSoft textP1 textMedium fadeAni">
 							{postContent.fields.description}
 						</p>
 					</GridChild>
 					<GridChild colSpan={6} className={`fadeAni ${style.showcaseMeta}`}>
 						<p
-							className={`textMain textP2 textMedium bgDeep ${style.showcaseTag}`}>
+							className={`textSoft textP2 textMedium bgDeep ${style.showcaseTag}`}>
 							Year: {postContent.fields.year}
 						</p>
 						<div className={`${style.showcaseTags}`}>
 							{postContent.fields.tags.map((tag) => (
 								<p
 									key={tag}
-									className={`textMain textP2 bgDeep ${style.showcaseTag}`}>
+									className={`textSoft textP2 textMedium bgDeep ${style.showcaseTag}`}>
 									{tag}
 								</p>
 							))}

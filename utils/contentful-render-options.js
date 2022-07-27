@@ -7,7 +7,9 @@ export const textRender = {
 	renderNode: {
 		// eslint-disable-next-line react/display-name
 		[BLOCKS.PARAGRAPH]: (node, children) =>
-			children != "" ? <p className="textP1 textMain">{children}</p> : null,
+			children != "" ? (
+				<p className="textP1 textSoft textMedium">{children}</p>
+			) : null,
 		// eslint-disable-next-line react/display-name
 		[BLOCKS.HEADING_4]: (node, children) =>
 			children != "" ? (

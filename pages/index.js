@@ -134,7 +134,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					<Section title="Recent work" id="work">
 						<div className={style.workContent}>
 							<GridContainer>
-								<GridChild colSpan={6}>
+								<GridChild colSpan={12}>
 									<CaseStudyCard
 										postData={cmsData.items[0]}
 										title={cmsData.items[0].fields.title}
@@ -144,7 +144,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 										img={cmsData.items[0].fields.featureImage.fields.file.url}
 									/>
 								</GridChild>
-								<GridChild colSpan={6}>
+								<GridChild colSpan={12}>
 									<CaseStudyCard
 										postData={cmsData.items[1]}
 										title={cmsData.items[1].fields.title}

@@ -82,7 +82,7 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 								{postContent.fields.subtitle}
 							</h3>
 						</div>
-						<p className="textSoft textP1 textMedium fadeAni">
+						<p className="textMain textP1 textRegular fadeAni">
 							{postContent.fields.description}
 						</p>
 					</GridChild>

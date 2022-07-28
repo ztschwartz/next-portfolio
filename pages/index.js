@@ -100,13 +100,13 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					<Section title="About me" id="about">
 						<GridContainer offset={true}>
 							<GridChild colStart={5} colSpan={8} wrapperType="textWrapper">
-								<p className="textSoft textP1 textMedium">
+								<p className="textMain textP1 textRegular">
 									I’m Zack Schwartz, a developer-turned-product designer
 									currently solving problems for small businesses at RYSE
 									Digital. I enjoy applying the design process to complex
 									problems and carving out interesting and usesful solutions.
 								</p>
-								<p className="textSoft textP1 textMedium">
+								<p className="textMain textP1 textRegular">
 									I started my career 4 years ago as a freelance front-end web
 									developer. I focused on deliving well developed sites to small
 									businesses. Over time, as I learned more about how a great
@@ -116,14 +116,14 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 									who uses code as a tool to build prototypes for quicker
 									iterations and better end products.
 								</p>
-								<p className="textSoft textP1 textMedium">
+								<p className="textMain textP1 textRegular">
 									My background in devleopment has given me a unique perspective
 									on the developer-designer relationship that has shaped my
 									skills and interests. I do my best work in the gap between
 									these two disciplines. Specifically, I’m interested in design
 									systems, prototyping, and UI engineering.
 								</p>
-								<p className="textSoft textP1 textMedium">
+								<p className="textMain textP1 textRegular">
 									When I’m not thinking about design, you can find me either
 									trying to perfect my pour-over routine, looking for a new tech
 									youtube video to watch, or...
@@ -161,12 +161,12 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					<Section title="Contact me" id="contact">
 						<GridContainer wrapperType="contentWrapper" offset={true}>
 							<GridChild colStart={5} colSpan={8} wrapperType="textWrapper">
-								<p className="textSoft textP1 textMedium">
+								<p className="textMain textP1 textRegular">
 									If you have any questions or just want to talk about design,
 									I&apos;m not a hard guy to get in touch with. Just send me an
 									email or DM me on social media
 								</p>
-								<p className="textSoft textP1 textMedium">
+								<p className="textMain textP1 textRegular">
 									I could talk for hours about design, development, or any of my
 									other hobbies.
 								</p>

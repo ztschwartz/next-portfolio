@@ -90,47 +90,13 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 									I’m a passionate product designer & developer currently based
 									in St. Louis, Missouri. I’ve spent the last five years
 									utilizing design & technology to build products that solve
-									complex problems.
+									complex problems.
 								</span>
 							</h1>
 						</GridChild>
 					</GridContainer>
 				</div>
 				<div className="fadeAni">
-					<Section title="About me" id="about">
-						<GridContainer offset={true}>
-							<GridChild colStart={5} colSpan={8} wrapperType="textWrapper">
-								<p className="textMain textP1 textRegular">
-									I’m Zack Schwartz, a developer-turned-product designer
-									currently solving problems for small businesses at RYSE
-									Digital. I enjoy applying the design process to complex
-									problems and carving out interesting and usesful solutions.
-								</p>
-								<p className="textMain textP1 textRegular">
-									I started my career 4 years ago as a freelance front-end web
-									developer. I focused on deliving well developed sites to small
-									businesses. Over time, as I learned more about how a great
-									product is designed, the importance of design became clear and
-									I found myself gravitating towards the process of researching,
-									iterating, and validating. Now I consider myself a designer
-									who uses code as a tool to build prototypes for quicker
-									iterations and better end products.
-								</p>
-								<p className="textMain textP1 textRegular">
-									My background in devleopment has given me a unique perspective
-									on the developer-designer relationship that has shaped my
-									skills and interests. I do my best work in the gap between
-									these two disciplines. Specifically, I’m interested in design
-									systems, prototyping, and UI engineering.
-								</p>
-								<p className="textMain textP1 textRegular">
-									When I’m not thinking about design, you can find me either
-									trying to perfect my pour-over routine, looking for a new tech
-									youtube video to watch, or...
-								</p>
-							</GridChild>
-						</GridContainer>
-					</Section>
 					<Section title="Recent work" id="work">
 						<div className={style.workContent}>
 							<GridContainer>
@@ -157,18 +123,32 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 							</GridContainer>
 						</div>
 					</Section>
-
-					<Section title="Contact me" id="contact">
+					<Section title="About me" id="about">
 						<GridContainer wrapperType="contentWrapper" offset={true}>
 							<GridChild colStart={5} colSpan={8} wrapperType="textWrapper">
 								<p className="textMain textP1 textRegular">
-									If you have any questions or just want to talk about design,
-									I&apos;m not a hard guy to get in touch with. Just send me an
-									email or DM me on social media
+									I’m Zack Schwartz, a developer-turned-product designer
+									currently solving problems for small businesses at RYSE
+									Digital. I started my career five years ago as a freelance
+									front-end web developer in the local St. Louis area.
 								</p>
 								<p className="textMain textP1 textRegular">
-									I could talk for hours about design, development, or any of my
-									other hobbies.
+									My background in development has given me a unique perspective
+									on the developer-designer relationship and the gap between
+									these two disciplines. I often use my front-end knowledge as a
+									tool to communicate designs and create mocks that match
+									implementation.
+								</p>
+								<p className="textMain textP1 textRegular">
+									I enjoy tinkering and building personal projects in my free
+									time. Recently, I have been working on Focalpoints, a simple
+									productivity tool designed to help users focus on their daily
+									tasks.
+								</p>
+								<p className="textMain textP1 textRegular">
+									If you have any questions, want to talk about possible work,
+									or just want to talk, feel free to send me an email or a
+									message on LinkedIn/Twitter.
 								</p>
 							</GridChild>
 							<GridChild innerGrid={true} colStart={5} colSpan={8}>
@@ -205,9 +185,20 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 									</div>
 								</GridChild>
 							</GridChild>
+							{/* <GridChild colStart={5} colSpan={3}>
+								<Image
+									className={style.aboutImg}
+									src="/img/about-img.png"
+									alt="A photo of Zachary Schwartz"
+									width={500}
+									height={500}
+									layout="responsive"
+									placeholder="blur"
+									blurDataURL="/img/about-imgblur.png"
+								/>
+							</GridChild> */}
 						</GridContainer>
 					</Section>
-
 					<Footer />
 				</div>
 			</div>

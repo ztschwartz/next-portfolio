@@ -83,7 +83,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 							<h1
 								className={`textH1 textMedium textSoft fadeAni ${style.showcaseHeadlineGroup}`}>
 								<span className={`fadeAni ${style.showcaseMainHeadline}`}>
-									<span className="textMain textBold">
+									<span className="textMain">
 										Hey there—I’m&nbsp;Zack
 										<span className="textAccent">.</span>{" "}
 									</span>

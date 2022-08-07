@@ -13,7 +13,7 @@ import PageTransition from "../animations/PageTransition";
 import Navbar from "../components/Navbar/Navbar.js";
 import SectionHeader from "../components/SectionHeader/SectionHeader.js";
 import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard.js";
-import postData from "../posts/post.json";
+
 import Footer from "../components/Footer/Footer.js";
 import Section from "../components/Section/Section";
 import { GridChild, GridContainer } from "../components/Grid/Grid";
@@ -81,7 +81,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					<GridContainer>
 						<GridChild colSpan={12}>
 							<h1
-								className={`textH1 textRegular textSoft fadeAni ${style.showcaseHeadlineGroup}`}>
+								className={`textH1 textMedium textSoft fadeAni ${style.showcaseHeadlineGroup}`}>
 								<span className={`fadeAni ${style.showcaseMainHeadline}`}>
 									<span className="textMain textBold">
 										Hey there—I’m&nbsp;Zack
@@ -126,26 +126,26 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					<Section title="About me" id="about">
 						<GridContainer wrapperType="contentWrapper" offset={true}>
 							<GridChild colStart={5} colSpan={8} wrapperType="textWrapper">
-								<p className="textMain textP1 textRegular">
+								<p className="textSoft textP1 textMedium">
 									I’m Zack Schwartz, a developer-turned-product designer
 									currently solving problems for small businesses at RYSE
 									Digital. I started my career five years ago as a freelance
 									front-end web developer in the local St. Louis area.
 								</p>
-								<p className="textMain textP1 textRegular">
+								<p className="textSoft textP1 textMedium">
 									My background in development has given me a unique perspective
 									on the developer-designer relationship and the gap between
 									these two disciplines. I often use my front-end knowledge as a
 									tool to communicate designs and create mocks that match
 									implementation.
 								</p>
-								<p className="textMain textP1 textRegular">
+								<p className="textSoft textP1 textMedium">
 									I enjoy tinkering and building personal projects in my free
 									time. Recently, I have been working on Focalpoints, a simple
 									productivity tool designed to help users focus on their daily
 									tasks.
 								</p>
-								<p className="textMain textP1 textRegular">
+								<p className="textSoft textP1 textMedium">
 									If you have any questions, want to talk about possible work,
 									or just want to talk, feel free to send me an email or a
 									message on LinkedIn/Twitter.

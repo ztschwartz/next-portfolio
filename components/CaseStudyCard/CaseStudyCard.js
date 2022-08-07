@@ -21,8 +21,9 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 				<div className={`${style.cardInnerSection}`}>
 					<div className={`bgMain heightAni ${style.cardInner}`}>
 						<div className={`heightAni ${style.cardInnerContent}`}>
-							<h1 className="textMain textH3 textMedium">{title}</h1>
-							<h3 className="textSoft textH3 textRegular">{subtitle}</h3>
+							<h2 className="textMain textH3 textMedium">
+								{title} {subtitle}
+							</h2>
 						</div>
 						<div className={`${style.cardInnerLink} borderDeep heightAni`}>
 							<svg

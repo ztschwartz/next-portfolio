@@ -1,13 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import postData from "../../posts/post.json";
+
 import { client, fetchContentfulData } from "../../utils/contentful-client";
 import NavbarStyles from "./Navbar.module.css";
 
 const PaginationBtns = ({ currentPage, cmsData }) => {
-	const postString = JSON.stringify(postData);
-	const postObject = JSON.parse(postString);
-
 	const posts = cmsData.items;
 	const arrayLength = posts.length;
 

@@ -11,11 +11,7 @@ import * as contentful from "contentful";
 import { client, fetchContentfulData } from "../utils/contentful-client";
 import PageTransition from "../animations/PageTransition";
 import Navbar from "../components/Navbar/Navbar.js";
-import SectionHeader from "../components/SectionHeader/SectionHeader.js";
-import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard.js";
-import postData from "../posts/post.json";
 import Footer from "../components/Footer/Footer.js";
-import Section from "../components/Section/Section";
 import { GridChild, GridContainer } from "../components/Grid/Grid";
 
 gsap.registerPlugin(ScrollTrigger, Flip);

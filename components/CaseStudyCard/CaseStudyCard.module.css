@@ -39,27 +39,6 @@
 	z-index: 1;
 }
 
-/* .cardInnerSection {
-	grid-row: 2 / 3;
-	grid-column: 1 / 2;
-	padding: 0 1rem 0 0;
-	justify-self: start;
-	align-self: end;
-	z-index: 2;
-}
-
-.cardInner {
-	border-radius: 0 0.625rem 0 0.875rem;
-	padding: 1.25rem;
-	display: grid;
-	grid-auto-flow: column;
-	gap: 4rem;
-	justify-content: space-between;
-	align-items: center;
-	backdrop-filter: saturate(100%) blur(16px);
-	-webkit-backdrop-filter: saturate(100%) blur(16px);
-} */
-
 .cardInnerSection {
 	display: grid;
 	grid-row: 2 / 3;
@@ -84,8 +63,8 @@
 }
 .cardInnerContent {
 	display: grid;
-	grid-auto-flow: row;
-	justify-self: stretch;
+	grid-auto-flow: column;
+	justify-self: start;
 	gap: 0;
 }
 
@@ -197,6 +176,9 @@
 		background: var(--gray80);
 	}
 
+	.caseStudyCard:active .cardInnerLink {
+		border: 1px solid var(--accentDark);
+	}
 	@media (hover: hover) {
 		.caseStudyCard:hover .cardInnerLink {
 			transition: border 150ms ease;

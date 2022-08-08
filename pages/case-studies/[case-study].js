@@ -75,7 +75,7 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 				<GridContainer className={style.showcaseContent}>
 					<GridChild colSpan={6} className={style.showcaseMain}>
 						<div className={`${style.showcaseHeadlineGroup}`}>
-							<h1 className="textMain textH1 textBold fadeAni">
+							<h1 className="textMain textH1 textMedium fadeAni">
 								{postContent.fields.title}
 							</h1>
 							<h3 className="textSoft textH1 textMedium fadeAni">

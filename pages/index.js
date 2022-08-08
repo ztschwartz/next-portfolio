@@ -185,18 +185,6 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 									</div>
 								</GridChild>
 							</GridChild>
-							{/* <GridChild colStart={5} colSpan={3}>
-								<Image
-									className={style.aboutImg}
-									src="/img/about-img.png"
-									alt="A photo of Zachary Schwartz"
-									width={500}
-									height={500}
-									layout="responsive"
-									placeholder="blur"
-									blurDataURL="/img/about-imgblur.png"
-								/>
-							</GridChild> */}
 						</GridContainer>
 					</Section>
 					<Footer />

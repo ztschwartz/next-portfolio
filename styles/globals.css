@@ -234,7 +234,7 @@ body {
 
 @media (max-width: 1080px) {
 	.container {
-		padding: 0 3rem;
+		padding: 0 2rem;
 	}
 }
 
@@ -503,7 +503,7 @@ body {
 .textGroup {
 	display: grid;
 	grid-auto-flow: row;
-	row-gap: 0.5rem;
+	row-gap: 0.25rem;
 	align-self: start;
 	justify-content: start;
 }

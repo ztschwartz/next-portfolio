@@ -81,7 +81,7 @@ function MyApp({ Component, pageProps }) {
 				onExited={scrollToTop}
 				key={router.asPath}>
 				<>
-					{loaderView ? <Loader loaded={loaded} /> : null}
+					{loaderView && <Loader loaded={loaded} />}
 					<Component loaded={loaded} loaderView={loaderView} {...pageProps} />
 				</>
 			</Transition>

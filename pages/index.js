@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Script from "next/script";
@@ -41,7 +41,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 
 	// const scrollTriggerFresh = () => ScrollTrigger.refresh();
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		PageTransition();
 	}, []);
 

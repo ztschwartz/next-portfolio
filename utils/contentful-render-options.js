@@ -7,14 +7,14 @@ export const textRender = {
 	renderNode: {
 		// eslint-disable-next-line react/display-name
 		[BLOCKS.PARAGRAPH]: (node, children) =>
-			children != "" ? (
+			children != "" && (
 				<p className="textP1 textSoft textMedium">{children}</p>
-			) : null,
+			),
 		// eslint-disable-next-line react/display-name
 		[BLOCKS.HEADING_4]: (node, children) =>
-			children != "" ? (
+			children != "" && (
 				<h4 className="textMain textH3 textBold">{children}</h4>
-			) : null,
+			),
 	},
 };
 

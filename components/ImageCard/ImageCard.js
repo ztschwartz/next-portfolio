@@ -7,7 +7,7 @@ const ImageCard = ({ children, sectionPadding, colSpan, colStart }) => {
 		<GridChild
 			colSpan={colSpan}
 			colStart={colStart}
-			className={sectionPadding ? style.sectionPadding : null}>
+			className={sectionPadding && style.sectionPadding}>
 			<div className={`bgDeep ${style.imgCardSection}`}>
 				<div className={`${style.imgCardInner}`}>{children}</div>
 			</div>

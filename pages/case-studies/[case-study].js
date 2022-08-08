@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
@@ -63,8 +63,11 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 	const [currentPage, setCurrentPage] = useState();
 	const [postState, setPostState] = useState("");
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		PageTransition();
+	}, []);
+
+	useEffect(() => {
 		setCurrentPage(postContent.fields.order);
 	}, [postContent.fields.order]);
 

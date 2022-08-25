@@ -5,7 +5,6 @@ import Script from "next/script";
 import Image from "next/image";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { Flip } from "gsap/dist/Flip";
 import style from "../styles/Home.module.css";
 import * as contentful from "contentful";
 import { client, fetchContentfulData } from "../utils/contentful-client";
@@ -18,7 +17,7 @@ import Footer from "../components/Footer/Footer.js";
 import Section from "../components/Section/Section";
 import { GridChild, GridContainer } from "../components/Grid/Grid";
 
-gsap.registerPlugin(ScrollTrigger, Flip);
+gsap.registerPlugin(ScrollTrigger);
 
 export const getStaticProps = async (context) => {
 	const client = contentful.createClient({
@@ -83,7 +82,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 							<h1
 								className={`textH1 textMedium textSoft fadeAni ${style.showcaseHeadlineGroup}`}>
 								<span className={`fadeAni ${style.showcaseMainHeadline}`}>
-									<span className="textMain">
+									<span className="textMain textBold">
 										Hey there—I’m&nbsp;Zack
 										<span className="textAccent">.</span>{" "}
 									</span>

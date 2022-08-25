@@ -5,7 +5,6 @@ import Script from "next/script";
 import Image from "next/image";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { Flip } from "gsap/dist/Flip";
 import style from "../styles/error.module.css";
 import * as contentful from "contentful";
 import { client, fetchContentfulData } from "../utils/contentful-client";
@@ -14,7 +13,7 @@ import Navbar from "../components/Navbar/Navbar.js";
 import Footer from "../components/Footer/Footer.js";
 import { GridChild, GridContainer } from "../components/Grid/Grid";
 
-gsap.registerPlugin(ScrollTrigger, Flip);
+gsap.registerPlugin(ScrollTrigger);
 
 export const getStaticProps = async (context) => {
 	const client = contentful.createClient({

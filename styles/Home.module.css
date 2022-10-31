@@ -3,12 +3,7 @@
 /*  Showcase - Large */
 
 .showcase {
-	padding: 16rem 0 4rem 0;
-}
-
-.showcaseMainHeadline {
-	display: block;
-	max-width: 56rem;
+	padding: 18rem 0 5rem 0;
 }
 
 .showcaseHeadline {
@@ -78,7 +73,7 @@
 
 .work {
 	height: auto;
-	padding-bottom: 4rem;
+	padding-bottom: 5rem;
 }
 
 /*  Showcase - Small */
@@ -90,7 +85,7 @@
 }
 
 .about {
-	padding-bottom: 6rem;
+	padding-bottom: 5rem;
 }
 
 .aboutImg {

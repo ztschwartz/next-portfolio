@@ -45,7 +45,7 @@
 	color: var(--accentLight);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	@media (hover: hover) {
 		.backHomeLink:hover {
 			color: var(--accentDark);
@@ -55,7 +55,7 @@
 	.backHomeLink:active {
 		color: var(--accentDark);
 	}
-}
+} */
 
 .backHomeSvg {
 	transform: rotate(-135deg);
@@ -108,7 +108,7 @@
 	border: 1px solid var(--accentLight);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	.pageBtn:hover {
 		width: auto;
 		padding: 0 1rem;
@@ -119,7 +119,7 @@
 		filter: brightness(0.98);
 		border: 1px solid var(--accentDark);
 	}
-}
+} */
 
 .pageBtnLabel {
 	width: 100%;

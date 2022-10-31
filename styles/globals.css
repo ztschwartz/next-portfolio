@@ -29,9 +29,8 @@ a {
 
 /**** COLORS ****/
 
-:root {
+/* :root {
 	--white: rgba(255, 255, 255, 1);
-
 	--gray10: rgba(232, 237, 242, 1);
 	--gray20: rgba(205, 212, 218, 1);
 	--gray30: rgba(175, 184, 192, 1);
@@ -47,7 +46,7 @@ a {
 	--accentLight: rgba(10, 107, 235, 1);
 	--accentDark: rgba(247, 209, 95, 1);
 	--shadow: rgba(0, 0, 0, 0.05);
-}
+} */
 
 /* :root {
 	--white: rgba(255, 255, 255, 1);
@@ -68,6 +67,17 @@ a {
 	--shadow: rgba(0, 0, 0, 0.05);
 } */
 
+:root {
+	--white: rgba(255, 255, 255, 1);
+	--gray20: rgba(239, 239, 241, 1);
+	--gray60: rgba(126, 126, 129, 1);
+	--black: rgba(26, 26, 26, 1);
+	--transparentWhite: rgba(255, 255, 255, 0.95);
+	--accentLight: rgba(10, 107, 235, 1);
+	--accentDark: rgba(247, 209, 95, 1);
+	--shadow: rgba(0, 0, 0, 0.05);
+}
+
 body {
 	background-color: var(--white);
 }
@@ -85,7 +95,7 @@ body {
 }
 
 .bgDeep {
-	background-color: var(--gray10);
+	background-color: var(--gray20);
 }
 
 .bgSoft {
@@ -97,7 +107,7 @@ body {
 }
 
 .borderDeep {
-	border: 1px solid var(--gray10);
+	border: 1px solid var(--gray20);
 }
 
 .borderSoft {
@@ -121,11 +131,11 @@ body {
 }
 
 .fillMain {
-	fill: var(--gray90);
+	fill: var(--black);
 }
 
-.fillSoft {
-	fill: var(--gray30);
+.fillDeep {
+	fill: var(--gray20);
 }
 
 .fillAccent {
@@ -146,7 +156,7 @@ body {
 	filter: brightness(0.9);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	body {
 		background-color: var(--gray90);
 	}
@@ -216,7 +226,7 @@ body {
 			color: var(--accentDark);
 		}
 	}
-}
+} */
 
 /**** GLOBAL COMPONENTS ****/
 

@@ -61,8 +61,8 @@ body {
 		"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	--text36: 2.25rem/2.75rem "PP-Neue-Montreal", -apple-system,
 		BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-	--text34: 2.125rem/2.5rem "PP-Neue-Montreal", -apple-system,
-		BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	--text32: 2rem/2.5rem "PP-Neue-Montreal", -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	--text28: 1.75rem/2.25rem "PP-Neue-Montreal", -apple-system,
 		BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	--text24: 1.5rem/1.875rem "PP-Neue-Montreal", -apple-system,
@@ -82,11 +82,11 @@ body {
 /* TEXT STYLES */
 
 .textH1 {
-	font: var(--text34);
+	font: var(--text32);
 }
 
 .textH2 {
-	font: var(--text28);
+	font: var(--text24);
 }
 
 .textH3 {
@@ -145,9 +145,6 @@ body {
 /* Text Styles - Small */
 
 @media (max-width: 768px) {
-	.textH1 {
-		font: var(--text28);
-	}
 	.textRegular {
 		font-weight: 400;
 	}
@@ -164,13 +161,6 @@ body {
 /* Text Styles - XSmall */
 
 @media (max-width: 640px) {
-	.textH1 {
-		font: var(--text24);
-	}
-
-	.textH2 {
-		font: var(--text24);
-	}
 	.textRegular {
 		font-weight: 400;
 	}

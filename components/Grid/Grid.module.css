@@ -2,13 +2,13 @@
 
 .gridContainer {
 	width: 100%;
-	padding: 0 4rem;
+	padding: 0 3rem;
 	max-width: 64rem;
 	margin: 0 auto;
 	display: grid;
 	align-items: start;
 	grid-template-columns: repeat(12, 1fr);
-	column-gap: 1rem;
+	column-gap: 0.5rem;
 	row-gap: 1rem;
 }
 
@@ -16,7 +16,7 @@
 	display: grid;
 	align-items: start;
 	grid-template-columns: repeat(12, 1fr);
-	column-gap: 1rem;
+	column-gap: 0.5rem;
 	row-gap: 1rem;
 }
 

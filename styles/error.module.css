@@ -45,7 +45,7 @@
 	color: var(--accentLight);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	@media (hover: hover) {
 		.backHomeLink:hover {
 			color: var(--accentDark);
@@ -55,7 +55,7 @@
 	.backHomeLink:active {
 		color: var(--accentDark);
 	}
-}
+} */
 
 .backHomeSvg {
 	transform: rotate(-135deg);

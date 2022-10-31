@@ -1,7 +1,7 @@
 .imgCardSection {
 	border-radius: 0.875rem;
 	height: 32rem;
-	padding: 1rem;
+	padding: 1rem 2rem;
 }
 
 .sectionPadding {
@@ -22,6 +22,7 @@
 
 @media (max-width: 1080px) {
 	.imgCardSection {
-		height: 20rem;
+		height: 24rem;
+		padding: 1rem;
 	}
 }

@@ -17,7 +17,7 @@
 
 @media (hover: hover) {
 	.caseStudyCard:hover {
-		box-shadow: 0 0 0px 2px var(--gray20);
+		box-shadow: 0 0 0px 2px var(--accentLight);
 	}
 }
 
@@ -29,6 +29,7 @@
 }
 
 .cardImgSection {
+	min-height: 0;
 	grid-row: 1 / 2;
 	grid-column: 1 / 2;
 	margin: 1rem;
@@ -37,6 +38,12 @@
 	justify-content: stretch;
 	transition: margin 100ms ease-out;
 	z-index: 1;
+}
+
+.featuredMedia {
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
 }
 
 .cardInnerSection {
@@ -52,7 +59,7 @@
 .cardInner {
 	box-shadow: 0px -8px 12px var(--shadow);
 	border-radius: 0.625rem;
-	padding: 1.5rem;
+	padding: 1.25rem;
 	display: grid;
 	grid-template-columns: 1fr auto;
 	gap: 2rem;
@@ -135,7 +142,7 @@
 	}
 
 	.cardInner {
-		padding: 1.25rem;
+		padding: 1rem;
 		justify-self: stretch;
 		align-items: end;
 		gap: 1rem;
@@ -145,15 +152,6 @@
 	.cardInner p {
 		display: none;
 	}
-
-	/* .cardInnerLink {
-		justify-content: start;
-		justify-items: start;
-		align-items: center;
-		height: auto;
-		width: auto;
-		border: none;
-	} */
 
 	.cardInnerLinkText {
 		display: block;
@@ -167,7 +165,7 @@
 	}
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	.caseStudyCard:hover {
 		box-shadow: 0 0 0px 2px var(--gray80);
 	}
@@ -185,4 +183,4 @@
 			border: 1px solid var(--accentDark);
 		}
 	}
-}
+} */

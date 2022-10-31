@@ -17,12 +17,20 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 						src={`https:${img}`}
 						alt="Ambassador App Phone Mockup"
 					/>
+					{/* <video
+						autoPlay
+						loop
+						className={style.featuredMedia}
+						src={`https:${img}`}
+						alt="Ambassador App Phone Mockup"></video> */}
 				</div>
 				<div className={`${style.cardInnerSection}`}>
 					<div className={`bgMain heightAni ${style.cardInner}`}>
 						<div className={`heightAni ${style.cardInnerContent}`}>
 							<h2 className="textMain textH3 textMedium">
-								{title} {subtitle}
+								<span className={style.titleLine}>{title} </span>
+								&nbsp;
+								<span className={style.titleLine}>{subtitle}</span>
 							</h2>
 						</div>
 						<div className={`${style.cardInnerLink} borderDeep heightAni`}>

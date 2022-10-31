@@ -6,7 +6,7 @@ const Loader = ({ loaded }) => {
 		<div className={`bgMain ${loaded ? style.loaderHidden : style.loader}`}>
 			<div className={style.loaderContent}>
 				<svg
-					className={`fillSoft ${style.loaderLogo}`}
+					className={`fillDeep ${style.loaderLogo}`}
 					viewBox="0 0 168 80"
 					xmlns="http://www.w3.org/2000/svg">
 					<path

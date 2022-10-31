@@ -34,15 +34,10 @@ export const getStaticProps = async (context) => {
 };
 
 export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
-	// const postString = JSON.stringify(postData);
-
-	// const postObject = JSON.parse(postString);
-
-	// const scrollTriggerFresh = () => ScrollTrigger.refresh();
-
 	useLayoutEffect(() => {
 		PageTransition();
-	}, []);
+		console.log(cmsData);
+	}, [cmsData]);
 
 	return (
 		<>
@@ -76,7 +71,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 			</Head>
 			<div className={style.homePage}>
 				<Navbar type="home" />
-				<div className={`${style.showcase}`} id="showcase">
+				{/* <div className={`${style.showcase}`} id="showcase">
 					<GridContainer>
 						<GridChild colSpan={12}>
 							<h1
@@ -94,9 +89,28 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 							</h1>
 						</GridChild>
 					</GridContainer>
+				</div> */}
+				<div className={`${style.showcase}`} id="showcase">
+					<GridContainer>
+						<GridChild colSpan={4}>
+							<h1 className="textH1 textBold textMain fadeAni">
+								Hey there—
+								<br />
+								I’m&nbsp;Zack<span className="textAccent">.</span>
+							</h1>
+						</GridChild>
+						<GridChild colSpan={8}>
+							<h3 className="textH3 textMedium textSoft fadeAni">
+								I’m a passionate product designer & developer currently based in
+								St. Louis, Missouri. I’ve spent the last five years utilizing
+								design & technology to build products that solve complex
+								problems.
+							</h3>
+						</GridChild>
+					</GridContainer>
 				</div>
 				<div className="fadeAni">
-					<Section title="Recent work" id="work">
+					<Section title="My work" id="work">
 						<div className={style.workContent}>
 							<GridContainer>
 								<GridChild colSpan={12}>
@@ -128,21 +142,24 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 								<p className="textSoft textP1 textMedium">
 									I’m Zack Schwartz, a developer-turned-product designer
 									currently solving problems for small businesses at RYSE
-									Digital. I started my career five years ago as a freelance
-									front-end web developer in the local St. Louis area.
+									Digital. I enjoy applying the design process to complex
+									problems and carving out interesting and useful solutions.
 								</p>
 								<p className="textSoft textP1 textMedium">
-									My background in development has given me a unique perspective
-									on the developer-designer relationship and the gap between
-									these two disciplines. I often use my front-end knowledge as a
-									tool to communicate designs and create mocks that match
-									implementation.
+									I started my career 5 years ago as a freelance front-end web
+									developer. I focused on delivering well developed sites to
+									small businesses. After some time, I found myself gravitating
+									towards the process of researching, iterating, and validating.
+									Now I consider myself a designer who uses code as a tool to
+									build prototypes for quicker iterations and better end
+									products.
 								</p>
 								<p className="textSoft textP1 textMedium">
-									I enjoy tinkering and building personal projects in my free
-									time. Recently, I have been working on Focalpoints, a simple
-									productivity tool designed to help users focus on their daily
-									tasks.
+									My background in devleopment has given me a unique perspective
+									on the developer-designer relationship that has shaped my
+									skills and interests. I do my best work in the gap between
+									these two disciplines. Specifically, I’m interested in design
+									systems, prototyping, and UI engineering.
 								</p>
 								<p className="textSoft textP1 textMedium">
 									If you have any questions, want to talk about possible work,
@@ -186,6 +203,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 							</GridChild>
 						</GridContainer>
 					</Section>
+
 					<Footer />
 				</div>
 			</div>

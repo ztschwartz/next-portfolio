@@ -2,29 +2,34 @@
 
 .footer {
 	border-top: 1px solid var(--gray10);
-	padding: 4rem 0;
+	padding: 3rem 0;
 }
 
-.infoSection {
+.contentSection {
 	display: grid;
 	grid-auto-flow: row;
-	row-gap: 1rem;
+	row-gap: 3rem;
+}
+
+.navigationSection {
+	display: grid;
+	grid-auto-flow: row;
+	row-gap: 0.5rem;
 	justify-items: start;
 	align-items: start;
 }
 
+.caseStudiesSection {
+	display: grid;
+	grid-auto-flow: row;
+	row-gap: 0.5rem;
+	justify-items: start;
+	align-items: start;
+}
 .contactSection {
 	display: grid;
 	grid-auto-flow: row;
-	row-gap: 1rem;
-	justify-items: start;
-	align-items: start;
-}
-
-.sitemapSection {
-	display: grid;
-	grid-auto-flow: row;
-	row-gap: 1rem;
+	row-gap: 0.5rem;
 	justify-items: start;
 	align-items: start;
 }
@@ -32,13 +37,22 @@
 .linksListSection {
 	display: grid;
 	grid-auto-flow: row;
-	row-gap: 0.25rem;
+	row-gap: 0.5rem;
 	justify-items: start;
 	align-items: start;
 }
 
 .sitemapSection a {
 	display: inline-block;
+}
+
+.infoSection {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: start;
+	justify-items: start;
+	align-items: start;
+	gap: 1rem;
 }
 
 .logoSection {
@@ -48,8 +62,8 @@
 	justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	.footer {
 		border-top: 1px solid var(--gray80);
 	}
-}
+} */

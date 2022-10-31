@@ -116,40 +116,57 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 					</GridChild>
 				</GridContainer>
 			</div>
-			{postContent.fields.bodySection.map((section) => (
-				<Section
-					key={section.fields.sectionId}
-					title={section.fields.name}
-					id={section.fields.sectionId}>
-					<GridContainer wrapperType="contentWrapper" offset={true}>
-						{section.fields.contentSection.map((innerSection) =>
-							innerSection.fields.hasOwnProperty("textContent") ? (
-								<GridChild wrapperType="textWrapper" colStart={5} colSpan={8}>
-									{documentToReactComponents(
-										innerSection.fields.textContent,
-										textRender
-									)}
-								</GridChild>
-							) : innerSection.fields.hasOwnProperty("imageContent") ? (
-								<GridChild
-									innerGrid={true}
-									wrapperType="textWrapper"
-									colSpan={12}>
-									{innerSection.fields.imagesPerRow > 1
-										? documentToReactComponents(
-												innerSection.fields.imageContent,
-												twoImagePerRowRender
-										  )
-										: documentToReactComponents(
-												innerSection.fields.imageContent,
-												oneImagePerRowRender
-										  )}
-								</GridChild>
-							) : null
-						)}
-					</GridContainer>
-				</Section>
-			))}
+			<div className="fadeAni">
+				{postContent.fields.bodySection.map((section) => (
+					<Section
+						key={section.fields.sectionId}
+						title={section.fields.name}
+						id={section.fields.sectionId}>
+						<GridContainer wrapperType="contentWrapper" offset={true}>
+							{section.fields.contentSection.map((innerSection) =>
+								innerSection.fields.hasOwnProperty("textContent") ? (
+									<GridChild wrapperType="textWrapper" colStart={5} colSpan={8}>
+										{documentToReactComponents(
+											innerSection.fields.textContent,
+											textRender
+										)}
+									</GridChild>
+								) : innerSection.fields.hasOwnProperty("imageContent") ? (
+									<GridChild
+										innerGrid={true}
+										wrapperType="textWrapper"
+										colSpan={12}>
+										{innerSection.fields.imagesPerRow > 1
+											? documentToReactComponents(
+													innerSection.fields.imageContent,
+													twoImagePerRowRender
+											  )
+											: documentToReactComponents(
+													innerSection.fields.imageContent,
+													oneImagePerRowRender
+											  )}
+									</GridChild>
+								) : innerSection.fields.hasOwnProperty("videoContent") ? (
+									<GridChild
+										innerGrid={true}
+										wrapperType="textWrapper"
+										colSpan={12}>
+										{innerSection.fields.imagesPerRow > 1
+											? documentToReactComponents(
+													innerSection.fields.imageContent,
+													twoImagePerRowRender
+											  )
+											: documentToReactComponents(
+													innerSection.fields.imageContent,
+													oneImagePerRowRender
+											  )}
+									</GridChild>
+								) : null
+							)}
+						</GridContainer>
+					</Section>
+				))}
+			</div>
 			<Footer />
 		</div>
 	);

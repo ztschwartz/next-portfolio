@@ -12,7 +12,7 @@ export const textRender = {
 		// eslint-disable-next-line react/display-name
 		[BLOCKS.HEADING_4]: (node, children) =>
 			children != "" && (
-				<h4 className="textMain textH2 textBold">{children}</h4>
+				<h4 className="textMain textH2 textMedium">{children}</h4>
 			),
 	},
 };

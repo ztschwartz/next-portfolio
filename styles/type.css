@@ -145,6 +145,9 @@ body {
 /* Text Styles - Small */
 
 @media (max-width: 768px) {
+	.textH1 {
+		font: var(--text28);
+	}
 	.textRegular {
 		font-weight: 400;
 	}

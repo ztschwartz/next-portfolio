@@ -11,7 +11,7 @@
 .showcaseMain {
 	display: grid;
 	grid-auto-flow: row;
-	gap: 1.5rem;
+	gap: 1rem;
 }
 
 .showcaseMeta {
@@ -47,6 +47,10 @@
 @media (max-width: 768px) {
 	.showcaseContent {
 		row-gap: 2rem;
+	}
+
+	.showcaseMain {
+		gap: 1rem;
 	}
 
 	.showcaseMeta {

@@ -187,12 +187,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 											hello@zacktschwartz.com
 										</a>
 									</div>
-									<div className="textGroup">
-										<p className="textMain textP2 textBold">Twitter:</p>
-										<a href="#" className="textMain link textP2">
-											@zacktschwartz
-										</a>
-									</div>
+
 									<div className="textGroup">
 										<p className="textMain textP2 textBold">LinkedIn:</p>
 										<a href="#" className="textMain link textP2">

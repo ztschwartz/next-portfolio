@@ -5,7 +5,7 @@ export const GridContainer = ({ children, offset, className, wrapperType }) => {
 	return (
 		<div
 			className={`${style.gridContainer} ${style[wrapperType]} ${className} ${
-				offset && style.offsetContent
+				offset ? style.offsetContent : null
 			}`}>
 			{children}
 		</div>
@@ -45,7 +45,7 @@ export const GridChild = ({
 	return (
 		<div
 			className={`${style[wrapperType]} ${className} ${
-				innerGrid && style.innerGridContainer
+				innerGrid ? style.innerGridContainer : null
 			} ${style[getColSpan(colSpan)]} ${style[getColStart(colStart)]}`}>
 			{children}
 		</div>

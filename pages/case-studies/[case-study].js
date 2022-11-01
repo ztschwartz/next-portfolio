@@ -8,8 +8,8 @@ import * as contentful from "contentful";
 import { client, fetchContentfulData } from "../../utils/contentful-client";
 import {
 	textRender,
-	oneImagePerRowRender,
-	twoImagePerRowRender,
+	imageCoverRender,
+	imageContainRender,
 } from "../../utils/contentful-render-options";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
@@ -136,14 +136,14 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 										innerGrid={true}
 										wrapperType="textWrapper"
 										colSpan={12}>
-										{innerSection.fields.imagesPerRow > 1
+										{innerSection.fields.imageCover === true
 											? documentToReactComponents(
 													innerSection.fields.imageContent,
-													twoImagePerRowRender
+													imageCoverRender
 											  )
 											: documentToReactComponents(
 													innerSection.fields.imageContent,
-													oneImagePerRowRender
+													imageContainRender
 											  )}
 									</GridChild>
 								) : innerSection.fields.hasOwnProperty("videoContent") ? (

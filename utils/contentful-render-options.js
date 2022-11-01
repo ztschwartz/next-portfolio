@@ -7,7 +7,7 @@ export const textRender = {
 		// eslint-disable-next-line react/display-name
 		[BLOCKS.PARAGRAPH]: (node, children) =>
 			children != "" && (
-				<p className="textP1 textSoft textMedium">{children}</p>
+				<p className="textP1 textMain textMedium">{children}</p>
 			),
 		// eslint-disable-next-line react/display-name
 		[BLOCKS.HEADING_4]: (node, children) =>
@@ -17,14 +17,14 @@ export const textRender = {
 	},
 };
 
-export const oneImagePerRowRender = {
+export const imageCoverRender = {
 	renderNode: {
 		// eslint-disable-next-line react/display-name
 		[BLOCKS.EMBEDDED_ASSET]: (node, children) => (
-			<ImageCard colSpan={12}>
+			<ImageCard objectFit="cover" colSpan={12}>
 				<Image
 					layout="fill"
-					objectFit="contain"
+					objectFit="cover"
 					src={`https:${node.data.target.fields.file.url}`}
 					alt="Ambassador App Phone Mockup"
 				/>
@@ -33,11 +33,11 @@ export const oneImagePerRowRender = {
 	},
 };
 
-export const twoImagePerRowRender = {
+export const imageContainRender = {
 	renderNode: {
 		// eslint-disable-next-line react/display-name
 		[BLOCKS.EMBEDDED_ASSET]: (node, children) => (
-			<ImageCard colSpan={6}>
+			<ImageCard objectFit="contain" colSpan={12}>
 				<Image
 					layout="fill"
 					objectFit="contain"

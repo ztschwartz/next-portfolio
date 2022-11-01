@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 1.5rem 0;
+	padding: 2rem 0;
 	display: flex;
 	z-index: 100;
 	align-items: center;
@@ -37,12 +37,12 @@
 
 @media (hover: hover) {
 	.backHomeLink:hover {
-		color: var(--accentLight);
+		color: var(--accent);
 	}
 }
 
 .backHomeLink:active {
-	color: var(--accentLight);
+	color: var(--accent);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -96,16 +96,16 @@
 	.pageBtn:hover {
 		width: auto;
 		padding: 0 1rem;
-		/* box-shadow: 0 0 0 1px var(--accentLight);
+		/* box-shadow: 0 0 0 1px var(--accent);
 		transition: box-shadow 100ms ease-out; */
-		border: 1px solid var(--accentLight);
+		border: 1px solid var(--accent);
 		transition: border 100ms ease-out;
 	}
 }
 
 .pageBtn:active {
 	filter: brightness(0.98);
-	border: 1px solid var(--accentLight);
+	border: 1px solid var(--accent);
 }
 
 /* @media (prefers-color-scheme: dark) {

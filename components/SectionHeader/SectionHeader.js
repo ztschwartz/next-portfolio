@@ -18,7 +18,7 @@ const SectionHeader = ({ title, name }) => {
 		<div className={style.headerBar}>
 			<div
 				id={`${name}HeaderBg`}
-				className={`bgMain ${style.headerBarBg}`}></div>
+				className={`bgMainTransparent ${style.headerBarBg}`}></div>
 			<GridContainer>
 				<GridChild colSpan={12}>
 					<div className={style.headerBarFlex}>

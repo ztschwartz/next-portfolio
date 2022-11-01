@@ -43,7 +43,7 @@ a {
 	--black: rgba(21, 24, 30, 1);
 	--transparentWhite: rgba(255, 255, 255, 0.8);
 	--transparentGray90: rgba(28, 32, 39, 0.8);
-	--accentLight: rgba(10, 107, 235, 1);
+	--accent: rgba(10, 107, 235, 1);
 	--accentDark: rgba(247, 209, 95, 1);
 	--shadow: rgba(0, 0, 0, 0.05);
 } */
@@ -62,18 +62,20 @@ a {
 	--gray80: rgba(50, 50, 50, 1);
 	--gray90: rgba(35, 35, 35, 1);
 	--transparentGray90: rgba(35, 35, 35, 0.8);
-	--accentLight: rgba(10, 107, 235, 1);
+	--accent: rgba(10, 107, 235, 1);
 	--accentDark: rgba(247, 209, 95, 1);
 	--shadow: rgba(0, 0, 0, 0.05);
 } */
 
 :root {
 	--white: rgba(255, 255, 255, 1);
-	--gray20: rgba(239, 239, 241, 1);
+	--gray20: rgba(241, 241, 243, 1);
+	--gray30: rgba(229, 229, 230, 1);
 	--gray60: rgba(126, 126, 129, 1);
 	--black: rgba(26, 26, 26, 1);
-	--transparentWhite: rgba(255, 255, 255, 0.95);
-	--accentLight: rgba(10, 107, 235, 1);
+	--transparentWhite: rgba(255, 255, 255, 0.8);
+	--accent: rgba(81, 81, 240, 1);
+	--accentSoft: rgba(235, 235, 255, 1);
 	--accentDark: rgba(247, 209, 95, 1);
 	--shadow: rgba(0, 0, 0, 0.05);
 }
@@ -115,15 +117,19 @@ body {
 }
 
 .textAccent {
-	color: var(--accentLight);
+	color: var(--accent);
 }
 
 .bgAccent {
-	background-color: var(--accentLight);
+	background-color: var(--accent);
+}
+
+.bgAccentSoft {
+	background-color: var(--accentSoft);
 }
 
 .borderAccent {
-	border: 1px solid var(--accentLight);
+	border: 1px solid var(--accent);
 }
 
 .bgMainTransparent {
@@ -139,16 +145,33 @@ body {
 }
 
 .fillAccent {
-	fill: var(--accentLight);
+	fill: var(--accent);
 }
 
 .fillWhite {
 	fill: var(--white);
 }
 
+.strokeMain {
+	stroke: var(--black);
+}
+
+.strokeDeep {
+	stroke: var(--gray20);
+}
+
+.strokeAccent {
+	stroke: var(--accent);
+}
+
+.strokeWhite {
+	stroke: var(--white);
+}
+
 @media (hover: hover) {
 	.link:hover {
-		color: var(--accentLight);
+		color: var(--accent);
+		text-decoration: underline;
 	}
 }
 

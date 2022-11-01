@@ -121,7 +121,7 @@ body {
 /* DECORATION */
 
 .link {
-	text-decoration: underline;
+	text-decoration: none;
 	display: inline-block;
 	font-weight: 500;
 }

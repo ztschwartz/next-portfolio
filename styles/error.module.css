@@ -37,12 +37,12 @@
 
 @media (hover: hover) {
 	.backHomeLink:hover {
-		color: var(--accentLight);
+		color: var(--accent);
 	}
 }
 
 .backHomeLink:active {
-	color: var(--accentLight);
+	color: var(--accent);
 }
 
 /* @media (prefers-color-scheme: dark) {

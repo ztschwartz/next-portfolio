@@ -81,7 +81,7 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 							<h1 className="textMain textH1 textBold fadeAni">
 								{postContent.fields.title}
 							</h1>
-							<h3 className="textSoft textH1 textMedium fadeAni">
+							<h3 className="textMain textH1 textBold fadeAni">
 								{postContent.fields.subtitle}
 							</h3>
 						</div>

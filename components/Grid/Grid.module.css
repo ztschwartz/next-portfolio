@@ -286,12 +286,12 @@
 
 .contentWrapper {
 	display: grid;
-	row-gap: 4rem;
+	row-gap: 3rem;
 }
 
 .textWrapper {
 	display: grid;
-	row-gap: 1.25rem;
+	row-gap: 1.5rem;
 }
 
 .noPadding {

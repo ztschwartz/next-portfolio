@@ -69,7 +69,7 @@ function MyApp({ Component, pageProps }) {
 	useEffect(() => {
 		firstPageLoad();
 		ScrollTrigger.refresh();
-	});
+	}, []);
 
 	return (
 		<SwitchTransition mode={"out-in"}>

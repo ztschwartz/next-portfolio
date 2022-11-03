@@ -17,7 +17,7 @@ const Navbar = ({ type, currentPage, cmsData }) => {
 							<Link scroll={false} href="/">
 								<a className={`navAni ${style.homeNavLogoSection}`}>
 									<svg
-										className={`fillMain ${style.navLogo}`}
+										className={`fillAccent ${style.navLogo}`}
 										viewBox="0 0 168 80"
 										xmlns="http://www.w3.org/2000/svg">
 										<path

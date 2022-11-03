@@ -11,6 +11,12 @@
 	row-gap: 3rem;
 }
 
+.footerMain {
+	display: grid;
+	grid-auto-flow: row;
+	row-gap: 2rem;
+}
+
 .navigationSection {
 	display: grid;
 	grid-auto-flow: row;
@@ -51,8 +57,12 @@
 	grid-auto-flow: column;
 	justify-content: start;
 	justify-items: start;
-	align-items: start;
+	align-items: center;
 	gap: 1rem;
+}
+
+.infoSectionText {
+	display: inline-block;
 }
 
 .logoSection {

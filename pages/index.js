@@ -155,7 +155,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 									products.
 								</p>
 								<p className="textSoft textP1 textMedium">
-									My background in devleopment has given me a unique perspective
+									My background in development has given me a unique perspective
 									on the developer-designer relationship that has shaped my
 									skills and interests. I do my best work in the gap between
 									these two disciplines. Specifically, I’m interested in design

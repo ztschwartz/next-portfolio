@@ -94,9 +94,9 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					<GridContainer>
 						<GridChild colSpan={4}>
 							<h1 className="textH1 textBold textMain fadeAni">
-								Hey there—
+								Hey there<span className="textAccent">—</span>
 								<br />
-								I’m&nbsp;Zack<span className="textAccent">.</span>
+								I’m&nbsp;Zack.
 							</h1>
 						</GridChild>
 						<GridChild colSpan={8}>

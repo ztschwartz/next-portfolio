@@ -124,19 +124,19 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 						id={section.fields.sectionId}>
 						<GridContainer wrapperType="contentWrapper" offset={true}>
 							{section.fields.contentSection.map((innerSection) =>
-								innerSection.fields.hasOwnProperty("textContent") ? (
+								innerSection.fields?.hasOwnProperty("textContent") ? (
 									<GridChild wrapperType="textWrapper" colStart={5} colSpan={8}>
 										{documentToReactComponents(
 											innerSection.fields.textContent,
 											textRender
 										)}
 									</GridChild>
-								) : innerSection.fields.hasOwnProperty("imageContent") ? (
+								) : innerSection.fields?.hasOwnProperty("imageContent") ? (
 									<GridChild
 										innerGrid={true}
 										wrapperType="textWrapper"
 										colSpan={12}>
-										{innerSection.fields.imageCover === true
+										{innerSection.fields?.imageCover === true
 											? documentToReactComponents(
 													innerSection.fields.imageContent,
 													imageCoverRender
@@ -146,12 +146,12 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 													imageContainRender
 											  )}
 									</GridChild>
-								) : innerSection.fields.hasOwnProperty("videoContent") ? (
+								) : innerSection.fields?.hasOwnProperty("videoContent") ? (
 									<GridChild
 										innerGrid={true}
 										wrapperType="textWrapper"
 										colSpan={12}>
-										{innerSection.fields.imagesPerRow > 1
+										{innerSection.fields?.imagesPerRow > 1
 											? documentToReactComponents(
 													innerSection.fields.imageContent,
 													twoImagePerRowRender

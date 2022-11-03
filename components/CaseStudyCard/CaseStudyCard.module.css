@@ -23,9 +23,6 @@
 .caseStudyCard:active {
 	background: var(--gray30);
 }
-.caseStudyCard:active .cardInnerLink {
-	border: 1px solid var(--accent);
-}
 
 .cardImgSection {
 	min-height: 0;
@@ -118,8 +115,13 @@
 }
 
 .cardInnerLink svg {
-	transition: stroke 200ms ease-out;
+	transition: stroke 200ms ease-out, transform 200ms ease-out;
+
 	height: 0.75rem;
+}
+
+.caseStudyCard:active .cardInnerLink svg {
+	transform: translateX(4px);
 }
 
 /* Case Study Card - Medium  */

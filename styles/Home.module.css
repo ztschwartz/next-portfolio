@@ -3,7 +3,7 @@
 /*  Showcase - Large */
 
 .showcase {
-	padding: 18rem 0 5rem 0;
+	padding: 16rem 0 5rem 0;
 }
 
 .showcaseHeadline {
@@ -55,7 +55,7 @@
 
 @media (max-width: 640px) {
 	.showcase {
-		padding: 10rem 0 4rem 0;
+		padding: 9rem 0 3rem 0;
 	}
 
 	.showcaseHealineName {

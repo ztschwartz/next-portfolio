@@ -25,17 +25,17 @@ const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
 						alt="Ambassador App Phone Mockup"></video> */}
 				</div>
 				<div className={`${style.cardInnerSection}`}>
-					<div className={`bgMain heightAni ${style.cardInner}`}>
-						<div className={`heightAni ${style.cardInnerContent}`}>
+					<div className={`bgMain ${style.cardInner}`}>
+						<div className={`${style.cardInnerContent}`}>
 							<h2 className="textMain textH3 textMedium">
 								<span className={style.titleLine}>{title} </span>
 								&nbsp;
 								<span className={style.titleLine}>{subtitle}</span>
 							</h2>
 						</div>
-						<div className={`${style.cardInnerLink} bgAccentSoft heightAni`}>
+						<div className={`${style.cardInnerLink} bgSoft`}>
 							<svg
-								className="strokeAccent"
+								className="strokeMain"
 								viewBox="0 0 24 24"
 								xmlns="http://www.w3.org/2000/svg">
 								<path

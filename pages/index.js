@@ -68,6 +68,19 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					sizes="16x16"
 					href="/favicon-16x16.png"
 				/>
+				<meta name="theme-color" content="#FFFFFF" />
+				<meta
+					name="theme-color"
+					content="#FFFFFF"
+					key="theme-color-light"
+					media="(prefers-color-scheme: light)"
+				/>
+				<meta
+					name="theme-color"
+					content="#FFFFFF"
+					key="theme-color-dark"
+					media="(prefers-color-scheme: dark)"
+				/>
 			</Head>
 			<div className={style.homePage}>
 				<Navbar type="home" />
@@ -94,7 +107,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					<GridContainer>
 						<GridChild colSpan={4}>
 							<h1 className="textH1 textBold textMain fadeAni">
-								Hey there<span className="textAccent">—</span>
+								Hey there—
 								<br />
 								I’m&nbsp;Zack.
 							</h1>
@@ -139,13 +152,13 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					<Section title="About me" id="about">
 						<GridContainer wrapperType="contentWrapper" offset={true}>
 							<GridChild colStart={5} colSpan={8} wrapperType="textWrapper">
-								<p className="textSoft textP1 textMedium">
+								<p className="textMain textP1 textMedium">
 									I’m Zack Schwartz, a developer-turned-product designer
 									currently solving problems for small businesses at RYSE
 									Digital. I enjoy applying the design process to complex
 									problems and carving out interesting and useful solutions.
 								</p>
-								<p className="textSoft textP1 textMedium">
+								<p className="textMain textP1 textMedium">
 									I started my career 5 years ago as a freelance front-end web
 									developer. I focused on delivering well developed sites to
 									small businesses. After some time, I found myself gravitating
@@ -154,14 +167,14 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 									build prototypes for quicker iterations and better end
 									products.
 								</p>
-								<p className="textSoft textP1 textMedium">
+								<p className="textMain textP1 textMedium">
 									My background in development has given me a unique perspective
 									on the developer-designer relationship that has shaped my
 									skills and interests. I do my best work in the gap between
 									these two disciplines. Specifically, I’m interested in design
 									systems, prototyping, and UI engineering.
 								</p>
-								<p className="textSoft textP1 textMedium">
+								<p className="textMain textP1 textMedium">
 									If you have any questions, want to talk about possible work,
 									or just want to talk, feel free to send me an email or a
 									message on LinkedIn/Twitter.
@@ -198,7 +211,6 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 							</GridChild>
 						</GridContainer>
 					</Section>
-
 					<Footer />
 				</div>
 			</div>

@@ -69,10 +69,11 @@ a {
 
 :root {
 	--white: rgba(255, 255, 255, 1);
-	--gray20: rgba(244, 244, 245, 1);
-	--gray30: rgba(234, 234, 235, 1);
+	--gray20: rgba(247, 247, 248, 1);
+	--gray30: rgba(237, 237, 238, 1);
 	--gray60: rgba(126, 126, 129, 1);
-	--black: rgba(26, 26, 26, 1);
+	/* --black: rgba(26, 26, 26, 1); */
+	--black: rgba(0, 0, 0, 1);
 	--transparentWhite: rgba(255, 255, 255, 0.8);
 	--accent: rgba(81, 81, 240, 1);
 	--accentSoft: rgba(235, 235, 255, 1);

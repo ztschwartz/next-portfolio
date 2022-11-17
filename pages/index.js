@@ -84,42 +84,9 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 			</Head>
 			<div className={style.homePage}>
 				<Navbar type="home" />
-				{/* <div className={`${style.showcase}`} id="showcase">
-					<GridContainer>
-						<GridChild colSpan={12}>
-							<h1
-								className={`textH1 textMedium textSoft fadeAni ${style.showcaseHeadlineGroup}`}>
-								<span className={`fadeAni ${style.showcaseMainHeadline}`}>
-									<span className="textMain textBold">
-										Hey there—I’m&nbsp;Zack
-										<span className="textAccent">.</span>{" "}
-									</span>
-									I’m a passionate product designer & developer currently based
-									in St. Louis, Missouri. I’ve spent the last five years
-									utilizing design & technology to build products that solve
-									complex problems.
-								</span>
-							</h1>
-						</GridChild>
-					</GridContainer>
-				</div> */}
+
 				<div className={`${style.showcase}`} id="showcase">
 					<GridContainer>
-						{/* <GridChild colSpan={4}>
-							<h1 className="textH1 textBold textMain fadeAni">
-								Hey there—
-								<br />
-								I’m&nbsp;Zack.
-							</h1>
-						</GridChild>
-						<GridChild colSpan={8}>
-							<h3 className="textH3 textMedium textSoft fadeAni">
-								I’m a passionate product designer & developer currently based in
-								St. Louis, Missouri. I’ve spent the last five years utilizing
-								design & technology to build products that solve complex
-								problems.
-							</h3>
-						</GridChild> */}
 						<GridChild colSpan={11}>
 							<h1 className="textH1 textMain textBold fadeAni">
 								Hey there—I’m Zack.{" "}
@@ -221,7 +188,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 							</GridChild>
 						</GridContainer>
 					</Section>
-					<Footer />
+					<Footer cmsData={cmsData} />
 				</div>
 			</div>
 		</>

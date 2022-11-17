@@ -17,6 +17,14 @@
 	row-gap: 2rem;
 }
 
+.footerCol {
+	display: grid;
+	grid-auto-flow: row;
+	row-gap: 0.5rem;
+	justify-items: start;
+	align-items: start;
+}
+
 .navigationSection {
 	display: grid;
 	grid-auto-flow: row;
@@ -52,24 +60,17 @@
 	display: inline-block;
 }
 
-.infoSection {
+.logoSection {
 	display: grid;
 	grid-auto-flow: column;
-	justify-content: start;
-	justify-items: start;
+	justify-content: center;
+	justify-items: center;
 	align-items: center;
 	gap: 1rem;
 }
 
 .infoSectionText {
 	display: inline-block;
-}
-
-.logoSection {
-	padding-top: 4rem;
-	display: grid;
-	align-items: center;
-	justify-content: center;
 }
 
 /* @media (prefers-color-scheme: dark) {

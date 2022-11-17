@@ -1,30 +1,43 @@
 import React from "react";
 import Link from "next/link";
 import LogoIcon from "../LogoIcon.js";
+import { client, fetchContentfulData } from "../../utils/contentful-client";
 import style from "./Footer.module.css";
 import { GridContainer, GridChild } from "../Grid/Grid.js";
 
-const Footer = () => {
+const Footer = ({ cmsData }) => {
 	return (
 		<footer className={`${style.footer} bgDeep`}>
 			<div className={style.contentSection}>
 				<GridContainer className={style.footerMain}>
-					<GridChild colSpan={4} className={`${style.navigationSection}`}>
+					<GridChild colSpan={4} className={`${style.footerCol}`}>
 						<h3 className="textMain textP2 textBold">Navigation</h3>
 						<div className={style.linksListSection}>
-							<a className="textP2 link textSoft textMedium">Introduction</a>
-							<a className="textP2 link textSoft textMedium">Work</a>
-							<a className="textP2 link textSoft textMedium">About</a>
-							<a className="textP2 link textSoft textMedium">Contact</a>
+							<Link scroll={false} href="/">
+								<a className="textP2 link textSoft textMedium">Home</a>
+							</Link>
+							<Link
+								scroll={false}
+								href={`/case-studies/${encodeURIComponent(
+									cmsData.items[0].fields.slug
+								)}`}>
+								<a className="textP2 link textSoft textMedium">
+									Case Study: {cmsData.items[0].fields.title}
+								</a>
+							</Link>
+							<Link
+								scroll={false}
+								href={`/case-studies/${encodeURIComponent(
+									cmsData.items[1].fields.slug
+								)}`}>
+								<a className="textP2 link textSoft textMedium">
+									Case Study: {cmsData.items[1].fields.title}
+								</a>
+							</Link>
 						</div>
 					</GridChild>
-					<GridChild colSpan={4} className={`${style.caseStudiesSection}`}>
-						<h3 className="textMain textP2 textBold">Case Studies</h3>
-						<div className={style.linksListSection}>
-							<p className="textP2 textSoft textMedium">Coming Soon</p>
-						</div>
-					</GridChild>
-					<GridChild colSpan={4} className={`${style.contactSection}`}>
+
+					<GridChild colSpan={4} className={`${style.footerCol}`}>
 						<h3 className="textMain textP2 textBold">Contact</h3>
 						<div className={style.linksListSection}>
 							<a className="textP2 link textSoft textMedium">
@@ -38,16 +51,17 @@ const Footer = () => {
 							</a>
 						</div>
 					</GridChild>
+					<GridChild colSpan={4} className={`${style.footerCol}`}>
+						<p className="textP2  textSoft textMedium">
+							©2022 Zachary Schwartz.
+							<br />
+							All rights reserved.
+						</p>
+					</GridChild>
 				</GridContainer>
 				<GridContainer>
-					<GridChild colSpan={12} className={`${style.infoSection}`}>
+					<GridChild colSpan={12} className={`${style.logoSection}`}>
 						<LogoIcon />
-						<p className="textP2  textSoft textMedium">
-							<span className={style.infoSectionText}>
-								©2022&nbsp;Zachary&nbsp;Schwartz.
-							</span>{" "}
-							<span>All&nbsp;rights&nbsp;reserved.</span>
-						</p>
 					</GridChild>
 				</GridContainer>
 			</div>

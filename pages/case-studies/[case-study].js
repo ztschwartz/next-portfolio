@@ -167,7 +167,7 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 					</Section>
 				))}
 			</div>
-			<Footer />
+			<Footer cmsData={cmsData} />
 		</div>
 	);
 };

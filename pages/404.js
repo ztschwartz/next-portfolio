@@ -75,7 +75,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					</GridContainer>
 				</div>
 				<div className="fadeAni">
-					<Footer />
+					<Footer cmsData={cmsData}/>
 				</div>
 			</div>
 		</>

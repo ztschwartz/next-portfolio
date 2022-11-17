@@ -120,10 +120,10 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 								problems.
 							</h3>
 						</GridChild> */}
-						<GridChild colSpan={10}>
-							<h1 className="textH1 textMain textMedium fadeAni">
+						<GridChild colSpan={11}>
+							<h1 className="textH1 textMain textBold fadeAni">
 								Hey there—I’m Zack.{" "}
-								<span className="textSoft">
+								<span className="textSoft textMedium">
 									I’m a passionate product designer & developer currently based
 									in St. Louis, Missouri. I’ve spent the last five years
 									utilizing design & technology to build products that solve
@@ -197,9 +197,8 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 										className={style.aboutImg}
 										src="/img/about-img.png"
 										alt="A photo of Zachary Schwartz"
-										width={500}
-										height={500}
-										layout="responsive"
+										width={256}
+										height={256}
 										placeholder="blur"
 										blurDataURL="/img/about-imgblur.png"
 									/>

@@ -93,7 +93,6 @@
 
 .pageBtn:active {
 	filter: brightness(0.98);
-	border: 1px solid var(--accent);
 }
 
 /* @media (prefers-color-scheme: dark) {

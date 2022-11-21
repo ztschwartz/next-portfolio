@@ -35,28 +35,6 @@
 	transition: color 100ms ease-out;
 }
 
-@media (hover: hover) {
-	.backHomeLink:hover {
-		color: var(--accent);
-	}
-}
-
-.backHomeLink:active {
-	color: var(--accent);
-}
-
-/* @media (prefers-color-scheme: dark) {
-	@media (hover: hover) {
-		.backHomeLink:hover {
-			color: var(--accentDark);
-		}
-	}
-
-	.backHomeLink:active {
-		color: var(--accentDark);
-	}
-} */
-
 .backHomeSvg {
 	transform: rotate(-180deg);
 	height: 0.75rem;
@@ -95,19 +73,6 @@
 	filter: brightness(0.98);
 }
 
-/* @media (prefers-color-scheme: dark) {
-	.pageBtn:hover {
-		width: auto;
-		padding: 0 1rem;
-		border: 1px solid var(--accentDark);
-		transition: border 100ms ease-out;
-	}
-	.pageBtn:active {
-		filter: brightness(0.98);
-		border: 1px solid var(--accentDark);
-	}
-} */
-
 .pageBtnLabel {
 	width: 100%;
 	overflow: hidden;
@@ -133,8 +98,7 @@
 	.pageBtn:hover {
 		width: auto;
 		padding: 0 0.875rem;
-		/* border: 1px solid var(--accent); */
-		background-color: var(--accent);
+		background-color: var(--black);
 	}
 	.pageBtn:hover > p {
 		visibility: visible;

@@ -9,10 +9,6 @@ import "../styles/type.css";
 import HomePage from "./index.js";
 import CaseStudyPage from "./case-studies/[case-study].js";
 import Loader from "../components/Loader/Loader.js";
-/* import HomeStyles from '../styles/Home.module.css'
-import CaseStudyStyles from '../styles/CaseStudy.module.css'
-import CardStyles from '../styles/components/CaseStudyCard.module.css'
-import HeaderStyles from '../styles/components/SectionHeader.module.css' */
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter();

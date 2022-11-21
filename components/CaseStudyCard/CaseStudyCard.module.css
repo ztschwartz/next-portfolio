@@ -107,7 +107,7 @@
 
 @media (hover: hover) {
 	.caseStudyCard:hover .cardInnerLink {
-		background-color: var(--accent);
+		background-color: var(--black);
 	}
 	.caseStudyCard:hover .cardInnerLink svg {
 		stroke: var(--white);
@@ -160,10 +160,6 @@
 	}
 
 	@media (hover: hover) {
-		.caseStudyCard:hover .cardInnerLink {
-			transition: border 200ms ease-out;
-			border: 1px solid var(--accent);
-		}
 	}
 }
 

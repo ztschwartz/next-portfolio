@@ -40,15 +40,13 @@ const Footer = ({ cmsData }) => {
 					<GridChild colSpan={4} className={`${style.footerCol}`}>
 						<h3 className="textMain textP2 textBold">Contact</h3>
 						<div className={style.linksListSection}>
-							<a className="textP2 link textSoft textMedium">
-								hello@zacktschwartz
+							<a
+								href="mailto:hello@zacktschwartz.com"
+								className="textP2 link textSoft textMedium">
+								hello@zacktschwartz.com
 							</a>
-							<a className="textP2 link textSoft textMedium">
-								Message me on LinkedIn
-							</a>
-							<a className="textP2 link textSoft textMedium">
-								Message me on Polywork
-							</a>
+							<a className="textP2 link textSoft textMedium">LinkedIn</a>
+							<a className="textP2 link textSoft textMedium">Polywork</a>
 						</div>
 					</GridChild>
 					<GridChild colSpan={4} className={`${style.footerCol}`}>

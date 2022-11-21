@@ -177,13 +177,12 @@ body {
 
 @media (hover: hover) {
 	.link:hover {
-		color: var(--accent);
 		text-decoration: underline;
 	}
 }
 
 .link:active {
-	filter: brightness(0.9);
+	filter: brightness(0.5);
 }
 
 /* @media (prefers-color-scheme: dark) {

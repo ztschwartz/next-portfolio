@@ -164,8 +164,8 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 										className={style.aboutImg}
 										src="/img/about-img.png"
 										alt="A photo of Zachary Schwartz"
-										width={256}
-										height={256}
+										width={192}
+										height={192}
 										placeholder="blur"
 										blurDataURL="/img/about-imgblur.png"
 									/>

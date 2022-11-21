@@ -1,6 +1,7 @@
 .imgCardSection {
 	border-radius: 0.875rem;
 	height: 32rem;
+	overflow: hidden;
 }
 
 .objectFitCover {
@@ -30,6 +31,6 @@
 @media (max-width: 1080px) {
 	.imgCardSection {
 		height: 24rem;
-		padding: 1rem;
+		/* padding: 1rem; */
 	}
 }

@@ -2,7 +2,8 @@ import React from "react";
 import Link from "next/link";
 
 import { client, fetchContentfulData } from "../../utils/contentful-client";
-import NavbarStyles from "./Navbar.module.css";
+import style from "./Navbar.module.css";
+import { useState } from "react";
 
 const PaginationBtns = ({ currentPage, cmsData }) => {
 	const posts = cmsData.items;
@@ -65,12 +66,14 @@ const PaginationBtns = ({ currentPage, cmsData }) => {
 	const [prevPageSlug, prevPageText] = getPrevPage();
 
 	return (
-		<div className={NavbarStyles.paginationSection}>
+		<div className={style.paginationSection}>
 			<Link
 				scroll={false}
 				href={`/case-studies/${encodeURIComponent(prevPageSlug)}`}>
 				<a
-					className={`bgSoft navAni ${NavbarStyles.prevPageBtn} ${NavbarStyles.pageBtn}`}>
+					className={`bgSoft navAni ${style.prevPageBtn} ${
+						currentPage === 1 ? style.pageBtnDisabled : style.pageBtn
+					}`}>
 					<svg
 						className="strokeMain"
 						viewBox="0 0 24 24"
@@ -82,8 +85,7 @@ const PaginationBtns = ({ currentPage, cmsData }) => {
 							strokeLinejoin="round"
 						/>
 					</svg>
-					<p
-						className={`textP2 textWhite textMedium ${NavbarStyles.pageBtnLabel}`}>
+					<p className={`textP2 textWhite textMedium ${style.pageBtnLabel}`}>
 						<span className="textP2 textWhite textMedium">Prev: </span>
 						{prevPageText}
 					</p>
@@ -93,9 +95,10 @@ const PaginationBtns = ({ currentPage, cmsData }) => {
 				scroll={false}
 				href={`/case-studies/${encodeURIComponent(nextPageSlug)}`}>
 				<a
-					className={`bgSoft navAni ${NavbarStyles.nextPageBtn} ${NavbarStyles.pageBtn}`}>
-					<p
-						className={`textP2 textWhite textMedium ${NavbarStyles.pageBtnLabel}`}>
+					className={`bgSoft navAni ${style.nextPageBtn} ${
+						currentPage === arrayLength ? style.pageBtnDisabled : style.pageBtn
+					}`}>
+					<p className={`textP2 textWhite textMedium ${style.pageBtnLabel}`}>
 						<span className="textP2 textWhite textMedium">Next: </span>
 						{nextPageText}
 					</p>

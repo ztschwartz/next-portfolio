@@ -1,7 +1,7 @@
 /** FOOTER - LARGE **/
 
 .footer {
-	border-top: 1px solid var(--gray10);
+	border-top: 2px solid var(--gray10);
 	padding: 3rem 0 2rem 0;
 }
 

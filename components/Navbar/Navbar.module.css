@@ -69,6 +69,22 @@
 	transition: background-color 100ms ease-out;
 }
 
+.pageBtnDisabled {
+	height: 2.5rem;
+	width: 2.5rem;
+	padding: 0;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-auto-flow: column;
+	gap: 0.5rem;
+	border-radius: 10000px;
+	transition: background-color 100ms ease-out;
+	opacity: 0.6;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
 .pageBtn:active {
 	filter: brightness(0.98);
 }
@@ -86,8 +102,19 @@
 	padding-top: 1px;
 }
 
+.pageBtnDisabled > svg {
+	height: 0.75rem;
+}
+
+.pageBtnDisabled > p {
+	visibility: hidden;
+	display: none;
+	padding-top: 1px;
+}
+
 .pageBtn > svg {
 	height: 0.75rem;
+	stroke: var(--black);
 }
 
 .prevPageBtn > svg {
@@ -104,10 +131,10 @@
 		visibility: visible;
 		display: block;
 	}
-	.nextPageBtn:hover > svg {
+	.pageBtn:hover > svg {
 		stroke: var(--white);
 	}
-	.prevPageBtn:hover > svg {
+	.pageBtn:hover > svg {
 		stroke: var(--white);
 	}
 }

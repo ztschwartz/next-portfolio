@@ -7,7 +7,7 @@ import { GridContainer, GridChild } from "../Grid/Grid.js";
 
 const Footer = ({ cmsData }) => {
 	return (
-		<footer className={`${style.footer} bgDeep`}>
+		<footer className={`bgDeep ${style.footer}`}>
 			<div className={style.contentSection}>
 				<GridContainer className={style.footerMain}>
 					<GridChild colSpan={4} className={`${style.footerCol}`}>

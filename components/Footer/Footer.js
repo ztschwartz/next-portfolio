@@ -54,8 +54,6 @@ const Footer = ({ cmsData }) => {
 							©2022 Zachary Schwartz.
 							<br />
 							All rights reserved.
-							<br />
-							STAGE BUILD
 						</p>
 					</GridChild>
 				</GridContainer>

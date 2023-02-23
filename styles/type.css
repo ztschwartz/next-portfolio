@@ -166,6 +166,9 @@ body {
 /* Text Styles - XSmall */
 
 @media (max-width: 640px) {
+	.textH1 {
+		font: var(--text24);
+	}
 	.textRegular {
 		font-weight: 400;
 	}

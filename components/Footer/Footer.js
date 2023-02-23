@@ -16,7 +16,10 @@ const Footer = ({ cmsData }) => {
 							<Link scroll={false} href="/">
 								<a className="textP2 link textSoft textMedium">Home</a>
 							</Link>
-							<Link
+							<p className="textP2 textSoft textMedium">
+								Case Studies: Coming soon
+							</p>
+							{/* <Link
 								scroll={false}
 								href={`/case-studies/${encodeURIComponent(
 									cmsData.items[0].fields.slug
@@ -33,7 +36,7 @@ const Footer = ({ cmsData }) => {
 								<a className="textP2 link textSoft textMedium">
 									Case Study: {cmsData.items[1].fields.title}
 								</a>
-							</Link>
+							</Link> */}
 						</div>
 					</GridChild>
 
@@ -45,8 +48,20 @@ const Footer = ({ cmsData }) => {
 								className="textP2 link textSoft textMedium">
 								hello@zacktschwartz.com
 							</a>
-							<a className="textP2 link textSoft textMedium">LinkedIn</a>
-							<a className="textP2 link textSoft textMedium">Polywork</a>
+							<a
+								href="https://www.linkedin.com/in/zacktschwartz"
+								target="_blank"
+								rel="noreferrer"
+								className="textP2 link textSoft textMedium">
+								LinkedIn
+							</a>
+							<a
+								href="https://poly.me/zacktschwartz"
+								target="_blank"
+								rel="noreferrer"
+								className="textP2 link textSoft textMedium">
+								Polywork
+							</a>
 						</div>
 					</GridChild>
 					<GridChild colSpan={4} className={`${style.footerCol}`}>

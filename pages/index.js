@@ -90,7 +90,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 						<GridChild colSpan={11}>
 							<h1 className="textH1 textMain textBold fadeAni">
 								Hey there—I’m Zack.{" "}
-								<span className="textSoft textMedium">
+								<span className="textSoft textBold">
 									I’m a passionate product designer & developer currently based
 									in St. Louis, Missouri. I’ve spent the last five years
 									utilizing design & technology to build products that solve
@@ -101,32 +101,6 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 					</GridContainer>
 				</div>
 				<div className="fadeAni">
-					<Section title="My work" id="work">
-						<div className={style.workContent}>
-							<GridContainer>
-								<GridChild colSpan={12}>
-									<CaseStudyCard
-										postData={cmsData.items[0]}
-										title={cmsData.items[0].fields.title}
-										subtitle={cmsData.items[0].fields.subtitle}
-										description={cmsData.items[0].fields.description}
-										slug={cmsData.items[0].fields.slug}
-										img={cmsData.items[0].fields.featureImage.fields.file.url}
-									/>
-								</GridChild>
-								<GridChild colSpan={12}>
-									<CaseStudyCard
-										postData={cmsData.items[1]}
-										title={cmsData.items[1].fields.title}
-										subtitle={cmsData.items[1].fields.subtitle}
-										description={cmsData.items[1].fields.description}
-										slug={cmsData.items[1].fields.slug}
-										img={cmsData.items[1].fields.featureImage.fields.file.url}
-									/>
-								</GridChild>
-							</GridContainer>
-						</div>
-					</Section>
 					<Section title="About me" id="about">
 						<GridContainer wrapperType="contentWrapper" offset={true}>
 							<GridChild colStart={5} colSpan={8} wrapperType="textWrapper">
@@ -180,7 +154,21 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 
 									<div className="textGroup">
 										<p className="textMain textP2 textBold">LinkedIn:</p>
-										<a href="#" className="textMain link textP2">
+										<a
+											href="https://www.linkedin.com/in/zacktschwartz"
+											target="_blank"
+											rel="noreferrer"
+											className="textMain link textP2">
+											zacktschwartz
+										</a>
+									</div>
+									<div className="textGroup">
+										<p className="textMain textP2 textBold">Polywork:</p>
+										<a
+											href="https://poly.me/zacktschwartz"
+											target="_blank"
+											rel="noreferrer"
+											className="textMain link textP2">
 											zacktschwartz
 										</a>
 									</div>
@@ -188,6 +176,38 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 							</GridChild>
 						</GridContainer>
 					</Section>
+					<Section title="My work" id="work">
+						<div className={style.workContent}>
+							<GridContainer>
+								<GridChild colSpan={12}>
+									<div className={`bgDeep ${style.workPreviewCard}`}>
+										<div className={`bgMain ${style.workPreviewInner}`}>
+											<h3>Case studies coming soon</h3>
+											<div className={style.innerLinkGroup}>
+												<a
+													className="link"
+													href="mailto:hello@zacktschwartz.com">
+													Contact for portfolio
+												</a>
+												<svg
+													className="strokeMain"
+													viewBox="0 0 24 24"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M12 2L22 12M22 12L12 22M22 12H2"
+														strokeWidth="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													/>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</GridChild>
+							</GridContainer>
+						</div>
+					</Section>
+
 					<Footer cmsData={cmsData} />
 				</div>
 			</div>

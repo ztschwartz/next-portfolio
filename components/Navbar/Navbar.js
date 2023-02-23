@@ -61,14 +61,14 @@ const Navbar = ({ type, currentPage, cmsData }) => {
 						{pageType === "home" ? (
 							<div className={style.navLinks}>
 								<a
-									href="#work"
-									className={`link textP2 textMain navAni ${style.navLink}`}>
-									Work
-								</a>
-								<a
 									href="#about"
 									className={`link textP2 navAni textMain ${style.navLink}`}>
 									About
+								</a>
+								<a
+									href="#work"
+									className={`link textP2 textMain navAni ${style.navLink}`}>
+									Work
 								</a>
 							</div>
 						) : (

@@ -9,7 +9,7 @@ const PageTransition = () => {
 			ease: "power3.out",
 			delay: 0.3,
 			opacity: 0,
-			stagger: 0.12,
+			stagger: 0.2,
 			duration: 1,
 			y: -32,
 			onComplete: scrollTriggerFresh,
@@ -18,7 +18,7 @@ const PageTransition = () => {
 		gsap.from(".fadeAni", {
 			ease: "power3.out",
 			opacity: 0,
-			stagger: 0.12,
+			stagger: 0.2,
 			delay: 0.2,
 			duration: 1,
 			y: 32,

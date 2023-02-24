@@ -150,9 +150,23 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 											<span className="textBold">Email:</span>{" "}
 											hello@zacktschwartz.com
 										</a>
+										<a
+											href="https://www.linkedin.com/in/zacktschwartz"
+											target="_blank"
+											rel="noreferrer"
+											className="textMain link textP2">
+											<span className="textBold">LinkedIn:</span> zacktschwartz
+										</a>
+										<a
+											href="https://poly.me/zacktschwartz"
+											target="_blank"
+											rel="noreferrer"
+											className="textMain link textP2">
+											<span className="textBold">Polywork:</span> zacktschwartz
+										</a>
 									</div>
 
-									<div className="textGroup">
+									{/* <div className="textGroup">
 										<a
 											href="https://www.linkedin.com/in/zacktschwartz"
 											target="_blank"
@@ -169,7 +183,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 											className="textMain link textP2">
 											<span className="textBold">Polywork:</span> zacktschwartz
 										</a>
-									</div>
+									</div> */}
 								</GridChild>
 							</GridChild>
 						</GridContainer>

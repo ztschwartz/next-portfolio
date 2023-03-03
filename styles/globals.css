@@ -67,6 +67,8 @@ a {
 	--shadow: rgba(0, 0, 0, 0.05);
 } */
 
+/* NEUTRAL */
+
 /* :root {
 	--white: rgba(255, 255, 255, 1);
 	--gray20: rgba(244, 244, 245, 1);
@@ -82,18 +84,17 @@ a {
 	--shadow: rgba(0, 0, 0, 0.05);
 } */
 
+/* GREEN TINT */
+
 :root {
 	--white: rgba(246, 249, 249, 1);
 	--gray20: rgba(233, 241, 241, 1);
 	--gray30: rgba(220, 229, 229, 1);
 	--gray60: rgba(101, 108, 108, 1);
-
 	--black: rgba(30, 36, 36, 1);
 	--transparentWhite: rgba(246, 249, 249, 0.8);
 	--accent: rgba(0, 178, 178, 1);
-	--accentSoft: rgba(235, 235, 255, 1);
 
-	--accentDark: rgba(247, 209, 95, 1);
 	--shadow: rgba(0, 0, 0, 0.05);
 }
 

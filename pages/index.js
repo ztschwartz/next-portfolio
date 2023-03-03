@@ -71,13 +71,13 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 				<meta name="theme-color" content="#FFFFFF" />
 				<meta
 					name="theme-color"
-					content="#FFFFFF"
+					content="#F6F9F9"
 					key="theme-color-light"
 					media="(prefers-color-scheme: light)"
 				/>
 				<meta
 					name="theme-color"
-					content="#FFFFFF"
+					content="#F6F9F9"
 					key="theme-color-dark"
 					media="(prefers-color-scheme: dark)"
 				/>

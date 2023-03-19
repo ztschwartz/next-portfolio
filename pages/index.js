@@ -34,7 +34,7 @@ export const getStaticProps = async (context) => {
 };
 
 export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
-	useLayoutEffect(() => {
+	useEffect(() => {
 		PageTransition();
 		console.log(cmsData);
 	}, [cmsData]);
@@ -196,11 +196,16 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 										<div className={`bgMain ${style.workPreviewInner}`}>
 											<h3>Case studies coming soon</h3>
 											<div className={style.innerLinkGroup}>
-												<a
+												{/* <a
 													className="link"
 													href="mailto:hello@zacktschwartz.com">
 													Contact for portfolio
-												</a>
+												</a> */}
+												<Link
+													scroll={false}
+													href={`/case-studies/total-tastings`}>
+													<a>Contact for portfolio</a>
+												</Link>
 												<svg
 													className="strokeMain"
 													viewBox="0 0 24 24"

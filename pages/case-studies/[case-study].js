@@ -63,11 +63,12 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 	const [currentPage, setCurrentPage] = useState();
 	const [postState, setPostState] = useState("");
 
-	useLayoutEffect(() => {
-		PageTransition();
-	}, []);
+	// useLayoutEffect(() => {
+	// 	PageTransition();
+	// }, []);
 
 	useEffect(() => {
+		PageTransition();
 		setCurrentPage(postContent.fields.order);
 	}, [postContent.fields.order]);
 

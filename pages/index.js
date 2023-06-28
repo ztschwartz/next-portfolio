@@ -157,13 +157,13 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 											className="textMain link textP2">
 											<span className="textBold">LinkedIn:</span> zacktschwartz
 										</a>
-										<a
+										{/* <a
 											href="https://poly.me/zacktschwartz"
 											target="_blank"
 											rel="noreferrer"
 											className="textMain link textP2">
 											<span className="textBold">Polywork:</span> zacktschwartz
-										</a>
+										</a> */}
 									</div>
 
 									{/* <div className="textGroup">

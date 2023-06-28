@@ -6,7 +6,7 @@ import { Flip } from "gsap/dist/Flip";
 import { animateToHeight, animateBack } from "../../animations/HeightAnimation";
 import Image from "next/image";
 
-const CaseStudyCard = ({ title, subtitle, slug, img, description }) => {
+const CaseStudyCard = ({ title, subtitle, slug, img }) => {
 	return (
 		<Link scroll={false} href={`/case-studies/${encodeURIComponent(slug)}`}>
 			<a className={`bgDeep ${style.caseStudyCard}`}>

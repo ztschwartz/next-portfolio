@@ -66,6 +66,7 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 	// useLayoutEffect(() => {
 	// 	PageTransition();
 	// }, []);
+	console.log(postContent);
 
 	useEffect(() => {
 		PageTransition();
@@ -126,7 +127,11 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 						<GridContainer wrapperType="contentWrapper" offset={true}>
 							{section.fields.contentSection.map((innerSection) =>
 								innerSection.fields?.hasOwnProperty("textContent") ? (
-									<GridChild wrapperType="textWrapper" colStart={5} colSpan={8}>
+									<GridChild
+										key={innerSection.sys.id}
+										wrapperType="textWrapper"
+										colStart={5}
+										colSpan={8}>
 										{documentToReactComponents(
 											innerSection.fields.textContent,
 											textRender
@@ -134,6 +139,7 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 									</GridChild>
 								) : innerSection.fields?.hasOwnProperty("imageContent") ? (
 									<GridChild
+										key={innerSection.sys.id}
 										innerGrid={true}
 										wrapperType="textWrapper"
 										colSpan={12}>
@@ -149,6 +155,7 @@ const CaseStudyPage = ({ postPath, cmsData, postContent }) => {
 									</GridChild>
 								) : innerSection.fields?.hasOwnProperty("videoContent") ? (
 									<GridChild
+										key={innerSection.sys.id}
 										innerGrid={true}
 										wrapperType="textWrapper"
 										colSpan={12}>

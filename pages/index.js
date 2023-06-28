@@ -192,7 +192,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 						<div className={style.workContent}>
 							<GridContainer>
 								<GridChild colSpan={12}>
-									<div className={`bgDeep ${style.workPreviewCard}`}>
+									<div className={`${style.workPreviewCard}`}>
 										<div className={`bgMain ${style.workPreviewInner}`}>
 											<h3>Case studies coming soon</h3>
 											<div className={style.innerLinkGroup}>

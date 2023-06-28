@@ -49,13 +49,16 @@
 	width: 100%;
 	display: grid;
 	height: 32rem;
-	align-items: end;
-	justify-items: stretch;
+	align-items: center;
+	justify-items: center;
 	text-decoration: none;
 	transition: box-shadow 200ms ease-out, background-color 200ms ease-out;
 	box-shadow: 0 0 0 0px transparent;
 	overflow: hidden;
 	padding: 0.25rem;
+	background-image: url(/img/workPreviewImg.png);
+	background-size: cover;
+	background-position: center;
 }
 
 .workPreviewInner {
@@ -63,7 +66,7 @@
 	border-radius: 0.75rem;
 	padding: 1.25rem;
 	display: grid;
-	grid-auto-flow: column;
+	grid-auto-flow: row;
 	gap: 0.5rem;
 	justify-content: space-between;
 	align-items: center;

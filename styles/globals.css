@@ -69,24 +69,24 @@ a {
 
 /* NEUTRAL */
 
-/* :root {
+:root {
 	--white: rgba(255, 255, 255, 1);
 	--gray20: rgba(244, 244, 245, 1);
 	--gray30: rgba(237, 237, 238, 1);
 	--gray60: rgba(126, 126, 129, 1);
-	
+
 	--black: rgba(0, 0, 0, 1);
 	--transparentWhite: rgba(255, 255, 255, 0.8);
 	--accent: rgba(81, 81, 240, 1);
 	--accentSoft: rgba(235, 235, 255, 1);
-	
+
 	--accentDark: rgba(247, 209, 95, 1);
 	--shadow: rgba(0, 0, 0, 0.05);
-} */
+}
 
 /* GREEN TINT */
 
-:root {
+/* :root {
 	--white: rgba(246, 249, 249, 1);
 	--gray20: rgba(233, 241, 241, 1);
 	--gray30: rgba(220, 229, 229, 1);
@@ -96,7 +96,7 @@ a {
 	--accent: rgba(0, 178, 178, 1);
 
 	--shadow: rgba(0, 0, 0, 0.05);
-}
+} */
 
 body {
 	background-color: var(--white);

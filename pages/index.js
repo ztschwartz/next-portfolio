@@ -112,12 +112,11 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 								</p>
 								<p className="textSoft textP1 textMedium">
 									I started my career 5 years ago as a freelance front-end web
-									developer. I focused on delivering well developed sites to
-									small businesses. After some time, I found myself gravitating
-									towards the process of researching, iterating, and validating.
-									Now I consider myself a designer who uses code as a tool to
-									build prototypes for quicker iterations and better end
-									products.
+									developer. After some time creating website for small
+									businesses, I found myself gravitating towards the process of
+									researching, iterating, and validating. Now I consider myself
+									a designer who uses code as a tool to build prototypes for
+									quicker iterations and better end products.
 								</p>
 								<p className="textSoft textP1 textMedium">
 									My background in development has given me a unique perspective
@@ -129,7 +128,7 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 								<p className="textSoft textP1 textMedium">
 									If you have any questions, want to talk about possible work,
 									or just want to talk, feel free to send me an email or a
-									message on LinkedIn/Twitter.
+									message on LinkedIn.
 								</p>
 							</GridChild>
 							<GridChild innerGrid={true} colStart={5} colSpan={8}>

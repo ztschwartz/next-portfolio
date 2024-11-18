@@ -145,7 +145,9 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 								</GridChild>
 								<GridChild wrapperType="textWrapper" colSpan={7}>
 									<div className="textGroup">
-										<a href="#" className="textMain link textP2">
+										<a
+											href="mailto:hello@zacktschwartz.com"
+											className="textMain link textP2">
 											<span className="textBold">Email:</span>{" "}
 											hello@zacktschwartz.com
 										</a>

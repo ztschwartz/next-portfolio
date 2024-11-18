@@ -200,11 +200,11 @@ export default function Home({ loaded, loaderView, cmsData, featuredPosts }) {
 													href="mailto:hello@zacktschwartz.com">
 													Contact for portfolio
 												</a> */}
-												<Link
-													scroll={false}
-													href={`/case-studies/total-tastings`}>
-													<a>Contact for portfolio</a>
-												</Link>
+
+												<a href="mailto:hello@zacktschwartz.com">
+													Contact for portfolio
+												</a>
+
 												<svg
 													className="strokeMain"
 													viewBox="0 0 24 24"

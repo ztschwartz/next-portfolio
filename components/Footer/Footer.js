@@ -55,18 +55,18 @@ const Footer = ({ cmsData }) => {
 								className="textP2 link textSoft textMedium">
 								LinkedIn
 							</a>
-							<a
+							{/* <a
 								href="https://poly.me/zacktschwartz"
 								target="_blank"
 								rel="noreferrer"
 								className="textP2 link textSoft textMedium">
 								Polywork
-							</a>
+							</a> */}
 						</div>
 					</GridChild>
 					<GridChild colSpan={4} className={`${style.footerCol}`}>
 						<p className="textP2  textSoft textMedium">
-							©2022 Zachary Schwartz.
+							©2024 Zachary Schwartz.
 							<br />
 							All rights reserved.
 						</p>
